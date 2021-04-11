@@ -1,0 +1,421 @@
+"","Location","year","month","Number"
+"1","Auckland","2017","02",33
+"2","Auckland","2017","03",45
+"3","Auckland","2017","04",38
+"4","Auckland","2017","05",34
+"5","Auckland","2017","06",25
+"6","Auckland","2017","07",39
+"7","Auckland","2017","08",43
+"8","Auckland","2017","09",37
+"9","Auckland","2017","10",32
+"10","Auckland","2017","11",35
+"11","Auckland","2017","12",39
+"12","Auckland","2018","01",41
+"13","Auckland","2018","02",31
+"14","Auckland","2018","03",42
+"15","Auckland","2018","04",31
+"16","Auckland","2018","05",34
+"17","Auckland","2018","06",30
+"18","Auckland","2018","07",37
+"19","Auckland","2018","08",41
+"20","Auckland","2018","09",34
+"21","Auckland","2018","10",41
+"22","Auckland","2018","11",52
+"23","Auckland","2018","12",51
+"24","Auckland","2019","01",51
+"25","Auckland","2019","02",40
+"26","Auckland","2019","03",44
+"27","Auckland","2019","04",39
+"28","Auckland","2019","05",39
+"29","Auckland","2019","06",30
+"30","Auckland","2019","07",36
+"31","Auckland","2019","08",40
+"32","Auckland","2019","09",44
+"33","Auckland","2019","10",29
+"34","Auckland","2019","11",37
+"35","Auckland","2019","12",43
+"36","Bay Of Plenty","2017","02",5
+"37","Bay Of Plenty","2017","03",10
+"38","Bay Of Plenty","2017","04",8
+"39","Bay Of Plenty","2017","05",10
+"40","Bay Of Plenty","2017","06",7
+"41","Bay Of Plenty","2017","07",12
+"42","Bay Of Plenty","2017","08",10
+"43","Bay Of Plenty","2017","09",5
+"44","Bay Of Plenty","2017","10",12
+"45","Bay Of Plenty","2017","11",7
+"46","Bay Of Plenty","2017","12",7
+"47","Bay Of Plenty","2018","01",10
+"48","Bay Of Plenty","2018","02",5
+"49","Bay Of Plenty","2018","03",12
+"50","Bay Of Plenty","2018","04",9
+"51","Bay Of Plenty","2018","05",14
+"52","Bay Of Plenty","2018","06",11
+"53","Bay Of Plenty","2018","07",13
+"54","Bay Of Plenty","2018","08",6
+"55","Bay Of Plenty","2018","09",16
+"56","Bay Of Plenty","2018","10",10
+"57","Bay Of Plenty","2018","11",15
+"58","Bay Of Plenty","2018","12",17
+"59","Bay Of Plenty","2019","01",10
+"60","Bay Of Plenty","2019","02",13
+"61","Bay Of Plenty","2019","03",9
+"62","Bay Of Plenty","2019","04",7
+"63","Bay Of Plenty","2019","05",17
+"64","Bay Of Plenty","2019","06",10
+"65","Bay Of Plenty","2019","07",10
+"66","Bay Of Plenty","2019","08",16
+"67","Bay Of Plenty","2019","09",8
+"68","Bay Of Plenty","2019","10",12
+"69","Bay Of Plenty","2019","11",15
+"70","Bay Of Plenty","2019","12",16
+"71","Canterbury","2017","02",16
+"72","Canterbury","2017","03",17
+"73","Canterbury","2017","04",12
+"74","Canterbury","2017","05",14
+"75","Canterbury","2017","06",13
+"76","Canterbury","2017","07",10
+"77","Canterbury","2017","08",17
+"78","Canterbury","2017","09",11
+"79","Canterbury","2017","10",14
+"80","Canterbury","2017","11",23
+"81","Canterbury","2017","12",13
+"82","Canterbury","2018","01",14
+"83","Canterbury","2018","02",12
+"84","Canterbury","2018","03",19
+"85","Canterbury","2018","04",12
+"86","Canterbury","2018","05",9
+"87","Canterbury","2018","06",18
+"88","Canterbury","2018","07",10
+"89","Canterbury","2018","08",13
+"90","Canterbury","2018","09",19
+"91","Canterbury","2018","10",19
+"92","Canterbury","2018","11",15
+"93","Canterbury","2018","12",19
+"94","Canterbury","2019","01",16
+"95","Canterbury","2019","02",16
+"96","Canterbury","2019","03",14
+"97","Canterbury","2019","04",12
+"98","Canterbury","2019","05",3
+"99","Canterbury","2019","06",20
+"100","Canterbury","2019","07",10
+"101","Canterbury","2019","08",10
+"102","Canterbury","2019","09",17
+"103","Canterbury","2019","10",17
+"104","Canterbury","2019","11",21
+"105","Canterbury","2019","12",19
+"106","Hawkes Bay/ Gisborne","2017","02",12
+"107","Hawkes Bay/ Gisborne","2017","03",11
+"108","Hawkes Bay/ Gisborne","2017","04",12
+"109","Hawkes Bay/ Gisborne","2017","05",12
+"110","Hawkes Bay/ Gisborne","2017","06",9
+"111","Hawkes Bay/ Gisborne","2017","07",8
+"112","Hawkes Bay/ Gisborne","2017","08",13
+"113","Hawkes Bay/ Gisborne","2017","09",10
+"114","Hawkes Bay/ Gisborne","2017","10",7
+"115","Hawkes Bay/ Gisborne","2017","11",9
+"116","Hawkes Bay/ Gisborne","2017","12",13
+"117","Hawkes Bay/ Gisborne","2018","01",17
+"118","Hawkes Bay/ Gisborne","2018","02",9
+"119","Hawkes Bay/ Gisborne","2018","03",11
+"120","Hawkes Bay/ Gisborne","2018","04",7
+"121","Hawkes Bay/ Gisborne","2018","05",12
+"122","Hawkes Bay/ Gisborne","2018","06",8
+"123","Hawkes Bay/ Gisborne","2018","07",5
+"124","Hawkes Bay/ Gisborne","2018","08",16
+"125","Hawkes Bay/ Gisborne","2018","09",7
+"126","Hawkes Bay/ Gisborne","2018","10",9
+"127","Hawkes Bay/ Gisborne","2018","11",11
+"128","Hawkes Bay/ Gisborne","2018","12",13
+"129","Hawkes Bay/ Gisborne","2019","01",5
+"130","Hawkes Bay/ Gisborne","2019","02",7
+"131","Hawkes Bay/ Gisborne","2019","03",10
+"132","Hawkes Bay/ Gisborne","2019","04",8
+"133","Hawkes Bay/ Gisborne","2019","05",9
+"134","Hawkes Bay/ Gisborne","2019","06",11
+"135","Hawkes Bay/ Gisborne","2019","07",12
+"136","Hawkes Bay/ Gisborne","2019","08",16
+"137","Hawkes Bay/ Gisborne","2019","09",6
+"138","Hawkes Bay/ Gisborne","2019","10",8
+"139","Hawkes Bay/ Gisborne","2019","11",11
+"140","Hawkes Bay/ Gisborne","2019","12",15
+"141","Northland","2017","02",4
+"142","Northland","2017","03",6
+"143","Northland","2017","04",5
+"144","Northland","2017","05",8
+"145","Northland","2017","06",4
+"146","Northland","2017","07",5
+"147","Northland","2017","08",3
+"148","Northland","2017","09",4
+"149","Northland","2017","10",8
+"150","Northland","2017","11",4
+"151","Northland","2017","12",6
+"152","Northland","2018","01",4
+"153","Northland","2018","02",5
+"154","Northland","2018","03",4
+"155","Northland","2018","04",3
+"156","Northland","2018","05",6
+"157","Northland","2018","06",8
+"158","Northland","2018","07",5
+"159","Northland","2018","08",5
+"160","Northland","2018","09",3
+"161","Northland","2018","10",2
+"162","Northland","2018","11",1
+"163","Northland","2018","12",4
+"164","Northland","2019","01",7
+"165","Northland","2019","02",5
+"166","Northland","2019","03",7
+"167","Northland","2019","04",2
+"168","Northland","2019","05",7
+"169","Northland","2019","06",3
+"170","Northland","2019","07",2
+"171","Northland","2019","08",8
+"172","Northland","2019","09",4
+"173","Northland","2019","10",8
+"174","Northland","2019","11",3
+"175","Northland","2019","12",5
+"176","Southland/ Otago","2017","02",7
+"177","Southland/ Otago","2017","03",10
+"178","Southland/ Otago","2017","04",4
+"179","Southland/ Otago","2017","05",7
+"180","Southland/ Otago","2017","06",13
+"181","Southland/ Otago","2017","07",6
+"182","Southland/ Otago","2017","08",6
+"183","Southland/ Otago","2017","09",10
+"184","Southland/ Otago","2017","10",7
+"185","Southland/ Otago","2017","11",7
+"186","Southland/ Otago","2017","12",11
+"187","Southland/ Otago","2018","01",6
+"188","Southland/ Otago","2018","02",6
+"189","Southland/ Otago","2018","03",7
+"190","Southland/ Otago","2018","04",5
+"191","Southland/ Otago","2018","05",6
+"192","Southland/ Otago","2018","06",2
+"193","Southland/ Otago","2018","07",5
+"194","Southland/ Otago","2018","08",12
+"195","Southland/ Otago","2018","09",9
+"196","Southland/ Otago","2018","10",7
+"197","Southland/ Otago","2018","11",7
+"198","Southland/ Otago","2018","12",13
+"199","Southland/ Otago","2019","01",3
+"200","Southland/ Otago","2019","02",8
+"201","Southland/ Otago","2019","03",7
+"202","Southland/ Otago","2019","04",9
+"203","Southland/ Otago","2019","05",7
+"204","Southland/ Otago","2019","06",4
+"205","Southland/ Otago","2019","07",9
+"206","Southland/ Otago","2019","08",4
+"207","Southland/ Otago","2019","09",10
+"208","Southland/ Otago","2019","10",11
+"209","Southland/ Otago","2019","11",6
+"210","Southland/ Otago","2019","12",8
+"211","Tasman/ South-West Coast","2017","02",4
+"212","Tasman/ South-West Coast","2017","03",5
+"213","Tasman/ South-West Coast","2017","04",9
+"214","Tasman/ South-West Coast","2017","05",9
+"215","Tasman/ South-West Coast","2017","06",3
+"216","Tasman/ South-West Coast","2017","07",2
+"217","Tasman/ South-West Coast","2017","08",3
+"218","Tasman/ South-West Coast","2017","09",8
+"219","Tasman/ South-West Coast","2017","10",4
+"220","Tasman/ South-West Coast","2017","11",11
+"221","Tasman/ South-West Coast","2017","12",3
+"222","Tasman/ South-West Coast","2018","01",2
+"223","Tasman/ South-West Coast","2018","02",14
+"224","Tasman/ South-West Coast","2018","03",3
+"225","Tasman/ South-West Coast","2018","04",1
+"226","Tasman/ South-West Coast","2018","05",1
+"227","Tasman/ South-West Coast","2018","06",6
+"228","Tasman/ South-West Coast","2018","07",4
+"229","Tasman/ South-West Coast","2018","08",2
+"230","Tasman/ South-West Coast","2018","09",7
+"231","Tasman/ South-West Coast","2018","10",1
+"232","Tasman/ South-West Coast","2018","11",8
+"233","Tasman/ South-West Coast","2018","12",7
+"234","Tasman/ South-West Coast","2019","01",8
+"235","Tasman/ South-West Coast","2019","02",3
+"236","Tasman/ South-West Coast","2019","03",2
+"237","Tasman/ South-West Coast","2019","04",4
+"238","Tasman/ South-West Coast","2019","05",6
+"239","Tasman/ South-West Coast","2019","06",4
+"240","Tasman/ South-West Coast","2019","07",8
+"241","Tasman/ South-West Coast","2019","08",5
+"242","Tasman/ South-West Coast","2019","09",5
+"243","Tasman/ South-West Coast","2019","10",7
+"244","Tasman/ South-West Coast","2019","11",3
+"245","Tasman/ South-West Coast","2019","12",5
+"246","Waikato","2017","02",14
+"247","Waikato","2017","03",10
+"248","Waikato","2017","04",9
+"249","Waikato","2017","05",13
+"250","Waikato","2017","06",13
+"251","Waikato","2017","07",11
+"252","Waikato","2017","08",9
+"253","Waikato","2017","09",15
+"254","Waikato","2017","10",7
+"255","Waikato","2017","11",17
+"256","Waikato","2017","12",13
+"257","Waikato","2018","01",13
+"258","Waikato","2018","02",21
+"259","Waikato","2018","03",15
+"260","Waikato","2018","04",13
+"261","Waikato","2018","05",15
+"262","Waikato","2018","06",12
+"263","Waikato","2018","07",10
+"264","Waikato","2018","08",13
+"265","Waikato","2018","09",9
+"266","Waikato","2018","10",13
+"267","Waikato","2018","11",9
+"268","Waikato","2018","12",12
+"269","Waikato","2019","01",21
+"270","Waikato","2019","02",23
+"271","Waikato","2019","03",19
+"272","Waikato","2019","04",14
+"273","Waikato","2019","05",12
+"274","Waikato","2019","06",14
+"275","Waikato","2019","07",11
+"276","Waikato","2019","08",13
+"277","Waikato","2019","09",14
+"278","Waikato","2019","10",13
+"279","Waikato","2019","11",17
+"280","Waikato","2019","12",17
+"281","Wellington/ Lower-Central North","2017","02",16
+"282","Wellington/ Lower-Central North","2017","03",18
+"283","Wellington/ Lower-Central North","2017","04",14
+"284","Wellington/ Lower-Central North","2017","05",8
+"285","Wellington/ Lower-Central North","2017","06",17
+"286","Wellington/ Lower-Central North","2017","07",19
+"287","Wellington/ Lower-Central North","2017","08",20
+"288","Wellington/ Lower-Central North","2017","09",11
+"289","Wellington/ Lower-Central North","2017","10",21
+"290","Wellington/ Lower-Central North","2017","11",17
+"291","Wellington/ Lower-Central North","2017","12",32
+"292","Wellington/ Lower-Central North","2018","01",15
+"293","Wellington/ Lower-Central North","2018","02",18
+"294","Wellington/ Lower-Central North","2018","03",23
+"295","Wellington/ Lower-Central North","2018","04",19
+"296","Wellington/ Lower-Central North","2018","05",16
+"297","Wellington/ Lower-Central North","2018","06",17
+"298","Wellington/ Lower-Central North","2018","07",10
+"299","Wellington/ Lower-Central North","2018","08",11
+"300","Wellington/ Lower-Central North","2018","09",20
+"301","Wellington/ Lower-Central North","2018","10",17
+"302","Wellington/ Lower-Central North","2018","11",28
+"303","Wellington/ Lower-Central North","2018","12",15
+"304","Wellington/ Lower-Central North","2019","01",18
+"305","Wellington/ Lower-Central North","2019","02",21
+"306","Wellington/ Lower-Central North","2019","03",24
+"307","Wellington/ Lower-Central North","2019","04",18
+"308","Wellington/ Lower-Central North","2019","05",16
+"309","Wellington/ Lower-Central North","2019","06",21
+"310","Wellington/ Lower-Central North","2019","07",15
+"311","Wellington/ Lower-Central North","2019","08",15
+"312","Wellington/ Lower-Central North","2019","09",12
+"313","Wellington/ Lower-Central North","2019","10",18
+"314","Wellington/ Lower-Central North","2019","11",15
+"315","Wellington/ Lower-Central North","2019","12",18
+"316","West Coast/ Upper-Central North","2017","02",15
+"317","West Coast/ Upper-Central North","2017","03",12
+"318","West Coast/ Upper-Central North","2017","04",8
+"319","West Coast/ Upper-Central North","2017","05",13
+"320","West Coast/ Upper-Central North","2017","06",8
+"321","West Coast/ Upper-Central North","2017","07",4
+"322","West Coast/ Upper-Central North","2017","08",14
+"323","West Coast/ Upper-Central North","2017","09",7
+"324","West Coast/ Upper-Central North","2017","10",6
+"325","West Coast/ Upper-Central North","2017","11",9
+"326","West Coast/ Upper-Central North","2017","12",12
+"327","West Coast/ Upper-Central North","2018","01",8
+"328","West Coast/ Upper-Central North","2018","02",11
+"329","West Coast/ Upper-Central North","2018","03",9
+"330","West Coast/ Upper-Central North","2018","04",10
+"331","West Coast/ Upper-Central North","2018","05",10
+"332","West Coast/ Upper-Central North","2018","06",12
+"333","West Coast/ Upper-Central North","2018","07",4
+"334","West Coast/ Upper-Central North","2018","08",9
+"335","West Coast/ Upper-Central North","2018","09",10
+"336","West Coast/ Upper-Central North","2018","10",11
+"337","West Coast/ Upper-Central North","2018","11",11
+"338","West Coast/ Upper-Central North","2018","12",13
+"339","West Coast/ Upper-Central North","2019","01",2
+"340","West Coast/ Upper-Central North","2019","02",7
+"341","West Coast/ Upper-Central North","2019","03",11
+"342","West Coast/ Upper-Central North","2019","04",10
+"343","West Coast/ Upper-Central North","2019","05",10
+"344","West Coast/ Upper-Central North","2019","06",12
+"345","West Coast/ Upper-Central North","2019","07",10
+"346","West Coast/ Upper-Central North","2019","08",7
+"347","West Coast/ Upper-Central North","2019","09",8
+"348","West Coast/ Upper-Central North","2019","10",14
+"349","West Coast/ Upper-Central North","2019","11",14
+"350","West Coast/ Upper-Central North","2019","12",13
+"351","Auckland","2020","02",132
+"352","Auckland","2020","03",110
+"353","Auckland","2020","04",62
+"354","Auckland","2020","05",99
+"355","Auckland","2020","06",117
+"356","Auckland","2020","07",139
+"357","Auckland","2020","08",110
+"358","Bay Of Plenty","2020","02",30
+"359","Bay Of Plenty","2020","03",31
+"360","Bay Of Plenty","2020","04",11
+"361","Bay Of Plenty","2020","05",28
+"362","Bay Of Plenty","2020","06",25
+"363","Bay Of Plenty","2020","07",49
+"364","Bay Of Plenty","2020","08",51
+"365","Canterbury","2020","02",62
+"366","Canterbury","2020","03",62
+"367","Canterbury","2020","04",18
+"368","Canterbury","2020","05",29
+"369","Canterbury","2020","06",53
+"370","Canterbury","2020","07",35
+"371","Canterbury","2020","08",44
+"372","Hawkes Bay/ Gisborne","2020","02",46
+"373","Hawkes Bay/ Gisborne","2020","03",25
+"374","Hawkes Bay/ Gisborne","2020","04",19
+"375","Hawkes Bay/ Gisborne","2020","05",28
+"376","Hawkes Bay/ Gisborne","2020","06",26
+"377","Hawkes Bay/ Gisborne","2020","07",31
+"378","Hawkes Bay/ Gisborne","2020","08",20
+"379","Northland","2020","02",21
+"380","Northland","2020","03",20
+"381","Northland","2020","04",6
+"382","Northland","2020","05",5
+"383","Northland","2020","06",14
+"384","Northland","2020","07",16
+"385","Northland","2020","08",29
+"386","Southland/ Otago","2020","02",21
+"387","Southland/ Otago","2020","03",24
+"388","Southland/ Otago","2020","04",11
+"389","Southland/ Otago","2020","05",12
+"390","Southland/ Otago","2020","06",23
+"391","Southland/ Otago","2020","07",24
+"392","Southland/ Otago","2020","08",22
+"393","Tasman/ South-West Coast","2020","02",18
+"394","Tasman/ South-West Coast","2020","03",21
+"395","Tasman/ South-West Coast","2020","04",8
+"396","Tasman/ South-West Coast","2020","05",11
+"397","Tasman/ South-West Coast","2020","06",14
+"398","Tasman/ South-West Coast","2020","07",10
+"399","Tasman/ South-West Coast","2020","08",16
+"400","Waikato","2020","02",56
+"401","Waikato","2020","03",52
+"402","Waikato","2020","04",26
+"403","Waikato","2020","05",36
+"404","Waikato","2020","06",42
+"405","Waikato","2020","07",43
+"406","Waikato","2020","08",47
+"407","Wellington/ Lower-Central North","2020","02",54
+"408","Wellington/ Lower-Central North","2020","03",56
+"409","Wellington/ Lower-Central North","2020","04",26
+"410","Wellington/ Lower-Central North","2020","05",32
+"411","Wellington/ Lower-Central North","2020","06",54
+"412","Wellington/ Lower-Central North","2020","07",49
+"413","Wellington/ Lower-Central North","2020","08",57
+"414","West Coast/ Upper-Central North","2020","02",22
+"415","West Coast/ Upper-Central North","2020","03",38
+"416","West Coast/ Upper-Central North","2020","04",22
+"417","West Coast/ Upper-Central North","2020","05",25
+"418","West Coast/ Upper-Central North","2020","06",34
+"419","West Coast/ Upper-Central North","2020","07",28
+"420","West Coast/ Upper-Central North","2020","08",46

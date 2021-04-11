@@ -1,0 +1,114 @@
+---
+title: "Assignment 1"
+author: "Keiryn Hart, 300428418"
+date: "29 July 2020"
+output: pdf_document
+---
+Question 1:
+a)
+```{r}
+g1 <- 180/230
+g1 * 100
+```
+The positive predictive value for individuals who are type A and tested type A in group 1 is 78.3%.
+
+b)
+```{r}
+g2 <- 39/50
+g2 * 100
+```
+The positive predictive value for individuals who are type A and tested type A in group 2 is 78%. 
+
+c)
+
+Judging by the predictive value for group 1 and group 2 you would have to assume that the algorithm is not discriminatory between group 1 and 2 because the percentage of each type A who tested type A is very similar which would indicate that there is very little bias between the two.
+
+Question 2:
+
+The reason there is an Ethics section in the Data 301 course is for students to understand the importance of ethically correct behavior when dealing with data, there are many right and wrong ways that data can be used and exploited and it extremely important to have a good understanding of ethical implications of data scientists actions.
+
+Ethics are extremely important in decision making as they help guide correct decisions, in data science it is also important that ethics are always thoroughly investigated when we are using machines and machine learning to make or help make decisions as computers cannot understand ethical implications like we can.
+
+Question 3:
+a)
+
+The Maximin Rule:
+
+the Maximin rule essentially states that one act is preferred to another only if its worst possible outcome is prefferred to the worst possible outcome of another act. two acts are also indifferent solely if their worst possible outcomes are equal.
+
+the maximin rule does follow the dominance contidion which means for each possible state if the outcome of one act is at least preferred as the outcome of another act, for some possible states, the outcome of the first act is preferred to the outcome of the second act and therefore the first is preferred to the second.
+
+it minimizes the worst possible outcome.
+
+The Maximax Rule:
+
+the maximax rule essentially chooses the best possible outcome of the different actions available and, unlike the maximin rule this does not account for the worst possible outcomes and only considers which of the actions provides the best possible outcome.
+
+
+b)
+
+Using the maximin rule for this example of overfishing I would choose to send observers, this is because out of the 2 actions this choice has the best worst possible outcome being waste money on observers compared to Allow over fishing.
+
+c)
+Yes I think the dominance rule can be used to make a decision based on this decision matrix because if you were to take Ancient history, no matter whether or not you had a good or bad lecturer the outcomes still rank higher in both cases than if you were to take stats for business which shows a dominant outcome in any situation if you take ancient history. the outcomes of taking ancient history are both better than the outcomes of taking statistics for business.
+
+d)
+the link between the dominance rule and the maximin rule is that if there is an equal worst outcome in a decision matrix then you would move to the best worst outcome of the different actions and make a decision based on the dominance of that outcome.
+
+the link between the dominance rule and that maximax rule is that the action that has the best possible outcome immediately has dominance over any other action because the maximax rule only focuses on the best possible outcome.
+
+
+Question 4:
+
+a)
+the difference between value and monetary value is that values are determined by the probability that they an outcome will happen based on what the individual percieves to be most important.
+
+monetary value changes things because money has decreasing marginal value for most people so people are more likely to take an action that guarantees them x amount as opposed to an action that could give you a lot more but also could give you nothing.
+
+
+b)
+a rational decision under risk should be made based on the action that was perceived to be the most rational option when the decision needed to be made. even if the outcome of that decision was not as good as expected after the decision was made.
+
+c)
+based on the rule above the rational decision would be to take the bus because at this stage the bus seems like the most rational decision that provides a better outcome whether it is on time or late.
+
+Question 5:
+
+a)
+this article was concerned with amazon's attempt to automate its hiring process using artificial intelligence to score candidates based on terms and language used in past candidates' resumes. The ethical concerns with the project is that it created a gender bias against women largely due to the models being trained on resumes submitted over the past 10 years where most came from men in a mostly male dominated industry, it taught itself that male candidates were preferred and applicants using terms such as "women's" were penalized.
+
+b)
+the second article describes the use of big data to create marine protected areas in the high seas with the hopes that these areas will be biodiversity hotspot's that constitute the critical mass needed to achieve long term marine sustainability goals. researchers too more than "22 billion data points organized into 55 layers" which account for about two thirds of the global ocean. the ethical concerns with this project have to do with the environment and ensuring that the relationship between humans and the environment remain balanced and beneficial to the world especially in an area which is yet to be claimed by any one nation unlike places just forests which already suffer from human progress. 
+
+Question 6:
+
+The Stuxnet worm is a malicious and sophisticated malware that exploits vulnerabilities and infects computers, it specifically targets computers that are involved in uranium enrichment and has the ability to go outside of the digital world and cause real world, physical effects to machinery and computers. It does this by checking to see if a computer is connected to specific models of programmable logic controllers (PLC's), manufactured by Siemens (a global automation and digitization company) which help computers interact with and control industry machinery such as uranium centrifuges. 
+
+Once identified, the worm alters the PLC's programming which causes the centrifuges to spin faster than they should for long periods of time which eventually damages or destroys the equipment and while this is happening the PLC's report no issues or problems.
+
+It is believed that Stuxnet was created by intelligence agencies of the United States and Israel and although it was initially identified in 2010 development most likely began in 2005. Stuxnet was intended as a tool to "derail/ delay the Iranian program to develop nuclear weapons", the US believed that if Iran were on the verge of creating nuclear weapons, Israel would launch airstrikes against their nuclear facilities which could have set off a regional war. It's first attack occurred in 2010 at the uranium enrichment plant in Iran and was first noticed by inspectors after the centrifuges were failing at an alarming rate and noone knew what it was.
+
+Stuxnet had the ability to get around the CIA frameworks securityb properties, firstly confidentiality, given the fact that the Iranian nuclear facility at Natanz was air gapped and not connected to the internet, it meant that its computers had to be infected via USB sticks trainsported by either intelligence agents or "unwilling dupes" which in theory meant that the infection should have been easily contained. In regards to Integrity which states that data should not be able to be modified in an unauthorized manner, Stuxnet did the opposite as stated above by altering programming to cause physical damage. Obviously access to this place was not attainable to the US or Israel governments and therefore the infection had to be made available to people who were in contact with this nuclear plant through the USB drive.
+
+https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/
+https://www.csoonline.com/article/3218104/what-is-stuxnet-who-created-it-and-how-does-it-work.html 
+
+Question 7:
+
+Genomics Aotearoa is an "agile, leading-edge and collaborative platform" who try to ensure that New Zealand is internationally participating and leading in the rapidly developing field of genomics and bionoformatics. it is an alliance of 9 different partners including Universities and research facilities. Their aim is to help develop a national genomics data archive, with an appropriate guardianship to support research and manage data storage and access within a Maori values context.
+
+Funding for Genomics Aotearoa primarily comes from the Strategic Science Investment Fund which currently lasts until 2024 which came as a result of an application and assessment process managed by the ministry of Business, Innovation and Employment.
+
+Tikanga provides an integral framework through which Maori can actively engage with ethical issues and consider the effect research may have on their values or relationships. Tikanga has great meaning within Genomics aotearoa as protocols should address both the physical and spiritual components within the research process with all DNA and data in research. they have outlined three key stages where different Tikanga could be applies to address cultural and ethical expectations, these being; Te Tuk i te Taonga (sharing the gift), Te Hau o te Taonga (the spirit of the gift) and Te Whakahoki i te Taonga (returning the gift). these all relate to consent, use and the responsibility to look after the gift respectively.
+
+In regards to the principals of Maori Data sovereignty, heavy emphasis is placed firstly of whakapapa and the protection of whakapapa as it describes the connection between people and creates a responsibility for both future and past generations. when an individual consent to participate in genomic research, the information and biological material the contribute is key and as such is culturally significant and therefore a core responsibility is to ensure that it is protected by managing the access and use of said information. This in turn connects to Whanaungatanga in the sense that the whanau/ community and anyone that comes in contact with the information has an obligation to protect the rights of every individual and community involved in any research. 
+
+When considering Kotahitanga, the collective benefits of any project should outweigh the risk to Maori and there should also be direct benefits for the participants and their communities. Benefit sharing is massive also and this identifies the importance for researchers as well as those involved to experience benefit from participation. This then directly ties into Manaakitanga in the sense that there must be a cultural and social responsibility to ensure that the benefits, communication and education become key pathways to realising the positive community outcomes.
+
+Kaitiakitanga is a form of guardianship that comes with the responsibility to look after the resources both in and not in use. It is important to understand and clearly identify who holds the role of kaitiaki within the research team and community as their role is guardianship of the data and how it us used and shared. any sharing or use of the data should only occur with the "expressed permission of the participants and mandated representatives of the community.
+
+https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf
+https://www.genomics-aotearoa.org.nz/ 
+
+
+

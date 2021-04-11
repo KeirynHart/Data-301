@@ -1,0 +1,151 @@
+---
+title: "assignment 2"
+author: "Keiryn Hart, 300428418"
+date: "13/08/2020"
+output: pdf_document
+---
+
+##Part 1:
+
+Question 1:
+
+my scientific question is has there been an increase in domestic violence as a result of the COVID-19 lockdown?
+
+sub questions for this include:
+
+Does this change vary by location? and does this change vary between the different levels of lockdown?
+
+this question came up as a result of my team initially looking into the police datasets and having an interest in this area, after some research we noticed that there were news articles and reports from other countries stating that there had been significant changes in the rates of domestic violence as a result of COVID-19. The interest also spurred from the current events around the world to do with COVID-19 and the investigation looked very interesting as a result.
+
+Question 2:
+
+S:
+specifically we are looking at Domestic violence in 2 different time periods, before and during the pandemic.
+
+M:
+the change will be measured by comparing the percentage change in domestic violence reports/victimizations.
+
+A:
+This is achievable as there have been similar reports done on this topic in other countries and the data we need is available for both time periods.
+
+R:
+This is very relevant at the moment as the pandemic is still unfolding around the world, and New Zealand (more specifically Auckland) may be going back into lockdown again, so this report could be very helpful.
+
+T:
+the time bound is that the due dat is set for the 31st of August.
+
+Question 3:
+Why:
+involves the reasoning behind our choice of question which is due to literature and news articles we have seen about similar projects, it also involves the SMART factors touched on before. benefits can also be found from a research project like this to help in the future to understand how these rates happen and help predict hot spots, it can give insight into the effect of lockdown on domestic violence, it could help with future prevention and help with future trends.
+
+what?
+we have identified patterns in other countries outside of NZ e.g. brazil and there is data available on breaches as well as criminal activity during COVID-19 as well as other specific crime data. the ethics, privacy and security implications of a report like this could include the publication of hotspots by location could impact communities but the information is anonymous given the sensitive nature of the data. we cannot speculate on causes without first doing formal research as speculation is touchy and needs to be done with respect and care.
+
+Who?
+the who involves my team including Abbey, Josh Shaun and myself and then our supervisor Alejhandro. the data providers came from the nz police database.
+
+When and what with?
+initially odf course we will be using resources including the specific datasets as well as information gathered from reports and news articles. the tools being used in this report will be R and R markdown with the hopes of using GIS packages for location information. in regards to when this assignment is due on the 31st of august, there are restrictions given the fact that the data is very new and relatively minimal due to the short time period and more research will likely be emerging as we work through the report and afterwards.
+
+How?
+we have used trello which helps with assigner tasks to different members as well as keeping a scientific style project board for information etc. the cost of this is yet to be determined in regards to time and there are risk involved given that the data is very new and small and quality could possibly be not as good as expected due to the constant new research and data appearing.
+
+Question 4:
+our team is modeled by firstly Abbey Bremner who is the Repo manager, myself as the bibliography manager, Alshaun Godinet as the data manager and Josh who is in charge of research.We are all also individually handling and managing differnt datasets which will eventually be merged into one.
+
+Question 5:
+
+shown below is the timeline for our project, by wednesday the 12th of august we wanted to have all our data collected which we did, then on the 17th of august we are aiming to have all the data groomed to a reasonable level so that on the 19th we can have all datasets merged into one. on the 21st of August we are planning to have our initial exploratory analysis completed which includes basic things such a graph visualisations and... This will hopefully mean that on the following dat we can have our main question answered. from then until the 27th we are planning on working through our sub questions and then between the 27th and the 31st we will be wrapping everything up and finalising the report.
+
+```{r}
+knitr::include_graphics("/Users/keirynhart/Documents/Uni/Data 301/assignment 2/assignment2image.png")
+```
+##Part 2:
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+
+Question 1:
+a)
+
+```{r}
+part1 <- read.csv("netflix_part1.csv", header = TRUE)
+part2a <- read.csv("netflix_part2a.csv", header = TRUE)
+part2b <- read.csv("netflix_part2b.csv", header = TRUE)
+
+p2aclean <- part2a[ part2a$date_added %in% part2b$DATE_ADDED & part2a$release_year %in% part2b$release_year & part2a$rating %in% part2b$rating & part2a$duration %in% part2b$DURATION,]
+
+nrow(part2a) - nrow(p2aclean)
+```
+there were 6 entries removed from part2a that did not uniquely match.
+
+b)
+
+As far as I am aware none of the remaining entries cannot be matched with 2b although I could be wrong?
+
+c)
+
+```{r}
+merge <- merge(p2aclean, part2b, by.x = c("date_added", "release_year", "rating", "duration"), by.y = c("DATE_ADDED", "release_year", "rating", "DURATION"), all.x = FALSE, all.y = TRUE)
+
+merge <- merge %>% distinct(title, .keep_all = TRUE)
+
+```
+(not sure if I was meant to but there were duplicates so I removed all the duplicates by title?)
+
+
+d)
+yes there does seem to be a pattern with the missing values in 2a, all of the missing values appear to be TV shows as there is almost the exact same amount of "TV Show" instances in 2b as there are NA instances in 2a.
+```{r}
+sum(is.na(part2a$type))
+sum(is.na(part2b$type))
+
+unique(part2a$type)
+unique(part2b$type)
+
+length(part2b$type[part2b$type=="TV Show"])
+length(part2a$type[part2a$type== "NA"])
+```
+
+e)
+```{r}
+merge$type.x <- NULL
+total <- bind_rows(merge, part1)
+```
+
+f)
+```{r}
+total[, "num_directors"] <- NA
+for(i in 1:nrow(total)){
+  x <- sapply(strsplit(total$director[i], ", "), length)
+  total$num_directors[i] <- x
+  if(total$num_directors[i] == 0){total$num_directors[i] <- NA}
+  }
+ 
+```
+
+g)
+```{r}
+total[, "display_num_directors"] <- NA
+for(i in 1:nrow(total)){
+  if(is.na(total$num_directors[i])){
+    total$display_num_directors[i] <- "Missing"
+  }
+  else if(total$num_directors[i] == 1){
+    total$display_num_directors[i] <- "1 director"
+  }
+  else{total$display_num_directors[i] <- "More than 1 director"}
+}
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+

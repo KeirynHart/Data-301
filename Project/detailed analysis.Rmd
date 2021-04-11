@@ -1,0 +1,297 @@
+---
+title: "Detailed Analysis"
+author: "Keiryn Hart, 300428418"
+date: "13/10/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+library(timetk)
+library(lubridate)
+library(zoo)
+library(data.table)  
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
+library(forecast)
+library(fpp2)
+library(TTR)
+library(car)
+
+victims <- read.csv("/Users/keirynhart/Documents/Uni/Data 301/Project/victimizations.csv")
+covid <- read.csv("/Users/keirynhart/Documents/Uni/Data 301/DATA301-Group-Project/Data/Covid calls for service cleaned.csv")
+merge <- read.csv('/Users/keirynhart/Documents/Uni/Data 301/DATA301-Group-Project/Data/merged data (Final).csv')
+vic <- read.csv("/Users/keirynhart/Documents/Uni/Data 301/Project/victimizations_concise.csv")
+unempl <- read.csv("/Users/keirynhart/Documents/Uni/Data 301/Project/unempl.csv")
+```
+
+
+```{r}
+seed = 10
+set.seed(seed)
+#removing unnecessary columns
+unempl[,c('X', 'X.1', 'X.2')] <- NULL 
+
+#converting date for merge
+unempl$Date <- as.Date(unempl$Date, format("%d/%m/%y"))
+unempl <- separate(unempl, "Date", c("year", "month"))
+
+#changing values in vic:
+vic$month <- sprintf("%02d", as.numeric(vic$month)) 
+
+comb <- merge(vic, unempl, by = c('year', "month"))
+comb <- comb %>% rename(Unemployment_percentage = total)
+
+comb[,"X"] <- NULL
+
+comb[comb[, "Location"] == "Auckland",]
+
+comb17 <- filter(comb, year == '2017')
+comb18 <- filter(comb, year == '2018')
+comb19 <- filter(comb, year == '2019')
+comb20 <- filter(comb, year == '2020')
+
+```
+
+
+```{r}
+comb[,"Alert_Level"] <- NA
+for(i in 1:nrow(comb)){
+  if(comb$year[i] == 2017 | comb$year[i] == 2018 | comb$year[i] == 2019){
+    comb$Alert_Level[i] <- 0
+  }
+  else if(comb$year[i] == 2020 & comb$month[i] == '03'){
+    comb$Alert_Level[i] <- 4
+  }
+  else if(comb$year[i] == 2020 & comb$month[i] == '02'){
+    comb$Alert_Level[i] <- 0
+  }
+  else if(comb$year[i] == 2020 & comb$month[i] == '04'){
+    comb$Alert_Level[i] <- 3
+  }
+  else if(comb$year[i] == 2020 & comb$month[i] == '05'){
+    comb$Alert_Level[i] <- 2
+  }
+  else if(comb$year[i] == 2020 & comb$month[i] == '06' | comb$month[i] == '07' | comb$month[i] == '08'){
+    comb$Alert_Level[i] <- 1
+  }
+}
+```
+
+
+
+```{r}
+
+comb$year <- as.factor(comb$year)
+comb$month <- as.factor(comb$month)
+comb$Alert_Level <- as.factor(comb$Alert_Level)
+comb$Location <- as.factor(comb$Location)
+
+```
+
+```{r}
+#Organising training and testing sets
+smp_size <- floor(0.7 * nrow(comb))
+train_ind <- sample(seq_len(nrow(comb)), size = smp_size)
+
+train <- comb[train_ind, ]
+test <- comb[-train_ind, ]
+
+test <- test[,c(1,2,3,5,6,4)]
+
+test1 <- test
+test1[,"Number"] <- NULL
+
+#actual values in test data:
+actual <- test[,"Number"]
+
+
+#Creating another testing set with other Covid dataset:
+merge[,"Event"] <- NULL
+CovidSum <- aggregate(. ~   year + Alert.Level + Location, merge, sum)
+CovidSum <- filter(CovidSum, year == 20)
+CovidSum[,"X"] <- NULL
+
+for(i in 1:nrow(CovidSum)){
+  CovidSum$year[i] <- 2020
+}
+
+#renaming variables
+CovidSum <- CovidSum %>% rename(Alert_Level = Alert.Level, Number = Number.of.Victimizations)
+
+#adding month column:
+CovidSum$month <- NA
+for(i in 1:nrow(CovidSum)){
+  if(CovidSum$Alert_Level[i] == 2){
+    CovidSum$month[i] <- "09"
+  }
+  else if(CovidSum$Alert_Level[i] == 3){
+    CovidSum$month[i] <- "10"
+  }
+  else if(CovidSum$Alert_Level[i] == 4){
+    CovidSum$month[i] <- "11"
+  }
+}
+
+#adding unemplyment
+CovidSum$Unemployment_percentage <- 4.0
+
+
+covid_test <- CovidSum
+covid_test[,"Number"] <- NA
+covid_values <- CovidSum[,"Number"]
+covid_test <- covid_test %>% filter(Location != 'Other')
+
+for (i in 1:nrow(covid_test)) {
+  if(covid_test$Location[i] == "Cantebury")
+    covid_test$Location[i] <- "Canterbury"
+}
+
+covid_test$year <- as.factor(covid_test$year)
+covid_test$month <- as.factor(covid_test$month)
+covid_test$Alert_Level <- as.factor(covid_test$Alert_Level)
+covid_test$Location <- as.factor(covid_test$Location)
+
+unempl20 <- filter(unempl, year == 2020)
+```
+
+```{r}
+a <-ggplot(comb17,aes(x=year, y=Number)) + 
+  geom_boxplot(aes(fill=Location), show.legend=TRUE) + labs(x="2017", y="Number of victimizations") 
+
+b <-ggplot(comb18,aes(x=year, y=Number)) + 
+  geom_boxplot(aes(fill=Location), show.legend=TRUE) + labs(x="2018", y="Number of victimizations") 
+
+c <-ggplot(comb19,aes(x=year, y=Number)) + 
+  geom_boxplot(aes(fill=Location), show.legend=TRUE) + labs(x="2019", y="Number of victimizations") 
+
+d <-ggplot(comb20,aes(x=year, y=Number)) + 
+  geom_boxplot(aes(fill=Location), show.legend=TRUE) + labs(x="2020", y="Number of victimizations")  
+
+d
+a
+b
+c
+```
+
+Regression:
+```{r}
+library(mgcv)
+
+#training different models:
+lr <- lm(Number ~ ., data = train) 
+lr1 <- lm(Number ~ year + month + Location + Alert_Level, data = train)
+lr2 <- gam(Number ~ year + month + Location:Alert_Level + Alert_Level, data = train)
+
+library(mgcv)
+library(kableExtra)
+
+#Summary Statistics:
+summ.gam <- summary(lr2)
+RSE <- summ.gam$scale
+adjRsq <- summ.gam$r.sq
+Rsq <- summ.gam$dev.expl
+statistics <- c("RSE", "AdjRsq", "Rsq") 
+values <- c(RSE, adjRsq, Rsq)
+stats <- data.frame(statistics, values)
+kable(stats, booktabs = T, digits = 3)
+
+
+#summary of models:
+sum1 <- summary(lr)
+sum2 <- summary(lr1)
+sum3 <- summary(lr2)
+
+```
+
+
+
+predictions:
+```{r}
+#predictions with test data:
+model1 <- predict(lr, newdata = test1)
+model2 <- predict(lr1, newdata = test1)
+model3 <- predict(lr2, newdata = test1)
+
+m1 <- model1[1:10]
+m2 <- model2[1:10]
+m3 <- model3[1:10]
+t1 <- actual[1:10]
+
+first_pred <- data.frame()
+first_pred <- rbind(m1,m2,m3,t1)
+
+
+kable(first_pred, digits = 0)
+
+#predicted - actual values:
+
+#scatterplot(model1, actual)
+#scatterplot(model2,actual)
+#scatterplot(model3, actual)
+
+```
+Second Predictions
+```{r}
+model1 <- predict(lr, newdata = covid_test)
+model2 <- predict(lr1, newdata = covid_test)
+model3 <- predict(lr2, newdata = covid_test)
+
+m1_c <- model1[1:10]
+m2_c <- model2[1:10]
+m3_c <- model3[1:10]
+t1_c <- covid_values[1:10]
+
+first_pred <- data.frame()
+first_pred <- rbind(m1_c,m2_c,m3_c,t1_c)
+
+
+kable(first_pred, digits = 0)
+```
+
+likelihood testing:
+```{r}
+likelihood <- anova(lr, lr1, test = 'F') 
+likelihood1 <- anova(lr, lr2, test = 'F')
+likelihood2 <- anova(lr1, lr2, test = 'F')
+
+kable(likelihood, digits = 2)
+kable(likelihood2, digits =2)
+```
+
+
+
+```{r}
+model1 <- predict(lr, newdata = covid_test)
+model2 <- predict(lr1, newdata = covid_test)
+model3 <- predict(lr2, newdata = covid_test)
+
+m1_c <- model1[1:10]
+m2_c <- model2[1:10]
+m3_c <- model3[1:10]
+t1_c <- covid_values[1:10]
+
+first_pred <- data.frame()
+first_pred <- rbind(m1_c,m2_c,m3_c,t1_c)
+
+
+kable(first_pred, digits = 0)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

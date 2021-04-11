@@ -1,0 +1,72 @@
+---
+title: "assingmnt 5"
+author: "Keiryn Hart, 300428418"
+date: "01/10/2020"
+output: html_document
+---
+
+```{r}
+library(shiny)
+anz <- read.csv('/Users/keirynhart/Documents/Uni/Data 301/assignment 5/ANZChampionship_Results.csv')
+head(anz)
+
+```
+
+```{r}
+year <- anz$Year
+year <- as.data.frame(year)
+year[, "team"] <- NA
+year[, "year"] <- NA
+year
+
+for(i in 1:nrow(anz)){
+  if(anz$HomeScore[i] > anz$AwayScore[i]){
+    anz$Year[i] <-  year$year[i]
+    anz$HomeTeam[i] <- year$team[i]
+  }
+  else{
+    anz$year[i] <- year$year[i]
+    anz$AwayTeam[i] <- year$team[i]
+  }
+}
+```
+
+```{r}
+data <- read.csv('/Users/keirynhart/Documents/Uni/Data 301/assignment 5/ANZChampionship_Results.csv', header = T)
+
+ui <- fluidPage(
+  titlePanel(title = h4("New Zealand vs. Australia", align="center")),
+  sidebarPanel(
+
+
+  mainPanel(
+    plotOutput("bar",height = 500))
+)
+
+  server <- function(input,output){
+
+  reactive_data = reactive({
+    selected_year = as.numeric(input$YEAR)
+    return(data[data$year==selected_year,])
+
+  })
+
+}
+shinyApp(ui=ui, server=server)
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```

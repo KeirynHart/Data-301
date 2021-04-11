@@ -1,0 +1,182 @@
+---
+title: "assignment4"
+author: "Keiryn Hart, 300428418"
+date: "14/09/2020"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(timetk)
+library(zoo)
+library(ggplot2)
+library(ggthemes)
+```
+
+
+```{r}
+fires <- read.csv("/Users/keirynhart/Documents/Uni/Data 301/assignment 4/datasets_316056_639173_amazon_edit.csv", stringsAsFactors = FALSE, header=TRUE)
+```
+
+Quesiton 1:
+
+a)
+```{r}
+fires <- fires %>% mutate(month=recode(month, 
+                         "Janeiro" = 1, "Fevereiro" = 2, "Marco" = 3, "Abril" = 4, "Maio" = 5, "Junho" = 6, "Julho" = 7, "Agosto" = 8, 
+                         "Setembro" = 9, "Outubro" = 10, "Novembro"  = 11, "Dezembro" = 12))
+
+unique(fires$month)
+```
+
+b)
+
+```{r}
+fires[, "date"] <- NA
+
+fires <- within(fires, date <- sprintf("%d-%d", year, month))
+
+
+```
+
+c)
+```{r}
+fires$date <- as.Date(as.yearmon(fires$date), format = "%Y-%m")
+
+str(fires)
+```
+
+d) 
+```{r}
+fires_summary <- fires %>% group_by(state) %>% summarise_by_time(date, .by = "halfyear", number = sum(number))
+str(fires)
+
+```
+
+
+e)
+```{r}
+fires_reduced <- filter(fires, year >= 2010)
+unique(fires_reduced$year)
+```
+
+f)
+```{r}
+#sorting into quarterly groups
+fires_quarter <- fires_reduced %>% group_by(state) %>% summarise_by_time(date, .by = "quarter", number = sum(number))
+arrange(fires_quarter, desc(number))
+
+#identifying 
+largest <- fires_quarter %>% group_by(state) %>% summarise(number = sum(number))
+arrange(largest, desc(number))
+
+#3 largest
+fires_3states <- filter(fires_quarter, state %in% c("Mato Grosso", "Rio", "Paraiba"))
+
+```
+
+g)
+```{r}
+ggplot(fires_3states,aes(x=date,y=number,colour=state,group=state)) + geom_line() + scale_colour_colorblind()
+ ```
+h)
+```{r}
+#last 6 months
+fires_6month <- filter(fires_reduced, month %in% c(7,8,9,10,11,12))
+
+#2 month periods
+fires_bi <- fires_6month %>% group_by(state) %>% summarise_by_time(date, .by = "bimonth", number = sum(number))
+arrange(fires_bi, desc(number))
+
+top3 <- filter(fires_bi, state %in% c("Mato Grosso", "Rio", "Paraiba"))
+
+ggplot(top3,aes(x=date,y=number,colour=state,group=state)) + geom_line() + scale_colour_colorblind()
+```
+
+
+```{r}
+energy <- read.csv("/Users/keirynhart/Documents/Uni/Data 301/assignment 4/energy_price_indexes_quarterly_edit.csv", stringsAsFactors = FALSE)
+unique(energy$Commercial.Petrol..Bulk.)
+unique(energy$Commercial.Diesel..Bulk.)
+unique(energy$Household.Electricity)
+```
+
+a)
+```{r}
+energy[energy == ".."] <- NA
+
+energy$Commercial.Petrol..Bulk. <- as.integer(energy$Commercial.Petrol..Bulk.)
+energy$Commercial.Diesel..Bulk. <- as.integer(energy$Commercial.Diesel..Bulk.)
+energy$Household.Electricity <- as.integer(energy$Household.Electricity)
+
+str(energy)
+```
+
+b)
+```{r}
+energy$Date <- as.Date(as.yearqtr(energy$Date, format = "%YQ%q"))
+unique(energy$Date)
+```
+
+
+c)
+```{r}
+
+energy_long <- pivot_longer(energy, cols = -"Date")
+energy
+energy_long
+```
+
+
+d)
+```{r}
+library(tsibble)
+
+energy_tsibble <- as_tsibble(energy_long, key = name, index = Date)
+energy_tsibble
+
+
+str(energy_tsibble)
+```
+
+e)
+```{r}
+minmax <- energy_tsibble %>%
+  index_by(Year = lubridate::year(Date)) %>%
+  group_by() %>%
+  summarise(max = max(na.omit(value)), min = min(na.omit(value)))
+
+
+```
+
+
+f)
+```{r}
+minmax[c(which.max(minmax$max), which.min(minmax$min)),]
+```
+year with the highest price was 2008 and the year with the lowest price was 1989.
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+
+

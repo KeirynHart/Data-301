@@ -1,0 +1,3096 @@
+2020-09-30 15:56:17,341:INFO:PyCaret Classification Module
+2020-09-30 15:56:17,342:INFO:version 2.1.2
+2020-09-30 15:56:17,342:INFO:Initializing setup()
+2020-09-30 15:56:17,342:INFO:USI: cf7e
+2020-09-30 15:56:17,342:INFO:setup(data=(6744, 1025), target=label, train_size=0.7, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-09-30 15:56:17,342:INFO:Checking environment
+2020-09-30 15:56:17,343:INFO:python_version: 3.7.6
+2020-09-30 15:56:17,343:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-09-30 15:56:17,343:INFO:machine: x86_64
+2020-09-30 15:56:17,360:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-09-30 15:56:17,361:INFO:Memory: svmem(total=8589934592, available=2201202688, percent=74.4, used=4438147072, free=95563776, active=2135891968, inactive=2064162816, wired=2302255104)
+2020-09-30 15:56:17,361:INFO:Physical Core: 4
+2020-09-30 15:56:17,361:INFO:Logical Core: 8
+2020-09-30 15:56:17,361:INFO:Checking libraries
+2020-09-30 15:56:17,361:INFO:pd==1.0.1
+2020-09-30 15:56:17,361:INFO:numpy==1.18.1
+2020-09-30 15:56:17,361:INFO:sklearn==0.22.1
+2020-09-30 15:56:19,182:WARNING:xgboost not found
+2020-09-30 15:56:19,377:WARNING:lightgbm not found
+2020-09-30 15:56:19,890:INFO:catboost==0.24.1
+2020-09-30 15:56:21,911:INFO:mlflow==1.11.0
+2020-09-30 15:56:21,911:INFO:Checking Exceptions
+2020-09-30 15:56:21,912:INFO:Preloading libraries
+2020-09-30 15:56:21,912:INFO:Preparing display monitor
+2020-09-30 15:56:21,930:INFO:Importing libraries
+2020-09-30 15:56:30,373:INFO:Declaring global variables
+2020-09-30 15:56:30,373:INFO:Copying data for preprocessing
+2020-09-30 15:56:30,476:INFO:Declaring preprocessing parameters
+2020-09-30 15:56:30,477:INFO:Importing preprocessing module
+2020-09-30 15:57:59,450:INFO:PyCaret Classification Module
+2020-09-30 15:57:59,451:INFO:version 2.1.2
+2020-09-30 15:57:59,451:INFO:Initializing setup()
+2020-09-30 15:57:59,451:INFO:USI: eea3
+2020-09-30 15:57:59,451:INFO:setup(data=(6744, 1025), target=label, train_size=0.7, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-09-30 15:57:59,451:INFO:Checking environment
+2020-09-30 15:57:59,451:INFO:python_version: 3.7.6
+2020-09-30 15:57:59,451:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-09-30 15:57:59,451:INFO:machine: x86_64
+2020-09-30 15:57:59,464:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-09-30 15:57:59,465:INFO:Memory: svmem(total=8589934592, available=2170277888, percent=74.7, used=4269166592, free=46350336, active=2091012096, inactive=1859977216, wired=2178154496)
+2020-09-30 15:57:59,465:INFO:Physical Core: 4
+2020-09-30 15:57:59,465:INFO:Logical Core: 8
+2020-09-30 15:57:59,465:INFO:Checking libraries
+2020-09-30 15:57:59,465:INFO:pd==1.0.1
+2020-09-30 15:57:59,465:INFO:numpy==1.18.1
+2020-09-30 15:57:59,465:INFO:sklearn==0.23.2
+2020-09-30 15:58:00,078:WARNING:xgboost not found
+2020-09-30 15:58:00,135:WARNING:lightgbm not found
+2020-09-30 15:58:00,186:INFO:catboost==0.24.1
+2020-09-30 15:58:00,806:INFO:mlflow==1.11.0
+2020-09-30 15:58:00,806:INFO:Checking Exceptions
+2020-09-30 15:58:00,807:INFO:Preloading libraries
+2020-09-30 15:58:00,807:INFO:Preparing display monitor
+2020-09-30 15:58:00,819:INFO:Importing libraries
+2020-09-30 15:58:01,601:INFO:Declaring global variables
+2020-09-30 15:58:01,601:INFO:Copying data for preprocessing
+2020-09-30 15:58:01,639:INFO:Declaring preprocessing parameters
+2020-09-30 15:58:01,640:INFO:Importing preprocessing module
+2020-09-30 16:01:40,118:INFO:PyCaret Classification Module
+2020-09-30 16:01:40,119:INFO:version 2.1.2
+2020-09-30 16:01:40,119:INFO:Initializing setup()
+2020-09-30 16:01:40,119:INFO:USI: 04f7
+2020-09-30 16:01:40,120:INFO:setup(data=(6744, 1025), target=label, train_size=0.7, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-09-30 16:01:40,120:INFO:Checking environment
+2020-09-30 16:01:40,120:INFO:python_version: 3.7.6
+2020-09-30 16:01:40,120:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-09-30 16:01:40,120:INFO:machine: x86_64
+2020-09-30 16:01:40,120:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-09-30 16:01:40,121:INFO:Memory: svmem(total=8589934592, available=1840205824, percent=78.6, used=4124045312, free=16609280, active=1825767424, inactive=1736015872, wired=2298277888)
+2020-09-30 16:01:40,121:INFO:Physical Core: 4
+2020-09-30 16:01:40,121:INFO:Logical Core: 8
+2020-09-30 16:01:40,121:INFO:Checking libraries
+2020-09-30 16:01:40,121:INFO:pd==1.0.1
+2020-09-30 16:01:40,121:INFO:numpy==1.18.1
+2020-09-30 16:01:40,121:INFO:sklearn==0.23.2
+2020-09-30 16:01:40,136:WARNING:xgboost not found
+2020-09-30 16:01:40,147:WARNING:lightgbm not found
+2020-09-30 16:01:40,148:INFO:catboost==0.24.1
+2020-09-30 16:01:40,148:INFO:mlflow==1.11.0
+2020-09-30 16:01:40,148:INFO:Checking Exceptions
+2020-09-30 16:01:40,148:INFO:Preloading libraries
+2020-09-30 16:01:40,149:INFO:Preparing display monitor
+2020-09-30 16:01:40,180:INFO:Importing libraries
+2020-09-30 16:01:40,185:INFO:Declaring global variables
+2020-09-30 16:01:40,185:INFO:Copying data for preprocessing
+2020-09-30 16:01:40,263:INFO:Declaring preprocessing parameters
+2020-09-30 16:01:40,263:INFO:Importing preprocessing module
+2020-09-30 16:01:58,981:INFO:PyCaret Classification Module
+2020-09-30 16:01:58,981:INFO:version 2.1.2
+2020-09-30 16:01:58,981:INFO:Initializing setup()
+2020-09-30 16:01:58,981:INFO:USI: 41dd
+2020-09-30 16:01:58,981:INFO:setup(data=(6744, 1025), target=label, train_size=0.7, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-09-30 16:01:58,981:INFO:Checking environment
+2020-09-30 16:01:58,982:INFO:python_version: 3.7.6
+2020-09-30 16:01:58,982:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-09-30 16:01:58,982:INFO:machine: x86_64
+2020-09-30 16:01:58,996:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-09-30 16:01:58,996:INFO:Memory: svmem(total=8589934592, available=1957801984, percent=77.2, used=4127940608, free=30363648, active=1929134080, inactive=1781497856, wired=2198806528)
+2020-09-30 16:01:58,996:INFO:Physical Core: 4
+2020-09-30 16:01:58,996:INFO:Logical Core: 8
+2020-09-30 16:01:58,996:INFO:Checking libraries
+2020-09-30 16:01:58,997:INFO:pd==1.0.1
+2020-09-30 16:01:58,997:INFO:numpy==1.18.1
+2020-09-30 16:01:58,997:INFO:sklearn==0.23.2
+2020-09-30 16:01:59,687:WARNING:xgboost not found
+2020-09-30 16:01:59,784:WARNING:lightgbm not found
+2020-09-30 16:01:59,859:INFO:catboost==0.24.1
+2020-09-30 16:02:00,525:INFO:mlflow==1.11.0
+2020-09-30 16:02:00,526:INFO:Checking Exceptions
+2020-09-30 16:02:00,526:INFO:Preloading libraries
+2020-09-30 16:02:00,526:INFO:Preparing display monitor
+2020-09-30 16:02:00,539:INFO:Importing libraries
+2020-09-30 16:02:01,458:INFO:Declaring global variables
+2020-09-30 16:02:01,458:INFO:Copying data for preprocessing
+2020-09-30 16:02:01,505:INFO:Declaring preprocessing parameters
+2020-09-30 16:02:01,506:INFO:Importing preprocessing module
+2020-09-30 16:09:18,292:INFO:PyCaret Classification Module
+2020-09-30 16:09:18,293:INFO:version 2.1.2
+2020-09-30 16:09:18,293:INFO:Initializing setup()
+2020-09-30 16:09:18,293:INFO:USI: 90cb
+2020-09-30 16:09:18,293:INFO:setup(data=(6744, 1025), target=label, train_size=0.7, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-09-30 16:09:18,293:INFO:Checking environment
+2020-09-30 16:09:18,293:INFO:python_version: 3.7.6
+2020-09-30 16:09:18,293:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-09-30 16:09:18,293:INFO:machine: x86_64
+2020-09-30 16:09:18,303:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-09-30 16:09:18,303:INFO:Memory: svmem(total=8589934592, available=2100346880, percent=75.5, used=4268089344, free=35225600, active=2068074496, inactive=1900208128, wired=2200014848)
+2020-09-30 16:09:18,303:INFO:Physical Core: 4
+2020-09-30 16:09:18,304:INFO:Logical Core: 8
+2020-09-30 16:09:18,304:INFO:Checking libraries
+2020-09-30 16:09:18,304:INFO:pd==1.0.1
+2020-09-30 16:09:18,304:INFO:numpy==1.18.1
+2020-09-30 16:09:18,304:INFO:sklearn==0.23.2
+2020-09-30 16:09:19,311:INFO:xgboost==1.2.0
+2020-09-30 16:09:19,386:INFO:lightgbm==3.0.0
+2020-09-30 16:09:19,454:INFO:catboost==0.24.1
+2020-09-30 16:09:20,223:INFO:mlflow==1.11.0
+2020-09-30 16:09:20,223:INFO:Checking Exceptions
+2020-09-30 16:09:20,223:INFO:Preloading libraries
+2020-09-30 16:09:20,224:INFO:Preparing display monitor
+2020-09-30 16:09:20,236:INFO:Importing libraries
+2020-09-30 16:09:21,276:INFO:Declaring global variables
+2020-09-30 16:09:21,276:INFO:Copying data for preprocessing
+2020-09-30 16:09:21,317:INFO:Declaring preprocessing parameters
+2020-09-30 16:09:21,318:INFO:Importing preprocessing module
+2020-09-30 16:09:22,417:INFO:Creating preprocessing pipeline
+2020-09-30 16:10:15,778:INFO:Preprocessing pipeline created successfully
+2020-09-30 16:10:15,778:INFO:Creating grid variables
+2020-09-30 16:10:15,804:INFO:Creating global containers
+2020-09-30 16:10:16,008:INFO:create_model_container 0
+2020-09-30 16:10:16,009:INFO:master_model_container 0
+2020-09-30 16:10:16,009:INFO:display_container 0
+2020-09-30 16:10:16,014:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='label',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Leve...
+                ('group', Empty()), ('nonliner', Empty()), ('scaling', Empty()),
+                ('P_transform', Empty()), ('pt_target', Empty()),
+                ('binn', Empty()), ('rem_outliers', Empty()),
+                ('cluster_all', Empty()), ('dummy', Dummify(target='label')),
+                ('fix_perfect', Empty()), ('clean_names', Clean_Colum_Names()),
+                ('feature_select', Empty()), ('fix_multi', Empty()),
+                ('dfs', Empty()), ('pca', Empty())],
+         verbose=False)
+2020-09-30 16:10:16,015:INFO:setup() succesfully completed......................................
+2020-09-30 16:11:50,303:INFO:Initializing compare_models()
+2020-09-30 16:11:50,303:INFO:compare_models(exclude=None, include=None, fold=10, round=4, sort=Accuracy, n_select=1, turbo=True, verbose=True)
+2020-09-30 16:11:50,303:INFO:Checking exceptions
+2020-09-30 16:11:50,306:INFO:Preloading libraries
+2020-09-30 16:11:50,306:INFO:Preparing display monitor
+2020-09-30 16:11:50,341:INFO:Copying training dataset
+2020-09-30 16:11:50,343:INFO:Importing libraries
+2020-09-30 16:11:50,369:INFO:Importing untrained models
+2020-09-30 16:11:50,370:INFO:Import successful
+2020-09-30 16:11:50,381:INFO:Defining folds
+2020-09-30 16:11:50,382:INFO:Declaring metric variables
+2020-09-30 16:11:50,382:INFO:Initializing Logistic Regression
+2020-09-30 16:11:50,398:INFO:Initializing Fold 1
+2020-09-30 16:11:50,399:INFO:Total runtime is 0.00028859376907348634 minutes
+2020-09-30 16:11:50,589:INFO:Fitting Model
+2020-09-30 16:11:51,163:INFO:Evaluating Metrics
+2020-09-30 16:11:51,194:INFO:Compiling Metrics
+2020-09-30 16:11:51,202:INFO:Initializing Fold 2
+2020-09-30 16:11:51,202:INFO:Total runtime is 0.013676897684733073 minutes
+2020-09-30 16:11:51,236:INFO:Fitting Model
+2020-09-30 16:11:51,717:INFO:Evaluating Metrics
+2020-09-30 16:11:51,750:INFO:Compiling Metrics
+2020-09-30 16:11:51,756:INFO:Initializing Fold 3
+2020-09-30 16:11:51,756:INFO:Total runtime is 0.022909315427144368 minutes
+2020-09-30 16:11:51,784:INFO:Fitting Model
+2020-09-30 16:11:52,292:INFO:Evaluating Metrics
+2020-09-30 16:11:52,322:INFO:Compiling Metrics
+2020-09-30 16:11:52,328:INFO:Initializing Fold 4
+2020-09-30 16:11:52,328:INFO:Total runtime is 0.032443678379058837 minutes
+2020-09-30 16:11:52,358:INFO:Fitting Model
+2020-09-30 16:11:52,864:INFO:Evaluating Metrics
+2020-09-30 16:11:52,893:INFO:Compiling Metrics
+2020-09-30 16:11:52,899:INFO:Initializing Fold 5
+2020-09-30 16:11:52,900:INFO:Total runtime is 0.041966076691945395 minutes
+2020-09-30 16:11:52,928:INFO:Fitting Model
+2020-09-30 16:11:53,419:INFO:Evaluating Metrics
+2020-09-30 16:11:53,447:INFO:Compiling Metrics
+2020-09-30 16:11:53,453:INFO:Initializing Fold 6
+2020-09-30 16:11:53,454:INFO:Total runtime is 0.0512004295984904 minutes
+2020-09-30 16:11:53,483:INFO:Fitting Model
+2020-09-30 16:11:53,976:INFO:Evaluating Metrics
+2020-09-30 16:11:54,004:INFO:Compiling Metrics
+2020-09-30 16:11:54,010:INFO:Initializing Fold 7
+2020-09-30 16:11:54,011:INFO:Total runtime is 0.06048201322555542 minutes
+2020-09-30 16:11:54,041:INFO:Fitting Model
+2020-09-30 16:11:54,525:INFO:Evaluating Metrics
+2020-09-30 16:11:54,553:INFO:Compiling Metrics
+2020-09-30 16:11:54,559:INFO:Initializing Fold 8
+2020-09-30 16:11:54,560:INFO:Total runtime is 0.06963417927424113 minutes
+2020-09-30 16:11:54,590:INFO:Fitting Model
+2020-09-30 16:11:55,076:INFO:Evaluating Metrics
+2020-09-30 16:11:55,104:INFO:Compiling Metrics
+2020-09-30 16:11:55,110:INFO:Initializing Fold 9
+2020-09-30 16:11:55,111:INFO:Total runtime is 0.07881826559702555 minutes
+2020-09-30 16:11:55,139:INFO:Fitting Model
+2020-09-30 16:11:55,613:INFO:Evaluating Metrics
+2020-09-30 16:11:55,642:INFO:Compiling Metrics
+2020-09-30 16:11:55,648:INFO:Initializing Fold 10
+2020-09-30 16:11:55,649:INFO:Total runtime is 0.08778411149978638 minutes
+2020-09-30 16:11:55,678:INFO:Fitting Model
+2020-09-30 16:11:56,180:INFO:Evaluating Metrics
+2020-09-30 16:11:56,208:INFO:Compiling Metrics
+2020-09-30 16:11:56,214:INFO:Calculating mean and std
+2020-09-30 16:11:56,215:INFO:Creating metrics dataframe
+2020-09-30 16:11:56,227:INFO:Initializing K Neighbors Classifier
+2020-09-30 16:11:56,234:INFO:Initializing Fold 1
+2020-09-30 16:11:56,235:INFO:Total runtime is 0.09755119482676189 minutes
+2020-09-30 16:11:56,263:INFO:Fitting Model
+2020-09-30 16:11:57,096:INFO:Evaluating Metrics
+2020-09-30 16:11:59,433:INFO:Compiling Metrics
+2020-09-30 16:11:59,441:INFO:Initializing Fold 2
+2020-09-30 16:11:59,441:INFO:Total runtime is 0.15099258025487264 minutes
+2020-09-30 16:11:59,485:INFO:Fitting Model
+2020-09-30 16:12:00,467:INFO:Evaluating Metrics
+2020-09-30 16:12:02,784:INFO:Compiling Metrics
+2020-09-30 16:12:02,790:INFO:Initializing Fold 3
+2020-09-30 16:12:02,791:INFO:Total runtime is 0.20682123104731243 minutes
+2020-09-30 16:12:02,814:INFO:Fitting Model
+2020-09-30 16:12:03,771:INFO:Evaluating Metrics
+2020-09-30 16:12:06,088:INFO:Compiling Metrics
+2020-09-30 16:12:06,094:INFO:Initializing Fold 4
+2020-09-30 16:12:06,095:INFO:Total runtime is 0.26188296476999917 minutes
+2020-09-30 16:12:06,120:INFO:Fitting Model
+2020-09-30 16:12:06,838:INFO:Evaluating Metrics
+2020-09-30 16:12:09,345:INFO:Compiling Metrics
+2020-09-30 16:12:09,351:INFO:Initializing Fold 5
+2020-09-30 16:12:09,352:INFO:Total runtime is 0.3161715944608052 minutes
+2020-09-30 16:12:09,376:INFO:Fitting Model
+2020-09-30 16:12:10,127:INFO:Evaluating Metrics
+2020-09-30 16:12:12,838:INFO:Compiling Metrics
+2020-09-30 16:12:12,845:INFO:Initializing Fold 6
+2020-09-30 16:12:12,845:INFO:Total runtime is 0.37439194520314534 minutes
+2020-09-30 16:12:12,871:INFO:Fitting Model
+2020-09-30 16:12:13,830:INFO:Evaluating Metrics
+2020-09-30 16:12:16,342:INFO:Compiling Metrics
+2020-09-30 16:12:16,350:INFO:Initializing Fold 7
+2020-09-30 16:12:16,351:INFO:Total runtime is 0.43281561533610025 minutes
+2020-09-30 16:12:16,380:INFO:Fitting Model
+2020-09-30 16:12:17,307:INFO:Evaluating Metrics
+2020-09-30 16:12:19,908:INFO:Compiling Metrics
+2020-09-30 16:12:19,915:INFO:Initializing Fold 8
+2020-09-30 16:12:19,915:INFO:Total runtime is 0.4922270139058431 minutes
+2020-09-30 16:12:19,943:INFO:Fitting Model
+2020-09-30 16:12:20,687:INFO:Evaluating Metrics
+2020-09-30 16:12:23,386:INFO:Compiling Metrics
+2020-09-30 16:12:23,393:INFO:Initializing Fold 9
+2020-09-30 16:12:23,394:INFO:Total runtime is 0.5502046942710876 minutes
+2020-09-30 16:12:23,426:INFO:Fitting Model
+2020-09-30 16:12:24,233:INFO:Evaluating Metrics
+2020-09-30 16:12:26,958:INFO:Compiling Metrics
+2020-09-30 16:12:26,964:INFO:Initializing Fold 10
+2020-09-30 16:12:26,965:INFO:Total runtime is 0.6097193439801534 minutes
+2020-09-30 16:12:26,989:INFO:Fitting Model
+2020-09-30 16:12:27,982:INFO:Evaluating Metrics
+2020-09-30 16:12:30,504:INFO:Compiling Metrics
+2020-09-30 16:12:30,511:INFO:Calculating mean and std
+2020-09-30 16:12:30,511:INFO:Creating metrics dataframe
+2020-09-30 16:12:30,523:INFO:Initializing Naive Bayes
+2020-09-30 16:12:30,529:INFO:Initializing Fold 1
+2020-09-30 16:12:30,530:INFO:Total runtime is 0.6691428621610005 minutes
+2020-09-30 16:12:30,553:INFO:Fitting Model
+2020-09-30 16:12:30,779:INFO:Evaluating Metrics
+2020-09-30 16:12:30,845:INFO:Compiling Metrics
+2020-09-30 16:12:30,852:INFO:Initializing Fold 2
+2020-09-30 16:12:30,854:INFO:Total runtime is 0.6745409488677978 minutes
+2020-09-30 16:12:30,886:INFO:Fitting Model
+2020-09-30 16:12:31,115:INFO:Evaluating Metrics
+2020-09-30 16:12:31,170:INFO:Compiling Metrics
+2020-09-30 16:12:31,177:INFO:Initializing Fold 3
+2020-09-30 16:12:31,177:INFO:Total runtime is 0.6799234271049499 minutes
+2020-09-30 16:12:31,206:INFO:Fitting Model
+2020-09-30 16:12:31,372:INFO:Evaluating Metrics
+2020-09-30 16:12:31,429:INFO:Compiling Metrics
+2020-09-30 16:12:31,435:INFO:Initializing Fold 4
+2020-09-30 16:12:31,435:INFO:Total runtime is 0.6842305143674214 minutes
+2020-09-30 16:12:31,461:INFO:Fitting Model
+2020-09-30 16:12:31,623:INFO:Evaluating Metrics
+2020-09-30 16:12:31,677:INFO:Compiling Metrics
+2020-09-30 16:12:31,683:INFO:Initializing Fold 5
+2020-09-30 16:12:31,683:INFO:Total runtime is 0.688358994325002 minutes
+2020-09-30 16:12:31,709:INFO:Fitting Model
+2020-09-30 16:12:31,868:INFO:Evaluating Metrics
+2020-09-30 16:12:31,924:INFO:Compiling Metrics
+2020-09-30 16:12:31,930:INFO:Initializing Fold 6
+2020-09-30 16:12:31,931:INFO:Total runtime is 0.6924832105636597 minutes
+2020-09-30 16:12:31,955:INFO:Fitting Model
+2020-09-30 16:12:32,118:INFO:Evaluating Metrics
+2020-09-30 16:12:32,176:INFO:Compiling Metrics
+2020-09-30 16:12:32,183:INFO:Initializing Fold 7
+2020-09-30 16:12:32,183:INFO:Total runtime is 0.6966971953709921 minutes
+2020-09-30 16:12:32,211:INFO:Fitting Model
+2020-09-30 16:12:32,373:INFO:Evaluating Metrics
+2020-09-30 16:12:32,433:INFO:Compiling Metrics
+2020-09-30 16:12:32,439:INFO:Initializing Fold 8
+2020-09-30 16:12:32,440:INFO:Total runtime is 0.7009653965632121 minutes
+2020-09-30 16:12:32,467:INFO:Fitting Model
+2020-09-30 16:12:32,628:INFO:Evaluating Metrics
+2020-09-30 16:12:32,686:INFO:Compiling Metrics
+2020-09-30 16:12:32,692:INFO:Initializing Fold 9
+2020-09-30 16:12:32,692:INFO:Total runtime is 0.7051784952481588 minutes
+2020-09-30 16:12:32,718:INFO:Fitting Model
+2020-09-30 16:12:32,885:INFO:Evaluating Metrics
+2020-09-30 16:12:32,936:INFO:Compiling Metrics
+2020-09-30 16:12:32,941:INFO:Initializing Fold 10
+2020-09-30 16:12:32,942:INFO:Total runtime is 0.7093405644098918 minutes
+2020-09-30 16:12:32,969:INFO:Fitting Model
+2020-09-30 16:12:33,123:INFO:Evaluating Metrics
+2020-09-30 16:12:33,177:INFO:Compiling Metrics
+2020-09-30 16:12:33,184:INFO:Calculating mean and std
+2020-09-30 16:12:33,184:INFO:Creating metrics dataframe
+2020-09-30 16:12:33,194:INFO:Initializing Decision Tree Classifier
+2020-09-30 16:12:33,200:INFO:Initializing Fold 1
+2020-09-30 16:12:33,201:INFO:Total runtime is 0.7136495113372803 minutes
+2020-09-30 16:12:33,226:INFO:Fitting Model
+2020-09-30 16:12:34,077:INFO:Evaluating Metrics
+2020-09-30 16:12:34,114:INFO:Compiling Metrics
+2020-09-30 16:12:34,119:INFO:Initializing Fold 2
+2020-09-30 16:12:34,120:INFO:Total runtime is 0.7289684613545736 minutes
+2020-09-30 16:12:34,145:INFO:Fitting Model
+2020-09-30 16:12:34,954:INFO:Evaluating Metrics
+2020-09-30 16:12:34,990:INFO:Compiling Metrics
+2020-09-30 16:12:34,996:INFO:Initializing Fold 3
+2020-09-30 16:12:34,996:INFO:Total runtime is 0.7435771306355795 minutes
+2020-09-30 16:12:35,023:INFO:Fitting Model
+2020-09-30 16:12:35,899:INFO:Evaluating Metrics
+2020-09-30 16:12:35,934:INFO:Compiling Metrics
+2020-09-30 16:12:35,940:INFO:Initializing Fold 4
+2020-09-30 16:12:35,940:INFO:Total runtime is 0.7593104441960653 minutes
+2020-09-30 16:12:35,968:INFO:Fitting Model
+2020-09-30 16:12:36,762:INFO:Evaluating Metrics
+2020-09-30 16:12:36,800:INFO:Compiling Metrics
+2020-09-30 16:12:36,805:INFO:Initializing Fold 5
+2020-09-30 16:12:36,806:INFO:Total runtime is 0.7737337629000346 minutes
+2020-09-30 16:12:36,832:INFO:Fitting Model
+2020-09-30 16:12:37,723:INFO:Evaluating Metrics
+2020-09-30 16:12:37,781:INFO:Compiling Metrics
+2020-09-30 16:12:37,787:INFO:Initializing Fold 6
+2020-09-30 16:12:37,788:INFO:Total runtime is 0.7901056806246439 minutes
+2020-09-30 16:12:37,818:INFO:Fitting Model
+2020-09-30 16:12:38,757:INFO:Evaluating Metrics
+2020-09-30 16:12:38,789:INFO:Compiling Metrics
+2020-09-30 16:12:38,795:INFO:Initializing Fold 7
+2020-09-30 16:12:38,796:INFO:Total runtime is 0.8068987131118774 minutes
+2020-09-30 16:12:38,822:INFO:Fitting Model
+2020-09-30 16:12:39,750:INFO:Evaluating Metrics
+2020-09-30 16:12:39,783:INFO:Compiling Metrics
+2020-09-30 16:12:39,789:INFO:Initializing Fold 8
+2020-09-30 16:12:39,789:INFO:Total runtime is 0.823463229338328 minutes
+2020-09-30 16:12:39,816:INFO:Fitting Model
+2020-09-30 16:12:40,677:INFO:Evaluating Metrics
+2020-09-30 16:12:40,712:INFO:Compiling Metrics
+2020-09-30 16:12:40,719:INFO:Initializing Fold 9
+2020-09-30 16:12:40,719:INFO:Total runtime is 0.8389599124590555 minutes
+2020-09-30 16:12:40,747:INFO:Fitting Model
+2020-09-30 16:12:41,608:INFO:Evaluating Metrics
+2020-09-30 16:12:41,643:INFO:Compiling Metrics
+2020-09-30 16:12:41,649:INFO:Initializing Fold 10
+2020-09-30 16:12:41,649:INFO:Total runtime is 0.8544635812441508 minutes
+2020-09-30 16:12:41,676:INFO:Fitting Model
+2020-09-30 16:12:42,523:INFO:Evaluating Metrics
+2020-09-30 16:12:42,559:INFO:Compiling Metrics
+2020-09-30 16:12:42,565:INFO:Calculating mean and std
+2020-09-30 16:12:42,565:INFO:Creating metrics dataframe
+2020-09-30 16:12:42,576:INFO:Initializing SVM - Linear Kernel
+2020-09-30 16:12:42,583:INFO:Initializing Fold 1
+2020-09-30 16:12:42,583:INFO:Total runtime is 0.870029894510905 minutes
+2020-09-30 16:12:42,609:INFO:Fitting Model
+2020-09-30 16:12:43,803:INFO:Evaluating Metrics
+2020-09-30 16:12:43,803:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:43,819:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:43,822:INFO:Compiling Metrics
+2020-09-30 16:12:43,829:INFO:Initializing Fold 2
+2020-09-30 16:12:43,830:INFO:Total runtime is 0.8908056457837423 minutes
+2020-09-30 16:12:43,858:INFO:Fitting Model
+2020-09-30 16:12:44,835:INFO:Evaluating Metrics
+2020-09-30 16:12:44,835:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:44,849:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:44,852:INFO:Compiling Metrics
+2020-09-30 16:12:44,858:INFO:Initializing Fold 3
+2020-09-30 16:12:44,858:INFO:Total runtime is 0.9079456289609273 minutes
+2020-09-30 16:12:44,885:INFO:Fitting Model
+2020-09-30 16:12:45,994:INFO:Evaluating Metrics
+2020-09-30 16:12:45,994:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:46,008:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:46,010:INFO:Compiling Metrics
+2020-09-30 16:12:46,016:INFO:Initializing Fold 4
+2020-09-30 16:12:46,017:INFO:Total runtime is 0.9272486646970113 minutes
+2020-09-30 16:12:46,043:INFO:Fitting Model
+2020-09-30 16:12:47,116:INFO:Evaluating Metrics
+2020-09-30 16:12:47,117:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:47,132:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:47,134:INFO:Compiling Metrics
+2020-09-30 16:12:47,140:INFO:Initializing Fold 5
+2020-09-30 16:12:47,141:INFO:Total runtime is 0.9459842284520467 minutes
+2020-09-30 16:12:47,168:INFO:Fitting Model
+2020-09-30 16:12:48,485:INFO:Evaluating Metrics
+2020-09-30 16:12:48,485:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:48,500:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:48,502:INFO:Compiling Metrics
+2020-09-30 16:12:48,508:INFO:Initializing Fold 6
+2020-09-30 16:12:48,509:INFO:Total runtime is 0.9687849799791971 minutes
+2020-09-30 16:12:48,535:INFO:Fitting Model
+2020-09-30 16:12:49,430:INFO:Evaluating Metrics
+2020-09-30 16:12:49,430:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:49,443:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:49,445:INFO:Compiling Metrics
+2020-09-30 16:12:49,451:INFO:Initializing Fold 7
+2020-09-30 16:12:49,452:INFO:Total runtime is 0.9844991127649942 minutes
+2020-09-30 16:12:49,480:INFO:Fitting Model
+2020-09-30 16:12:50,710:INFO:Evaluating Metrics
+2020-09-30 16:12:50,711:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:50,725:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:50,727:INFO:Compiling Metrics
+2020-09-30 16:12:50,734:INFO:Initializing Fold 8
+2020-09-30 16:12:50,735:INFO:Total runtime is 1.005885132153829 minutes
+2020-09-30 16:12:50,763:INFO:Fitting Model
+2020-09-30 16:12:51,508:INFO:Evaluating Metrics
+2020-09-30 16:12:51,509:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:51,523:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:51,526:INFO:Compiling Metrics
+2020-09-30 16:12:51,532:INFO:Initializing Fold 9
+2020-09-30 16:12:51,533:INFO:Total runtime is 1.019186512629191 minutes
+2020-09-30 16:12:51,559:INFO:Fitting Model
+2020-09-30 16:12:52,470:INFO:Evaluating Metrics
+2020-09-30 16:12:52,470:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:52,485:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:52,487:INFO:Compiling Metrics
+2020-09-30 16:12:52,494:INFO:Initializing Fold 10
+2020-09-30 16:12:52,494:INFO:Total runtime is 1.035212194919586 minutes
+2020-09-30 16:12:52,522:INFO:Fitting Model
+2020-09-30 16:12:53,417:INFO:Evaluating Metrics
+2020-09-30 16:12:53,417:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:53,432:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:53,434:INFO:Compiling Metrics
+2020-09-30 16:12:53,440:INFO:Calculating mean and std
+2020-09-30 16:12:53,440:INFO:Creating metrics dataframe
+2020-09-30 16:12:53,452:INFO:Initializing Ridge Classifier
+2020-09-30 16:12:53,461:INFO:Initializing Fold 1
+2020-09-30 16:12:53,461:INFO:Total runtime is 1.051328194141388 minutes
+2020-09-30 16:12:53,490:INFO:Fitting Model
+2020-09-30 16:12:54,105:INFO:Evaluating Metrics
+2020-09-30 16:12:54,105:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:54,120:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:54,123:INFO:Compiling Metrics
+2020-09-30 16:12:54,129:INFO:Initializing Fold 2
+2020-09-30 16:12:54,129:INFO:Total runtime is 1.0624632636706033 minutes
+2020-09-30 16:12:54,164:INFO:Fitting Model
+2020-09-30 16:12:54,591:INFO:Evaluating Metrics
+2020-09-30 16:12:54,591:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:54,606:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:54,608:INFO:Compiling Metrics
+2020-09-30 16:12:54,615:INFO:Initializing Fold 3
+2020-09-30 16:12:54,616:INFO:Total runtime is 1.070569348335266 minutes
+2020-09-30 16:12:54,644:INFO:Fitting Model
+2020-09-30 16:12:55,035:INFO:Evaluating Metrics
+2020-09-30 16:12:55,035:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:55,049:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:55,051:INFO:Compiling Metrics
+2020-09-30 16:12:55,057:INFO:Initializing Fold 4
+2020-09-30 16:12:55,057:INFO:Total runtime is 1.0779289960861205 minutes
+2020-09-30 16:12:55,086:INFO:Fitting Model
+2020-09-30 16:12:55,489:INFO:Evaluating Metrics
+2020-09-30 16:12:55,489:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:55,502:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:55,505:INFO:Compiling Metrics
+2020-09-30 16:12:55,511:INFO:Initializing Fold 5
+2020-09-30 16:12:55,511:INFO:Total runtime is 1.0854946295420327 minutes
+2020-09-30 16:12:55,538:INFO:Fitting Model
+2020-09-30 16:12:55,931:INFO:Evaluating Metrics
+2020-09-30 16:12:55,931:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:55,944:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:55,947:INFO:Compiling Metrics
+2020-09-30 16:12:55,953:INFO:Initializing Fold 6
+2020-09-30 16:12:55,954:INFO:Total runtime is 1.0928733309110004 minutes
+2020-09-30 16:12:55,982:INFO:Fitting Model
+2020-09-30 16:12:56,377:INFO:Evaluating Metrics
+2020-09-30 16:12:56,377:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:56,390:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:56,393:INFO:Compiling Metrics
+2020-09-30 16:12:56,400:INFO:Initializing Fold 7
+2020-09-30 16:12:56,401:INFO:Total runtime is 1.1003211458524067 minutes
+2020-09-30 16:12:56,430:INFO:Fitting Model
+2020-09-30 16:12:56,816:INFO:Evaluating Metrics
+2020-09-30 16:12:56,816:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:56,829:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:56,832:INFO:Compiling Metrics
+2020-09-30 16:12:56,838:INFO:Initializing Fold 8
+2020-09-30 16:12:56,839:INFO:Total runtime is 1.1076161662737527 minutes
+2020-09-30 16:12:56,864:INFO:Fitting Model
+2020-09-30 16:12:57,255:INFO:Evaluating Metrics
+2020-09-30 16:12:57,255:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:57,268:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:57,270:INFO:Compiling Metrics
+2020-09-30 16:12:57,276:INFO:Initializing Fold 9
+2020-09-30 16:12:57,276:INFO:Total runtime is 1.1149118463198342 minutes
+2020-09-30 16:12:57,303:INFO:Fitting Model
+2020-09-30 16:12:57,690:INFO:Evaluating Metrics
+2020-09-30 16:12:57,690:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:57,703:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:57,705:INFO:Compiling Metrics
+2020-09-30 16:12:57,711:INFO:Initializing Fold 10
+2020-09-30 16:12:57,712:INFO:Total runtime is 1.1221652309099832 minutes
+2020-09-30 16:12:57,737:INFO:Fitting Model
+2020-09-30 16:12:58,125:INFO:Evaluating Metrics
+2020-09-30 16:12:58,125:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-09-30 16:12:58,138:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-09-30 16:12:58,141:INFO:Compiling Metrics
+2020-09-30 16:12:58,146:INFO:Calculating mean and std
+2020-09-30 16:12:58,147:INFO:Creating metrics dataframe
+2020-09-30 16:12:58,159:INFO:Initializing Random Forest Classifier
+2020-09-30 16:12:58,165:INFO:Initializing Fold 1
+2020-09-30 16:12:58,166:INFO:Total runtime is 1.1297363599141437 minutes
+2020-09-30 16:12:58,192:INFO:Fitting Model
+2020-09-30 16:12:58,332:INFO:Evaluating Metrics
+2020-09-30 16:12:58,600:INFO:Compiling Metrics
+2020-09-30 16:12:58,609:INFO:Initializing Fold 2
+2020-09-30 16:12:58,610:INFO:Total runtime is 1.1371328274408974 minutes
+2020-09-30 16:12:58,661:INFO:Fitting Model
+2020-09-30 16:12:58,804:INFO:Evaluating Metrics
+2020-09-30 16:12:59,060:INFO:Compiling Metrics
+2020-09-30 16:12:59,069:INFO:Initializing Fold 3
+2020-09-30 16:12:59,070:INFO:Total runtime is 1.1448012630144753 minutes
+2020-09-30 16:12:59,123:INFO:Fitting Model
+2020-09-30 16:12:59,264:INFO:Evaluating Metrics
+2020-09-30 16:12:59,526:INFO:Compiling Metrics
+2020-09-30 16:12:59,537:INFO:Initializing Fold 4
+2020-09-30 16:12:59,538:INFO:Total runtime is 1.152605628967285 minutes
+2020-09-30 16:12:59,592:INFO:Fitting Model
+2020-09-30 16:12:59,738:INFO:Evaluating Metrics
+2020-09-30 16:13:00,005:INFO:Compiling Metrics
+2020-09-30 16:13:00,014:INFO:Initializing Fold 5
+2020-09-30 16:13:00,016:INFO:Total runtime is 1.160565129915873 minutes
+2020-09-30 16:13:00,069:INFO:Fitting Model
+2020-09-30 16:13:00,217:INFO:Evaluating Metrics
+2020-09-30 16:13:00,483:INFO:Compiling Metrics
+2020-09-30 16:13:00,493:INFO:Initializing Fold 6
+2020-09-30 16:13:00,493:INFO:Total runtime is 1.1685288826624551 minutes
+2020-09-30 16:13:00,551:INFO:Fitting Model
+2020-09-30 16:13:00,697:INFO:Evaluating Metrics
+2020-09-30 16:13:00,956:INFO:Compiling Metrics
+2020-09-30 16:13:00,965:INFO:Initializing Fold 7
+2020-09-30 16:13:00,966:INFO:Total runtime is 1.17641357978185 minutes
+2020-09-30 16:13:01,020:INFO:Fitting Model
+2020-09-30 16:13:01,170:INFO:Evaluating Metrics
+2020-09-30 16:13:01,432:INFO:Compiling Metrics
+2020-09-30 16:13:01,441:INFO:Initializing Fold 8
+2020-09-30 16:13:01,442:INFO:Total runtime is 1.1843408465385434 minutes
+2020-09-30 16:13:01,499:INFO:Fitting Model
+2020-09-30 16:13:01,647:INFO:Evaluating Metrics
+2020-09-30 16:13:01,910:INFO:Compiling Metrics
+2020-09-30 16:13:01,920:INFO:Initializing Fold 9
+2020-09-30 16:13:01,921:INFO:Total runtime is 1.1923153479894 minutes
+2020-09-30 16:13:01,973:INFO:Fitting Model
+2020-09-30 16:13:02,116:INFO:Evaluating Metrics
+2020-09-30 16:13:02,378:INFO:Compiling Metrics
+2020-09-30 16:13:02,388:INFO:Initializing Fold 10
+2020-09-30 16:13:02,388:INFO:Total runtime is 1.2001121123631793 minutes
+2020-09-30 16:13:02,442:INFO:Fitting Model
+2020-09-30 16:13:02,583:INFO:Evaluating Metrics
+2020-09-30 16:13:02,840:INFO:Compiling Metrics
+2020-09-30 16:13:02,849:INFO:Calculating mean and std
+2020-09-30 16:13:02,849:INFO:Creating metrics dataframe
+2020-09-30 16:13:02,863:INFO:Initializing Quadratic Discriminant Analysis
+2020-09-30 16:13:02,870:INFO:Initializing Fold 1
+2020-09-30 16:13:02,871:INFO:Total runtime is 1.2081480304400123 minutes
+2020-09-30 16:13:02,930:INFO:Fitting Model
+2020-09-30 16:13:05,647:INFO:Evaluating Metrics
+2020-09-30 16:13:05,784:INFO:Compiling Metrics
+2020-09-30 16:13:05,790:INFO:Initializing Fold 2
+2020-09-30 16:13:05,791:INFO:Total runtime is 1.2568152308464047 minutes
+2020-09-30 16:13:05,818:INFO:Fitting Model
+2020-09-30 16:13:08,537:INFO:Evaluating Metrics
+2020-09-30 16:13:08,671:INFO:Compiling Metrics
+2020-09-30 16:13:08,678:INFO:Initializing Fold 3
+2020-09-30 16:13:08,678:INFO:Total runtime is 1.3049432635307308 minutes
+2020-09-30 16:13:08,726:INFO:Fitting Model
+2020-09-30 16:13:11,270:INFO:Evaluating Metrics
+2020-09-30 16:13:11,408:INFO:Compiling Metrics
+2020-09-30 16:13:11,414:INFO:Initializing Fold 4
+2020-09-30 16:13:11,414:INFO:Total runtime is 1.3505460302035008 minutes
+2020-09-30 16:13:11,463:INFO:Fitting Model
+2020-09-30 16:13:14,027:INFO:Evaluating Metrics
+2020-09-30 16:13:14,174:INFO:Compiling Metrics
+2020-09-30 16:13:14,181:INFO:Initializing Fold 5
+2020-09-30 16:13:14,182:INFO:Total runtime is 1.396671064694722 minutes
+2020-09-30 16:13:14,215:INFO:Fitting Model
+2020-09-30 16:13:17,266:INFO:Evaluating Metrics
+2020-09-30 16:13:17,444:INFO:Compiling Metrics
+2020-09-30 16:13:17,451:INFO:Initializing Fold 6
+2020-09-30 16:13:17,452:INFO:Total runtime is 1.4511744459470108 minutes
+2020-09-30 16:13:17,515:INFO:Fitting Model
+2020-09-30 16:13:20,542:INFO:Evaluating Metrics
+2020-09-30 16:13:20,702:INFO:Compiling Metrics
+2020-09-30 16:13:20,710:INFO:Initializing Fold 7
+2020-09-30 16:13:20,711:INFO:Total runtime is 1.5054822285970046 minutes
+2020-09-30 16:13:20,750:INFO:Fitting Model
+2020-09-30 16:13:23,704:INFO:Evaluating Metrics
+2020-09-30 16:13:23,894:INFO:Compiling Metrics
+2020-09-30 16:13:23,902:INFO:Initializing Fold 8
+2020-09-30 16:13:23,903:INFO:Total runtime is 1.5586832284927363 minutes
+2020-09-30 16:13:23,936:INFO:Fitting Model
+2020-09-30 16:13:26,805:INFO:Evaluating Metrics
+2020-09-30 16:13:26,962:INFO:Compiling Metrics
+2020-09-30 16:13:26,969:INFO:Initializing Fold 9
+2020-09-30 16:13:26,969:INFO:Total runtime is 1.6097945094108577 minutes
+2020-09-30 16:13:27,003:INFO:Fitting Model
+2020-09-30 16:13:29,749:INFO:Evaluating Metrics
+2020-09-30 16:13:29,901:INFO:Compiling Metrics
+2020-09-30 16:13:29,909:INFO:Initializing Fold 10
+2020-09-30 16:13:29,910:INFO:Total runtime is 1.6587986270586645 minutes
+2020-09-30 16:13:29,942:INFO:Fitting Model
+2020-09-30 16:13:32,907:INFO:Evaluating Metrics
+2020-09-30 16:13:33,114:INFO:Compiling Metrics
+2020-09-30 16:13:33,129:INFO:Calculating mean and std
+2020-09-30 16:13:33,130:INFO:Creating metrics dataframe
+2020-09-30 16:13:33,150:INFO:Initializing Ada Boost Classifier
+2020-09-30 16:13:33,166:INFO:Initializing Fold 1
+2020-09-30 16:13:33,167:INFO:Total runtime is 1.7130936304728186 minutes
+2020-09-30 16:13:33,232:INFO:Fitting Model
+2020-09-30 16:13:36,655:INFO:Evaluating Metrics
+2020-09-30 16:13:36,851:INFO:Compiling Metrics
+2020-09-30 16:13:36,857:INFO:Initializing Fold 2
+2020-09-30 16:13:36,858:INFO:Total runtime is 1.774606382846832 minutes
+2020-09-30 16:13:36,884:INFO:Fitting Model
+2020-09-30 16:13:39,858:INFO:Evaluating Metrics
+2020-09-30 16:13:40,026:INFO:Compiling Metrics
+2020-09-30 16:13:40,032:INFO:Initializing Fold 3
+2020-09-30 16:13:40,033:INFO:Total runtime is 1.8275180935859676 minutes
+2020-09-30 16:13:40,057:INFO:Fitting Model
+2020-09-30 16:13:43,214:INFO:Evaluating Metrics
+2020-09-30 16:13:43,382:INFO:Compiling Metrics
+2020-09-30 16:13:43,388:INFO:Initializing Fold 4
+2020-09-30 16:13:43,389:INFO:Total runtime is 1.8834533135096228 minutes
+2020-09-30 16:13:43,415:INFO:Fitting Model
+2020-09-30 16:13:46,473:INFO:Evaluating Metrics
+2020-09-30 16:13:46,652:INFO:Compiling Metrics
+2020-09-30 16:13:46,658:INFO:Initializing Fold 5
+2020-09-30 16:13:46,659:INFO:Total runtime is 1.9379559437433873 minutes
+2020-09-30 16:13:46,684:INFO:Fitting Model
+2020-09-30 16:13:49,817:INFO:Evaluating Metrics
+2020-09-30 16:13:49,999:INFO:Compiling Metrics
+2020-09-30 16:13:50,004:INFO:Initializing Fold 6
+2020-09-30 16:13:50,005:INFO:Total runtime is 1.9937231938044224 minutes
+2020-09-30 16:13:50,032:INFO:Fitting Model
+2020-09-30 16:13:53,352:INFO:Evaluating Metrics
+2020-09-30 16:13:53,521:INFO:Compiling Metrics
+2020-09-30 16:13:53,527:INFO:Initializing Fold 7
+2020-09-30 16:13:53,528:INFO:Total runtime is 2.0524334152539567 minutes
+2020-09-30 16:13:53,553:INFO:Fitting Model
+2020-09-30 16:13:56,777:INFO:Evaluating Metrics
+2020-09-30 16:13:56,950:INFO:Compiling Metrics
+2020-09-30 16:13:56,956:INFO:Initializing Fold 8
+2020-09-30 16:13:56,956:INFO:Total runtime is 2.1095735430717464 minutes
+2020-09-30 16:13:56,981:INFO:Fitting Model
+2020-09-30 16:13:59,963:INFO:Evaluating Metrics
+2020-09-30 16:14:00,150:INFO:Compiling Metrics
+2020-09-30 16:14:00,156:INFO:Initializing Fold 9
+2020-09-30 16:14:00,156:INFO:Total runtime is 2.162912845611572 minutes
+2020-09-30 16:14:00,184:INFO:Fitting Model
+2020-09-30 16:14:03,294:INFO:Evaluating Metrics
+2020-09-30 16:14:03,463:INFO:Compiling Metrics
+2020-09-30 16:14:03,469:INFO:Initializing Fold 10
+2020-09-30 16:14:03,470:INFO:Total runtime is 2.218133159478505 minutes
+2020-09-30 16:14:03,496:INFO:Fitting Model
+2020-09-30 16:14:06,484:INFO:Evaluating Metrics
+2020-09-30 16:14:06,652:INFO:Compiling Metrics
+2020-09-30 16:14:06,658:INFO:Calculating mean and std
+2020-09-30 16:14:06,658:INFO:Creating metrics dataframe
+2020-09-30 16:14:06,670:INFO:Initializing Gradient Boosting Classifier
+2020-09-30 16:14:06,677:INFO:Initializing Fold 1
+2020-09-30 16:14:06,677:INFO:Total runtime is 2.2715931614240006 minutes
+2020-09-30 16:14:06,702:INFO:Fitting Model
+2020-09-30 16:14:17,034:INFO:Evaluating Metrics
+2020-09-30 16:14:17,080:INFO:Compiling Metrics
+2020-09-30 16:14:17,086:INFO:Initializing Fold 2
+2020-09-30 16:14:17,086:INFO:Total runtime is 2.445076930522918 minutes
+2020-09-30 16:14:17,113:INFO:Fitting Model
+2020-09-30 16:14:27,668:INFO:Evaluating Metrics
+2020-09-30 16:14:27,708:INFO:Compiling Metrics
+2020-09-30 16:14:27,714:INFO:Initializing Fold 3
+2020-09-30 16:14:27,715:INFO:Total runtime is 2.622216097513834 minutes
+2020-09-30 16:14:27,740:INFO:Fitting Model
+2020-09-30 16:14:38,323:INFO:Evaluating Metrics
+2020-09-30 16:14:38,363:INFO:Compiling Metrics
+2020-09-30 16:14:38,369:INFO:Initializing Fold 4
+2020-09-30 16:14:38,369:INFO:Total runtime is 2.7997901995976764 minutes
+2020-09-30 16:14:38,394:INFO:Fitting Model
+2020-09-30 16:14:48,982:INFO:Evaluating Metrics
+2020-09-30 16:14:49,022:INFO:Compiling Metrics
+2020-09-30 16:14:49,028:INFO:Initializing Fold 5
+2020-09-30 16:14:49,029:INFO:Total runtime is 2.97745726108551 minutes
+2020-09-30 16:14:49,055:INFO:Fitting Model
+2020-09-30 16:14:59,615:INFO:Evaluating Metrics
+2020-09-30 16:14:59,654:INFO:Compiling Metrics
+2020-09-30 16:14:59,660:INFO:Initializing Fold 6
+2020-09-30 16:14:59,661:INFO:Total runtime is 3.154649094740549 minutes
+2020-09-30 16:14:59,687:INFO:Fitting Model
+2020-09-30 16:15:10,318:INFO:Evaluating Metrics
+2020-09-30 16:15:10,358:INFO:Compiling Metrics
+2020-09-30 16:15:10,365:INFO:Initializing Fold 7
+2020-09-30 16:15:10,365:INFO:Total runtime is 3.333058396975199 minutes
+2020-09-30 16:15:10,391:INFO:Fitting Model
+2020-09-30 16:15:20,977:INFO:Evaluating Metrics
+2020-09-30 16:15:21,018:INFO:Compiling Metrics
+2020-09-30 16:15:21,024:INFO:Initializing Fold 8
+2020-09-30 16:15:21,024:INFO:Total runtime is 3.5107102155685417 minutes
+2020-09-30 16:15:21,050:INFO:Fitting Model
+2020-09-30 16:15:31,670:INFO:Evaluating Metrics
+2020-09-30 16:15:31,710:INFO:Compiling Metrics
+2020-09-30 16:15:31,717:INFO:Initializing Fold 9
+2020-09-30 16:15:31,717:INFO:Total runtime is 3.688925079504648 minutes
+2020-09-30 16:15:31,742:INFO:Fitting Model
+2020-09-30 16:15:42,318:INFO:Evaluating Metrics
+2020-09-30 16:15:42,358:INFO:Compiling Metrics
+2020-09-30 16:15:42,364:INFO:Initializing Fold 10
+2020-09-30 16:15:42,365:INFO:Total runtime is 3.8663884957631423 minutes
+2020-09-30 16:15:42,390:INFO:Fitting Model
+2020-09-30 16:15:52,923:INFO:Evaluating Metrics
+2020-09-30 16:15:52,964:INFO:Compiling Metrics
+2020-09-30 16:15:52,969:INFO:Calculating mean and std
+2020-09-30 16:15:52,969:INFO:Creating metrics dataframe
+2020-09-30 16:15:52,982:INFO:Initializing Linear Discriminant Analysis
+2020-09-30 16:15:52,988:INFO:Initializing Fold 1
+2020-09-30 16:15:52,989:INFO:Total runtime is 4.043449310461679 minutes
+2020-09-30 16:15:53,014:INFO:Fitting Model
+2020-09-30 16:15:56,796:INFO:Evaluating Metrics
+2020-09-30 16:15:56,826:INFO:Compiling Metrics
+2020-09-30 16:15:56,832:INFO:Initializing Fold 2
+2020-09-30 16:15:56,833:INFO:Total runtime is 4.107517878214518 minutes
+2020-09-30 16:15:56,860:INFO:Fitting Model
+2020-09-30 16:16:00,435:INFO:Evaluating Metrics
+2020-09-30 16:16:00,465:INFO:Compiling Metrics
+2020-09-30 16:16:00,471:INFO:Initializing Fold 3
+2020-09-30 16:16:00,472:INFO:Total runtime is 4.168168699741363 minutes
+2020-09-30 16:16:00,501:INFO:Fitting Model
+2020-09-30 16:16:04,220:INFO:Evaluating Metrics
+2020-09-30 16:16:04,258:INFO:Compiling Metrics
+2020-09-30 16:16:04,266:INFO:Initializing Fold 4
+2020-09-30 16:16:04,267:INFO:Total runtime is 4.23141918182373 minutes
+2020-09-30 16:16:04,299:INFO:Fitting Model
+2020-09-30 16:16:08,640:INFO:Evaluating Metrics
+2020-09-30 16:16:08,682:INFO:Compiling Metrics
+2020-09-30 16:16:08,690:INFO:Initializing Fold 5
+2020-09-30 16:16:08,691:INFO:Total runtime is 4.305150747299194 minutes
+2020-09-30 16:16:08,731:INFO:Fitting Model
+2020-09-30 16:16:12,701:INFO:Evaluating Metrics
+2020-09-30 16:16:12,738:INFO:Compiling Metrics
+2020-09-30 16:16:12,745:INFO:Initializing Fold 6
+2020-09-30 16:16:12,747:INFO:Total runtime is 4.37274759610494 minutes
+2020-09-30 16:16:12,779:INFO:Fitting Model
+2020-09-30 16:16:16,555:INFO:Evaluating Metrics
+2020-09-30 16:16:16,592:INFO:Compiling Metrics
+2020-09-30 16:16:16,599:INFO:Initializing Fold 7
+2020-09-30 16:16:16,599:INFO:Total runtime is 4.436962310473125 minutes
+2020-09-30 16:16:16,634:INFO:Fitting Model
+2020-09-30 16:16:20,462:INFO:Evaluating Metrics
+2020-09-30 16:16:20,502:INFO:Compiling Metrics
+2020-09-30 16:16:20,511:INFO:Initializing Fold 8
+2020-09-30 16:16:20,512:INFO:Total runtime is 4.502176527182262 minutes
+2020-09-30 16:16:20,545:INFO:Fitting Model
+2020-09-30 16:16:24,558:INFO:Evaluating Metrics
+2020-09-30 16:16:24,601:INFO:Compiling Metrics
+2020-09-30 16:16:24,609:INFO:Initializing Fold 9
+2020-09-30 16:16:24,610:INFO:Total runtime is 4.570478645960491 minutes
+2020-09-30 16:16:24,663:INFO:Fitting Model
+2020-09-30 16:16:28,485:INFO:Evaluating Metrics
+2020-09-30 16:16:28,524:INFO:Compiling Metrics
+2020-09-30 16:16:28,533:INFO:Initializing Fold 10
+2020-09-30 16:16:28,534:INFO:Total runtime is 4.63586437702179 minutes
+2020-09-30 16:16:28,566:INFO:Fitting Model
+2020-09-30 16:16:32,338:INFO:Evaluating Metrics
+2020-09-30 16:16:32,377:INFO:Compiling Metrics
+2020-09-30 16:16:32,385:INFO:Calculating mean and std
+2020-09-30 16:16:32,386:INFO:Creating metrics dataframe
+2020-09-30 16:16:32,404:INFO:Initializing Extra Trees Classifier
+2020-09-30 16:16:32,413:INFO:Initializing Fold 1
+2020-09-30 16:16:32,414:INFO:Total runtime is 4.700533978144328 minutes
+2020-09-30 16:16:32,446:INFO:Fitting Model
+2020-09-30 16:16:33,143:INFO:Evaluating Metrics
+2020-09-30 16:16:33,392:INFO:Compiling Metrics
+2020-09-30 16:16:33,401:INFO:Initializing Fold 2
+2020-09-30 16:16:33,401:INFO:Total runtime is 4.716996562480927 minutes
+2020-09-30 16:16:33,465:INFO:Fitting Model
+2020-09-30 16:16:34,167:INFO:Evaluating Metrics
+2020-09-30 16:16:34,429:INFO:Compiling Metrics
+2020-09-30 16:16:34,437:INFO:Initializing Fold 3
+2020-09-30 16:16:34,438:INFO:Total runtime is 4.7342729290326435 minutes
+2020-09-30 16:16:34,500:INFO:Fitting Model
+2020-09-30 16:16:35,087:INFO:Evaluating Metrics
+2020-09-30 16:16:35,335:INFO:Compiling Metrics
+2020-09-30 16:16:35,341:INFO:Initializing Fold 4
+2020-09-30 16:16:35,342:INFO:Total runtime is 4.749332014719645 minutes
+2020-09-30 16:16:35,399:INFO:Fitting Model
+2020-09-30 16:16:35,981:INFO:Evaluating Metrics
+2020-09-30 16:16:36,227:INFO:Compiling Metrics
+2020-09-30 16:16:36,236:INFO:Initializing Fold 5
+2020-09-30 16:16:36,237:INFO:Total runtime is 4.764248045285543 minutes
+2020-09-30 16:16:36,292:INFO:Fitting Model
+2020-09-30 16:16:36,883:INFO:Evaluating Metrics
+2020-09-30 16:16:37,139:INFO:Compiling Metrics
+2020-09-30 16:16:37,148:INFO:Initializing Fold 6
+2020-09-30 16:16:37,148:INFO:Total runtime is 4.779443025588989 minutes
+2020-09-30 16:16:37,203:INFO:Fitting Model
+2020-09-30 16:16:37,793:INFO:Evaluating Metrics
+2020-09-30 16:16:38,037:INFO:Compiling Metrics
+2020-09-30 16:16:38,043:INFO:Initializing Fold 7
+2020-09-30 16:16:38,044:INFO:Total runtime is 4.794372109572093 minutes
+2020-09-30 16:16:38,098:INFO:Fitting Model
+2020-09-30 16:16:38,684:INFO:Evaluating Metrics
+2020-09-30 16:16:38,938:INFO:Compiling Metrics
+2020-09-30 16:16:38,945:INFO:Initializing Fold 8
+2020-09-30 16:16:38,945:INFO:Total runtime is 4.809395881493886 minutes
+2020-09-30 16:16:39,004:INFO:Fitting Model
+2020-09-30 16:16:39,698:INFO:Evaluating Metrics
+2020-09-30 16:16:39,946:INFO:Compiling Metrics
+2020-09-30 16:16:39,954:INFO:Initializing Fold 9
+2020-09-30 16:16:39,954:INFO:Total runtime is 4.8262094259262085 minutes
+2020-09-30 16:16:40,009:INFO:Fitting Model
+2020-09-30 16:16:40,601:INFO:Evaluating Metrics
+2020-09-30 16:16:40,853:INFO:Compiling Metrics
+2020-09-30 16:16:40,859:INFO:Initializing Fold 10
+2020-09-30 16:16:40,860:INFO:Total runtime is 4.841298961639405 minutes
+2020-09-30 16:16:40,915:INFO:Fitting Model
+2020-09-30 16:16:41,501:INFO:Evaluating Metrics
+2020-09-30 16:16:41,754:INFO:Compiling Metrics
+2020-09-30 16:16:41,762:INFO:Calculating mean and std
+2020-09-30 16:16:41,763:INFO:Creating metrics dataframe
+2020-09-30 16:16:41,777:INFO:Initializing Extreme Gradient Boosting
+2020-09-30 16:16:41,786:INFO:Initializing Fold 1
+2020-09-30 16:16:41,787:INFO:Total runtime is 4.856753198305766 minutes
+2020-09-30 16:16:41,843:INFO:Fitting Model
+2020-09-30 16:17:18,049:INFO:Evaluating Metrics
+2020-09-30 16:17:18,165:INFO:Compiling Metrics
+2020-09-30 16:17:18,173:INFO:Initializing Fold 2
+2020-09-30 16:17:18,174:INFO:Total runtime is 5.463202798366547 minutes
+2020-09-30 16:17:18,202:INFO:Fitting Model
+2020-09-30 16:17:54,299:INFO:Evaluating Metrics
+2020-09-30 16:17:54,410:INFO:Compiling Metrics
+2020-09-30 16:17:54,416:INFO:Initializing Fold 3
+2020-09-30 16:17:54,417:INFO:Total runtime is 6.067253847916922 minutes
+2020-09-30 16:17:54,443:INFO:Fitting Model
+2020-09-30 16:18:30,674:INFO:Evaluating Metrics
+2020-09-30 16:18:30,783:INFO:Compiling Metrics
+2020-09-30 16:18:30,789:INFO:Initializing Fold 4
+2020-09-30 16:18:30,789:INFO:Total runtime is 6.673462363084158 minutes
+2020-09-30 16:18:30,816:INFO:Fitting Model
+2020-09-30 16:19:06,996:INFO:Evaluating Metrics
+2020-09-30 16:19:07,104:INFO:Compiling Metrics
+2020-09-30 16:19:07,110:INFO:Initializing Fold 5
+2020-09-30 16:19:07,110:INFO:Total runtime is 7.278806261221568 minutes
+2020-09-30 16:19:07,136:INFO:Fitting Model
+2020-09-30 16:19:43,308:INFO:Evaluating Metrics
+2020-09-30 16:19:43,418:INFO:Compiling Metrics
+2020-09-30 16:19:43,423:INFO:Initializing Fold 6
+2020-09-30 16:19:43,424:INFO:Total runtime is 7.8840337316195175 minutes
+2020-09-30 16:19:43,450:INFO:Fitting Model
+2020-09-30 16:20:19,750:INFO:Evaluating Metrics
+2020-09-30 16:20:19,858:INFO:Compiling Metrics
+2020-09-30 16:20:19,863:INFO:Initializing Fold 7
+2020-09-30 16:20:19,864:INFO:Total runtime is 8.491378279527028 minutes
+2020-09-30 16:20:19,891:INFO:Fitting Model
+2020-09-30 16:20:56,203:INFO:Evaluating Metrics
+2020-09-30 16:20:56,313:INFO:Compiling Metrics
+2020-09-30 16:20:56,319:INFO:Initializing Fold 8
+2020-09-30 16:20:56,320:INFO:Total runtime is 9.098970377445221 minutes
+2020-09-30 16:20:56,348:INFO:Fitting Model
+2020-09-30 16:21:33,393:INFO:Evaluating Metrics
+2020-09-30 16:21:33,503:INFO:Compiling Metrics
+2020-09-30 16:21:33,509:INFO:Initializing Fold 9
+2020-09-30 16:21:33,509:INFO:Total runtime is 9.71879676580429 minutes
+2020-09-30 16:21:33,536:INFO:Fitting Model
+2020-09-30 16:22:09,367:INFO:Evaluating Metrics
+2020-09-30 16:22:09,477:INFO:Compiling Metrics
+2020-09-30 16:22:09,483:INFO:Initializing Fold 10
+2020-09-30 16:22:09,484:INFO:Total runtime is 10.318375396728515 minutes
+2020-09-30 16:22:09,510:INFO:Fitting Model
+2020-09-30 16:22:45,854:INFO:Evaluating Metrics
+2020-09-30 16:22:45,963:INFO:Compiling Metrics
+2020-09-30 16:22:45,968:INFO:Calculating mean and std
+2020-09-30 16:22:45,968:INFO:Creating metrics dataframe
+2020-09-30 16:22:45,982:INFO:Initializing Light Gradient Boosting Machine
+2020-09-30 16:22:45,988:INFO:Initializing Fold 1
+2020-09-30 16:22:45,989:INFO:Total runtime is 10.926792128880818 minutes
+2020-09-30 16:22:46,017:INFO:Fitting Model
+2020-09-30 16:22:47,311:INFO:Evaluating Metrics
+2020-09-30 16:22:47,381:INFO:Compiling Metrics
+2020-09-30 16:22:47,386:INFO:Initializing Fold 2
+2020-09-30 16:22:47,387:INFO:Total runtime is 10.950083796183268 minutes
+2020-09-30 16:22:47,434:INFO:Fitting Model
+2020-09-30 16:22:48,681:INFO:Evaluating Metrics
+2020-09-30 16:22:48,752:INFO:Compiling Metrics
+2020-09-30 16:22:48,759:INFO:Initializing Fold 3
+2020-09-30 16:22:48,760:INFO:Total runtime is 10.972964680194854 minutes
+2020-09-30 16:22:48,808:INFO:Fitting Model
+2020-09-30 16:22:50,076:INFO:Evaluating Metrics
+2020-09-30 16:22:50,144:INFO:Compiling Metrics
+2020-09-30 16:22:50,150:INFO:Initializing Fold 4
+2020-09-30 16:22:50,150:INFO:Total runtime is 10.996147028605144 minutes
+2020-09-30 16:22:50,200:INFO:Fitting Model
+2020-09-30 16:22:51,485:INFO:Evaluating Metrics
+2020-09-30 16:22:51,554:INFO:Compiling Metrics
+2020-09-30 16:22:51,560:INFO:Initializing Fold 5
+2020-09-30 16:22:51,560:INFO:Total runtime is 11.019644395510356 minutes
+2020-09-30 16:22:51,609:INFO:Fitting Model
+2020-09-30 16:22:52,847:INFO:Evaluating Metrics
+2020-09-30 16:22:52,915:INFO:Compiling Metrics
+2020-09-30 16:22:52,921:INFO:Initializing Fold 6
+2020-09-30 16:22:52,921:INFO:Total runtime is 11.042326013247173 minutes
+2020-09-30 16:22:52,971:INFO:Fitting Model
+2020-09-30 16:22:54,240:INFO:Evaluating Metrics
+2020-09-30 16:22:54,311:INFO:Compiling Metrics
+2020-09-30 16:22:54,316:INFO:Initializing Fold 7
+2020-09-30 16:22:54,317:INFO:Total runtime is 11.065583447615307 minutes
+2020-09-30 16:22:54,371:INFO:Fitting Model
+2020-09-30 16:22:55,640:INFO:Evaluating Metrics
+2020-09-30 16:22:55,705:INFO:Compiling Metrics
+2020-09-30 16:22:55,711:INFO:Initializing Fold 8
+2020-09-30 16:22:55,711:INFO:Total runtime is 11.088828694820405 minutes
+2020-09-30 16:22:55,761:INFO:Fitting Model
+2020-09-30 16:22:57,016:INFO:Evaluating Metrics
+2020-09-30 16:22:57,084:INFO:Compiling Metrics
+2020-09-30 16:22:57,090:INFO:Initializing Fold 9
+2020-09-30 16:22:57,091:INFO:Total runtime is 11.111818615595501 minutes
+2020-09-30 16:22:57,141:INFO:Fitting Model
+2020-09-30 16:22:58,403:INFO:Evaluating Metrics
+2020-09-30 16:22:58,468:INFO:Compiling Metrics
+2020-09-30 16:22:58,475:INFO:Initializing Fold 10
+2020-09-30 16:22:58,475:INFO:Total runtime is 11.134895431995393 minutes
+2020-09-30 16:22:58,524:INFO:Fitting Model
+2020-09-30 16:22:59,781:INFO:Evaluating Metrics
+2020-09-30 16:22:59,850:INFO:Compiling Metrics
+2020-09-30 16:22:59,856:INFO:Calculating mean and std
+2020-09-30 16:22:59,857:INFO:Creating metrics dataframe
+2020-09-30 16:22:59,870:INFO:Initializing CatBoost Classifier
+2020-09-30 16:22:59,876:INFO:Initializing Fold 1
+2020-09-30 16:22:59,877:INFO:Total runtime is 11.158257444699606 minutes
+2020-09-30 16:22:59,925:INFO:Fitting Model
+2020-09-30 16:23:33,829:INFO:Evaluating Metrics
+2020-09-30 16:23:33,993:INFO:Compiling Metrics
+2020-09-30 16:23:34,000:INFO:Initializing Fold 2
+2020-09-30 16:23:34,001:INFO:Total runtime is 11.726987560590109 minutes
+2020-09-30 16:23:34,041:INFO:Fitting Model
+2020-09-30 16:24:09,147:INFO:Evaluating Metrics
+2020-09-30 16:24:09,313:INFO:Compiling Metrics
+2020-09-30 16:24:09,319:INFO:Initializing Fold 3
+2020-09-30 16:24:09,320:INFO:Total runtime is 12.315638879934948 minutes
+2020-09-30 16:24:09,360:INFO:Fitting Model
+2020-09-30 16:24:43,064:INFO:Evaluating Metrics
+2020-09-30 16:24:43,220:INFO:Compiling Metrics
+2020-09-30 16:24:43,227:INFO:Initializing Fold 4
+2020-09-30 16:24:43,228:INFO:Total runtime is 12.88076906601588 minutes
+2020-09-30 16:24:43,268:INFO:Fitting Model
+2020-09-30 16:25:16,573:INFO:Evaluating Metrics
+2020-09-30 16:25:16,727:INFO:Compiling Metrics
+2020-09-30 16:25:16,734:INFO:Initializing Fold 5
+2020-09-30 16:25:16,734:INFO:Total runtime is 13.43920721213023 minutes
+2020-09-30 16:25:16,790:INFO:Fitting Model
+2020-09-30 16:25:49,950:INFO:Evaluating Metrics
+2020-09-30 16:25:50,095:INFO:Compiling Metrics
+2020-09-30 16:25:50,101:INFO:Initializing Fold 6
+2020-09-30 16:25:50,101:INFO:Total runtime is 13.99532791376114 minutes
+2020-09-30 16:25:50,140:INFO:Fitting Model
+2020-09-30 16:26:21,303:INFO:Evaluating Metrics
+2020-09-30 16:26:21,451:INFO:Compiling Metrics
+2020-09-30 16:26:21,457:INFO:Initializing Fold 7
+2020-09-30 16:26:21,458:INFO:Total runtime is 14.51793974240621 minutes
+2020-09-30 16:26:21,496:INFO:Fitting Model
+2020-09-30 16:26:51,638:INFO:Evaluating Metrics
+2020-09-30 16:26:51,780:INFO:Compiling Metrics
+2020-09-30 16:26:51,787:INFO:Initializing Fold 8
+2020-09-30 16:26:51,787:INFO:Total runtime is 15.023427295684815 minutes
+2020-09-30 16:26:51,823:INFO:Fitting Model
+2020-09-30 16:27:22,324:INFO:Evaluating Metrics
+2020-09-30 16:27:22,470:INFO:Compiling Metrics
+2020-09-30 16:27:22,476:INFO:Initializing Fold 9
+2020-09-30 16:27:22,477:INFO:Total runtime is 15.53492017587026 minutes
+2020-09-30 16:27:22,513:INFO:Fitting Model
+2020-09-30 16:27:52,691:INFO:Evaluating Metrics
+2020-09-30 16:27:52,834:INFO:Compiling Metrics
+2020-09-30 16:27:52,840:INFO:Initializing Fold 10
+2020-09-30 16:27:52,841:INFO:Total runtime is 16.04098419348399 minutes
+2020-09-30 16:27:52,877:INFO:Fitting Model
+2020-09-30 16:28:24,104:INFO:Evaluating Metrics
+2020-09-30 16:28:24,249:INFO:Compiling Metrics
+2020-09-30 16:28:24,256:INFO:Calculating mean and std
+2020-09-30 16:28:24,256:INFO:Creating metrics dataframe
+2020-09-30 16:28:24,277:INFO:Finalizing top_n models
+2020-09-30 16:28:24,277:INFO:SubProcess create_model() called ==================================
+2020-09-30 16:28:24,284:INFO:Initializing create_model()
+2020-09-30 16:28:24,284:INFO:create_model(estimator=lightgbm, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-09-30 16:28:24,284:INFO:Checking exceptions
+2020-09-30 16:28:24,284:INFO:Preloading libraries
+2020-09-30 16:28:24,284:INFO:Preparing display monitor
+2020-09-30 16:28:24,294:INFO:Copying training dataset
+2020-09-30 16:28:24,336:INFO:Importing libraries
+2020-09-30 16:28:24,336:INFO:Defining folds
+2020-09-30 16:28:24,336:INFO:Declaring metric variables
+2020-09-30 16:28:24,337:INFO:Importing untrained model
+2020-09-30 16:28:24,337:INFO:Light Gradient Boosting Machine Imported succesfully
+2020-09-30 16:28:24,338:INFO:Checking ensemble method
+2020-09-30 16:28:24,344:INFO:Initializing Fold 1
+2020-09-30 16:28:24,391:INFO:Fitting Model
+2020-09-30 16:28:25,908:INFO:Evaluating Metrics
+2020-09-30 16:28:25,984:INFO:Compiling Metrics
+2020-09-30 16:28:25,991:INFO:Initializing Fold 2
+2020-09-30 16:28:26,039:INFO:Fitting Model
+2020-09-30 16:28:27,420:INFO:Evaluating Metrics
+2020-09-30 16:28:27,500:INFO:Compiling Metrics
+2020-09-30 16:28:27,506:INFO:Initializing Fold 3
+2020-09-30 16:28:27,552:INFO:Fitting Model
+2020-09-30 16:28:28,923:INFO:Evaluating Metrics
+2020-09-30 16:28:28,997:INFO:Compiling Metrics
+2020-09-30 16:28:29,003:INFO:Initializing Fold 4
+2020-09-30 16:28:29,049:INFO:Fitting Model
+2020-09-30 16:28:30,324:INFO:Evaluating Metrics
+2020-09-30 16:28:30,398:INFO:Compiling Metrics
+2020-09-30 16:28:30,404:INFO:Initializing Fold 5
+2020-09-30 16:28:30,455:INFO:Fitting Model
+2020-09-30 16:28:31,732:INFO:Evaluating Metrics
+2020-09-30 16:28:31,801:INFO:Compiling Metrics
+2020-09-30 16:28:31,806:INFO:Initializing Fold 6
+2020-09-30 16:28:31,849:INFO:Fitting Model
+2020-09-30 16:28:33,098:INFO:Evaluating Metrics
+2020-09-30 16:28:33,169:INFO:Compiling Metrics
+2020-09-30 16:28:33,174:INFO:Initializing Fold 7
+2020-09-30 16:28:33,218:INFO:Fitting Model
+2020-09-30 16:28:34,452:INFO:Evaluating Metrics
+2020-09-30 16:28:34,521:INFO:Compiling Metrics
+2020-09-30 16:28:34,526:INFO:Initializing Fold 8
+2020-09-30 16:28:34,570:INFO:Fitting Model
+2020-09-30 16:28:35,965:INFO:Evaluating Metrics
+2020-09-30 16:28:36,036:INFO:Compiling Metrics
+2020-09-30 16:28:36,042:INFO:Initializing Fold 9
+2020-09-30 16:28:36,088:INFO:Fitting Model
+2020-09-30 16:28:37,433:INFO:Evaluating Metrics
+2020-09-30 16:28:37,502:INFO:Compiling Metrics
+2020-09-30 16:28:37,507:INFO:Initializing Fold 10
+2020-09-30 16:28:37,553:INFO:Fitting Model
+2020-09-30 16:28:38,874:INFO:Evaluating Metrics
+2020-09-30 16:28:38,945:INFO:Compiling Metrics
+2020-09-30 16:28:38,951:INFO:Calculating mean and std
+2020-09-30 16:28:38,952:INFO:Creating metrics dataframe
+2020-09-30 16:28:38,956:INFO:Finalizing model
+2020-09-30 16:28:40,397:INFO:Uploading results into container
+2020-09-30 16:28:40,397:INFO:Uploading model into container now
+2020-09-30 16:28:40,397:INFO:create_model_container: 1
+2020-09-30 16:28:40,397:INFO:master_model_container: 1
+2020-09-30 16:28:40,397:INFO:display_container: 1
+2020-09-30 16:28:40,398:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2799, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2020-09-30 16:28:40,398:INFO:create_model() succesfully completed......................................
+2020-09-30 16:28:40,410:INFO:SubProcess create_model() end ==================================
+2020-09-30 16:28:40,478:INFO:create_model_container: 1
+2020-09-30 16:28:40,478:INFO:master_model_container: 1
+2020-09-30 16:28:40,478:INFO:display_container: 2
+2020-09-30 16:28:40,479:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2799, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2020-09-30 16:28:40,479:INFO:compare_models() succesfully completed......................................
+2020-10-01 13:48:53,863:INFO:PyCaret Classification Module
+2020-10-01 13:48:53,867:INFO:version 2.1.2
+2020-10-01 13:48:53,867:INFO:Initializing setup()
+2020-10-01 13:48:53,868:INFO:USI: c6f9
+2020-10-01 13:48:53,872:INFO:setup(data=(6744, 1025), target=label, train_size=1, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-10-01 13:48:53,872:INFO:Checking environment
+2020-10-01 13:48:53,873:INFO:python_version: 3.7.6
+2020-10-01 13:48:53,873:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-10-01 13:48:53,873:INFO:machine: x86_64
+2020-10-01 13:48:53,905:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-10-01 13:48:53,908:INFO:Memory: svmem(total=8589934592, available=1793499136, percent=79.1, used=3943706624, free=69017600, active=1727299584, inactive=1722163200, wired=2216407040)
+2020-10-01 13:48:53,908:INFO:Physical Core: 4
+2020-10-01 13:48:53,908:INFO:Logical Core: 8
+2020-10-01 13:48:53,908:INFO:Checking libraries
+2020-10-01 13:48:53,909:INFO:pd==1.0.1
+2020-10-01 13:48:53,909:INFO:numpy==1.18.1
+2020-10-01 13:48:53,909:INFO:sklearn==0.23.2
+2020-10-01 13:48:55,141:INFO:xgboost==1.2.0
+2020-10-01 13:48:55,179:INFO:lightgbm==3.0.0
+2020-10-01 13:48:55,274:INFO:catboost==0.24.1
+2020-10-01 13:48:56,270:INFO:mlflow==1.11.0
+2020-10-01 13:48:56,270:INFO:Checking Exceptions
+2020-10-01 13:49:07,873:INFO:PyCaret Classification Module
+2020-10-01 13:49:07,874:INFO:version 2.1.2
+2020-10-01 13:49:07,874:INFO:Initializing setup()
+2020-10-01 13:49:07,875:INFO:USI: 6bfd
+2020-10-01 13:49:07,875:INFO:setup(data=(6744, 1025), target=label, train_size=0.7, sampling=True, sample_estimator=None, categorical_features=None, categorical_imputation=constant, ordinal_features=None,
+                    high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, date_features=None, ignore_features=None, normalize=False,
+                    normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear,
+                    pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05,
+                    remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20,
+                    polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None,
+                    group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01,
+                    fix_imbalance=False, fix_imbalance_method=None, data_split_shuffle=True, folds_shuffle=False, n_jobs=-1, html=True, session_id=None, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False)
+2020-10-01 13:49:07,875:INFO:Checking environment
+2020-10-01 13:49:07,875:INFO:python_version: 3.7.6
+2020-10-01 13:49:07,875:INFO:python_build: ('default', 'Jan  8 2020 13:42:34')
+2020-10-01 13:49:07,875:INFO:machine: x86_64
+2020-10-01 13:49:07,875:INFO:platform: Darwin-19.5.0-x86_64-i386-64bit
+2020-10-01 13:49:07,875:INFO:Memory: svmem(total=8589934592, available=1869160448, percent=78.2, used=4002603008, free=56299520, active=1816006656, inactive=1770987520, wired=2186596352)
+2020-10-01 13:49:07,875:INFO:Physical Core: 4
+2020-10-01 13:49:07,875:INFO:Logical Core: 8
+2020-10-01 13:49:07,875:INFO:Checking libraries
+2020-10-01 13:49:07,875:INFO:pd==1.0.1
+2020-10-01 13:49:07,875:INFO:numpy==1.18.1
+2020-10-01 13:49:07,876:INFO:sklearn==0.23.2
+2020-10-01 13:49:07,876:INFO:xgboost==1.2.0
+2020-10-01 13:49:07,876:INFO:lightgbm==3.0.0
+2020-10-01 13:49:07,876:INFO:catboost==0.24.1
+2020-10-01 13:49:07,876:INFO:mlflow==1.11.0
+2020-10-01 13:49:07,876:INFO:Checking Exceptions
+2020-10-01 13:49:07,877:INFO:Preloading libraries
+2020-10-01 13:49:07,877:INFO:Preparing display monitor
+2020-10-01 13:49:07,901:INFO:Importing libraries
+2020-10-01 13:49:09,763:INFO:Declaring global variables
+2020-10-01 13:49:09,763:INFO:Copying data for preprocessing
+2020-10-01 13:49:09,902:INFO:Declaring preprocessing parameters
+2020-10-01 13:49:09,902:INFO:Importing preprocessing module
+2020-10-01 13:49:11,118:INFO:Creating preprocessing pipeline
+2020-10-01 13:49:48,015:INFO:Preprocessing pipeline created successfully
+2020-10-01 13:49:48,015:INFO:Creating grid variables
+2020-10-01 13:49:48,041:INFO:Creating global containers
+2020-10-01 13:49:48,266:INFO:create_model_container 0
+2020-10-01 13:49:48,266:INFO:master_model_container 0
+2020-10-01 13:49:48,266:INFO:display_container 0
+2020-10-01 13:49:48,271:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='label',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Leve...
+                ('group', Empty()), ('nonliner', Empty()), ('scaling', Empty()),
+                ('P_transform', Empty()), ('pt_target', Empty()),
+                ('binn', Empty()), ('rem_outliers', Empty()),
+                ('cluster_all', Empty()), ('dummy', Dummify(target='label')),
+                ('fix_perfect', Empty()), ('clean_names', Clean_Colum_Names()),
+                ('feature_select', Empty()), ('fix_multi', Empty()),
+                ('dfs', Empty()), ('pca', Empty())],
+         verbose=False)
+2020-10-01 13:49:48,271:INFO:setup() succesfully completed......................................
+2020-10-01 14:00:06,967:INFO:Initializing compare_models()
+2020-10-01 14:00:06,968:INFO:compare_models(exclude=None, include=None, fold=10, round=4, sort=Accuracy, n_select=1, turbo=True, verbose=True)
+2020-10-01 14:00:06,968:INFO:Checking exceptions
+2020-10-01 14:00:06,983:INFO:Preloading libraries
+2020-10-01 14:00:06,983:INFO:Preparing display monitor
+2020-10-01 14:00:07,020:INFO:Copying training dataset
+2020-10-01 14:00:07,021:INFO:Importing libraries
+2020-10-01 14:00:07,066:INFO:Importing untrained models
+2020-10-01 14:00:07,071:INFO:Import successful
+2020-10-01 14:00:07,077:INFO:Defining folds
+2020-10-01 14:00:07,078:INFO:Declaring metric variables
+2020-10-01 14:00:07,079:INFO:Initializing Logistic Regression
+2020-10-01 14:00:07,090:INFO:Initializing Fold 1
+2020-10-01 14:00:07,091:INFO:Total runtime is 0.00020220279693603516 minutes
+2020-10-01 14:00:07,265:INFO:Fitting Model
+2020-10-01 14:00:07,894:INFO:Evaluating Metrics
+2020-10-01 14:00:07,932:INFO:Compiling Metrics
+2020-10-01 14:00:07,941:INFO:Initializing Fold 2
+2020-10-01 14:00:07,942:INFO:Total runtime is 0.014378849665323892 minutes
+2020-10-01 14:00:07,977:INFO:Fitting Model
+2020-10-01 14:00:08,496:INFO:Evaluating Metrics
+2020-10-01 14:00:08,526:INFO:Compiling Metrics
+2020-10-01 14:00:08,532:INFO:Initializing Fold 3
+2020-10-01 14:00:08,533:INFO:Total runtime is 0.024226284027099608 minutes
+2020-10-01 14:00:08,563:INFO:Fitting Model
+2020-10-01 14:00:09,103:INFO:Evaluating Metrics
+2020-10-01 14:00:09,139:INFO:Compiling Metrics
+2020-10-01 14:00:09,146:INFO:Initializing Fold 4
+2020-10-01 14:00:09,146:INFO:Total runtime is 0.03445039987564087 minutes
+2020-10-01 14:00:09,181:INFO:Fitting Model
+2020-10-01 14:00:09,731:INFO:Evaluating Metrics
+2020-10-01 14:00:09,769:INFO:Compiling Metrics
+2020-10-01 14:00:09,776:INFO:Initializing Fold 5
+2020-10-01 14:00:09,776:INFO:Total runtime is 0.044953668117523195 minutes
+2020-10-01 14:00:09,810:INFO:Fitting Model
+2020-10-01 14:00:10,332:INFO:Evaluating Metrics
+2020-10-01 14:00:10,364:INFO:Compiling Metrics
+2020-10-01 14:00:10,370:INFO:Initializing Fold 6
+2020-10-01 14:00:10,371:INFO:Total runtime is 0.05486478408177694 minutes
+2020-10-01 14:00:10,399:INFO:Fitting Model
+2020-10-01 14:00:10,923:INFO:Evaluating Metrics
+2020-10-01 14:00:10,953:INFO:Compiling Metrics
+2020-10-01 14:00:10,959:INFO:Initializing Fold 7
+2020-10-01 14:00:10,960:INFO:Total runtime is 0.0646777351697286 minutes
+2020-10-01 14:00:10,987:INFO:Fitting Model
+2020-10-01 14:00:11,490:INFO:Evaluating Metrics
+2020-10-01 14:00:11,520:INFO:Compiling Metrics
+2020-10-01 14:00:11,526:INFO:Initializing Fold 8
+2020-10-01 14:00:11,526:INFO:Total runtime is 0.07412064870198569 minutes
+2020-10-01 14:00:11,557:INFO:Fitting Model
+2020-10-01 14:00:12,118:INFO:Evaluating Metrics
+2020-10-01 14:00:12,151:INFO:Compiling Metrics
+2020-10-01 14:00:12,158:INFO:Initializing Fold 9
+2020-10-01 14:00:12,159:INFO:Total runtime is 0.08465931415557862 minutes
+2020-10-01 14:00:12,189:INFO:Fitting Model
+2020-10-01 14:00:12,719:INFO:Evaluating Metrics
+2020-10-01 14:00:12,752:INFO:Compiling Metrics
+2020-10-01 14:00:12,759:INFO:Initializing Fold 10
+2020-10-01 14:00:12,759:INFO:Total runtime is 0.09467356602350871 minutes
+2020-10-01 14:00:12,792:INFO:Fitting Model
+2020-10-01 14:00:13,316:INFO:Evaluating Metrics
+2020-10-01 14:00:13,351:INFO:Compiling Metrics
+2020-10-01 14:00:13,358:INFO:Calculating mean and std
+2020-10-01 14:00:13,359:INFO:Creating metrics dataframe
+2020-10-01 14:00:13,375:INFO:Initializing K Neighbors Classifier
+2020-10-01 14:00:13,382:INFO:Initializing Fold 1
+2020-10-01 14:00:13,383:INFO:Total runtime is 0.1050665020942688 minutes
+2020-10-01 14:00:13,415:INFO:Fitting Model
+2020-10-01 14:00:14,191:INFO:Evaluating Metrics
+2020-10-01 14:00:16,536:INFO:Compiling Metrics
+2020-10-01 14:00:16,542:INFO:Initializing Fold 2
+2020-10-01 14:00:16,543:INFO:Total runtime is 0.15773024956385295 minutes
+2020-10-01 14:00:16,590:INFO:Fitting Model
+2020-10-01 14:00:17,561:INFO:Evaluating Metrics
+2020-10-01 14:00:19,894:INFO:Compiling Metrics
+2020-10-01 14:00:19,901:INFO:Initializing Fold 3
+2020-10-01 14:00:19,901:INFO:Total runtime is 0.21370269854863486 minutes
+2020-10-01 14:00:19,925:INFO:Fitting Model
+2020-10-01 14:00:20,877:INFO:Evaluating Metrics
+2020-10-01 14:00:23,299:INFO:Compiling Metrics
+2020-10-01 14:00:23,306:INFO:Initializing Fold 4
+2020-10-01 14:00:23,307:INFO:Total runtime is 0.2704612175623576 minutes
+2020-10-01 14:00:23,331:INFO:Fitting Model
+2020-10-01 14:00:24,288:INFO:Evaluating Metrics
+2020-10-01 14:00:26,612:INFO:Compiling Metrics
+2020-10-01 14:00:26,618:INFO:Initializing Fold 5
+2020-10-01 14:00:26,619:INFO:Total runtime is 0.32566261688868203 minutes
+2020-10-01 14:00:26,644:INFO:Fitting Model
+2020-10-01 14:00:27,627:INFO:Evaluating Metrics
+2020-10-01 14:00:29,944:INFO:Compiling Metrics
+2020-10-01 14:00:29,950:INFO:Initializing Fold 6
+2020-10-01 14:00:29,951:INFO:Total runtime is 0.3811987320582072 minutes
+2020-10-01 14:00:29,977:INFO:Fitting Model
+2020-10-01 14:00:30,812:INFO:Evaluating Metrics
+2020-10-01 14:00:33,251:INFO:Compiling Metrics
+2020-10-01 14:00:33,259:INFO:Initializing Fold 7
+2020-10-01 14:00:33,259:INFO:Total runtime is 0.43634004990259806 minutes
+2020-10-01 14:00:33,284:INFO:Fitting Model
+2020-10-01 14:00:34,264:INFO:Evaluating Metrics
+2020-10-01 14:00:36,598:INFO:Compiling Metrics
+2020-10-01 14:00:36,605:INFO:Initializing Fold 8
+2020-10-01 14:00:36,606:INFO:Total runtime is 0.4921098828315735 minutes
+2020-10-01 14:00:36,630:INFO:Fitting Model
+2020-10-01 14:00:37,605:INFO:Evaluating Metrics
+2020-10-01 14:00:39,924:INFO:Compiling Metrics
+2020-10-01 14:00:39,931:INFO:Initializing Fold 9
+2020-10-01 14:00:39,932:INFO:Total runtime is 0.547543466091156 minutes
+2020-10-01 14:00:39,959:INFO:Fitting Model
+2020-10-01 14:00:40,904:INFO:Evaluating Metrics
+2020-10-01 14:00:43,329:INFO:Compiling Metrics
+2020-10-01 14:00:43,343:INFO:Initializing Fold 10
+2020-10-01 14:00:43,344:INFO:Total runtime is 0.6044198671976725 minutes
+2020-10-01 14:00:43,376:INFO:Fitting Model
+2020-10-01 14:00:44,249:INFO:Evaluating Metrics
+2020-10-01 14:00:46,690:INFO:Compiling Metrics
+2020-10-01 14:00:46,697:INFO:Calculating mean and std
+2020-10-01 14:00:46,697:INFO:Creating metrics dataframe
+2020-10-01 14:00:46,709:INFO:Initializing Naive Bayes
+2020-10-01 14:00:46,717:INFO:Initializing Fold 1
+2020-10-01 14:00:46,718:INFO:Total runtime is 0.6606565515200297 minutes
+2020-10-01 14:00:46,745:INFO:Fitting Model
+2020-10-01 14:00:47,012:INFO:Evaluating Metrics
+2020-10-01 14:00:47,079:INFO:Compiling Metrics
+2020-10-01 14:00:47,085:INFO:Initializing Fold 2
+2020-10-01 14:00:47,086:INFO:Total runtime is 0.6667833010355632 minutes
+2020-10-01 14:00:47,117:INFO:Fitting Model
+2020-10-01 14:00:47,315:INFO:Evaluating Metrics
+2020-10-01 14:00:47,367:INFO:Compiling Metrics
+2020-10-01 14:00:47,373:INFO:Initializing Fold 3
+2020-10-01 14:00:47,374:INFO:Total runtime is 0.6715822696685791 minutes
+2020-10-01 14:00:47,403:INFO:Fitting Model
+2020-10-01 14:00:47,569:INFO:Evaluating Metrics
+2020-10-01 14:00:47,621:INFO:Compiling Metrics
+2020-10-01 14:00:47,628:INFO:Initializing Fold 4
+2020-10-01 14:00:47,628:INFO:Total runtime is 0.6758181691169739 minutes
+2020-10-01 14:00:47,655:INFO:Fitting Model
+2020-10-01 14:00:47,816:INFO:Evaluating Metrics
+2020-10-01 14:00:47,868:INFO:Compiling Metrics
+2020-10-01 14:00:47,874:INFO:Initializing Fold 5
+2020-10-01 14:00:47,874:INFO:Total runtime is 0.6799226999282837 minutes
+2020-10-01 14:00:47,901:INFO:Fitting Model
+2020-10-01 14:00:48,060:INFO:Evaluating Metrics
+2020-10-01 14:00:48,111:INFO:Compiling Metrics
+2020-10-01 14:00:48,116:INFO:Initializing Fold 6
+2020-10-01 14:00:48,117:INFO:Total runtime is 0.6839598695437114 minutes
+2020-10-01 14:00:48,146:INFO:Fitting Model
+2020-10-01 14:00:48,299:INFO:Evaluating Metrics
+2020-10-01 14:00:48,351:INFO:Compiling Metrics
+2020-10-01 14:00:48,357:INFO:Initializing Fold 7
+2020-10-01 14:00:48,358:INFO:Total runtime is 0.6879754662513733 minutes
+2020-10-01 14:00:48,386:INFO:Fitting Model
+2020-10-01 14:00:48,585:INFO:Evaluating Metrics
+2020-10-01 14:00:48,635:INFO:Compiling Metrics
+2020-10-01 14:00:48,641:INFO:Initializing Fold 8
+2020-10-01 14:00:48,642:INFO:Total runtime is 0.6927122513453166 minutes
+2020-10-01 14:00:48,670:INFO:Fitting Model
+2020-10-01 14:00:48,828:INFO:Evaluating Metrics
+2020-10-01 14:00:48,880:INFO:Compiling Metrics
+2020-10-01 14:00:48,885:INFO:Initializing Fold 9
+2020-10-01 14:00:48,886:INFO:Total runtime is 0.696781865755717 minutes
+2020-10-01 14:00:48,914:INFO:Fitting Model
+2020-10-01 14:00:49,065:INFO:Evaluating Metrics
+2020-10-01 14:00:49,118:INFO:Compiling Metrics
+2020-10-01 14:00:49,123:INFO:Initializing Fold 10
+2020-10-01 14:00:49,124:INFO:Total runtime is 0.7007483839988708 minutes
+2020-10-01 14:00:49,151:INFO:Fitting Model
+2020-10-01 14:00:49,308:INFO:Evaluating Metrics
+2020-10-01 14:00:49,358:INFO:Compiling Metrics
+2020-10-01 14:00:49,364:INFO:Calculating mean and std
+2020-10-01 14:00:49,364:INFO:Creating metrics dataframe
+2020-10-01 14:00:49,375:INFO:Initializing Decision Tree Classifier
+2020-10-01 14:00:49,381:INFO:Initializing Fold 1
+2020-10-01 14:00:49,382:INFO:Total runtime is 0.7050430337587993 minutes
+2020-10-01 14:00:49,411:INFO:Fitting Model
+2020-10-01 14:00:50,285:INFO:Evaluating Metrics
+2020-10-01 14:00:50,319:INFO:Compiling Metrics
+2020-10-01 14:00:50,326:INFO:Initializing Fold 2
+2020-10-01 14:00:50,327:INFO:Total runtime is 0.7207945346832276 minutes
+2020-10-01 14:00:50,353:INFO:Fitting Model
+2020-10-01 14:00:51,222:INFO:Evaluating Metrics
+2020-10-01 14:00:51,257:INFO:Compiling Metrics
+2020-10-01 14:00:51,263:INFO:Initializing Fold 3
+2020-10-01 14:00:51,263:INFO:Total runtime is 0.7364055355389914 minutes
+2020-10-01 14:00:51,289:INFO:Fitting Model
+2020-10-01 14:00:52,149:INFO:Evaluating Metrics
+2020-10-01 14:00:52,186:INFO:Compiling Metrics
+2020-10-01 14:00:52,192:INFO:Initializing Fold 4
+2020-10-01 14:00:52,193:INFO:Total runtime is 0.7518923362096152 minutes
+2020-10-01 14:00:52,220:INFO:Fitting Model
+2020-10-01 14:00:53,068:INFO:Evaluating Metrics
+2020-10-01 14:00:53,101:INFO:Compiling Metrics
+2020-10-01 14:00:53,107:INFO:Initializing Fold 5
+2020-10-01 14:00:53,108:INFO:Total runtime is 0.7671481013298036 minutes
+2020-10-01 14:00:53,136:INFO:Fitting Model
+2020-10-01 14:00:53,970:INFO:Evaluating Metrics
+2020-10-01 14:00:54,005:INFO:Compiling Metrics
+2020-10-01 14:00:54,011:INFO:Initializing Fold 6
+2020-10-01 14:00:54,012:INFO:Total runtime is 0.7822081486384075 minutes
+2020-10-01 14:00:54,038:INFO:Fitting Model
+2020-10-01 14:00:54,947:INFO:Evaluating Metrics
+2020-10-01 14:00:54,980:INFO:Compiling Metrics
+2020-10-01 14:00:54,986:INFO:Initializing Fold 7
+2020-10-01 14:00:54,987:INFO:Total runtime is 0.7984674016634624 minutes
+2020-10-01 14:00:55,014:INFO:Fitting Model
+2020-10-01 14:00:55,856:INFO:Evaluating Metrics
+2020-10-01 14:00:55,890:INFO:Compiling Metrics
+2020-10-01 14:00:55,896:INFO:Initializing Fold 8
+2020-10-01 14:00:55,897:INFO:Total runtime is 0.813629166285197 minutes
+2020-10-01 14:00:55,924:INFO:Fitting Model
+2020-10-01 14:00:56,790:INFO:Evaluating Metrics
+2020-10-01 14:00:56,823:INFO:Compiling Metrics
+2020-10-01 14:00:56,829:INFO:Initializing Fold 9
+2020-10-01 14:00:56,830:INFO:Total runtime is 0.8291780471801758 minutes
+2020-10-01 14:00:56,857:INFO:Fitting Model
+2020-10-01 14:00:57,739:INFO:Evaluating Metrics
+2020-10-01 14:00:57,772:INFO:Compiling Metrics
+2020-10-01 14:00:57,778:INFO:Initializing Fold 10
+2020-10-01 14:00:57,779:INFO:Total runtime is 0.8449925700823466 minutes
+2020-10-01 14:00:57,807:INFO:Fitting Model
+2020-10-01 14:00:58,701:INFO:Evaluating Metrics
+2020-10-01 14:00:58,735:INFO:Compiling Metrics
+2020-10-01 14:00:58,740:INFO:Calculating mean and std
+2020-10-01 14:00:58,741:INFO:Creating metrics dataframe
+2020-10-01 14:00:58,755:INFO:Initializing SVM - Linear Kernel
+2020-10-01 14:00:58,761:INFO:Initializing Fold 1
+2020-10-01 14:00:58,761:INFO:Total runtime is 0.8613704681396485 minutes
+2020-10-01 14:00:58,790:INFO:Fitting Model
+2020-10-01 14:00:59,866:INFO:Evaluating Metrics
+2020-10-01 14:00:59,867:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:00:59,883:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:00:59,885:INFO:Compiling Metrics
+2020-10-01 14:00:59,891:INFO:Initializing Fold 2
+2020-10-01 14:00:59,892:INFO:Total runtime is 0.880212152004242 minutes
+2020-10-01 14:00:59,921:INFO:Fitting Model
+2020-10-01 14:01:00,799:INFO:Evaluating Metrics
+2020-10-01 14:01:00,800:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:00,815:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:00,817:INFO:Compiling Metrics
+2020-10-01 14:01:00,823:INFO:Initializing Fold 3
+2020-10-01 14:01:00,824:INFO:Total runtime is 0.8957458178202311 minutes
+2020-10-01 14:01:00,852:INFO:Fitting Model
+2020-10-01 14:01:02,342:INFO:Evaluating Metrics
+2020-10-01 14:01:02,342:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:02,356:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:02,358:INFO:Compiling Metrics
+2020-10-01 14:01:02,364:INFO:Initializing Fold 4
+2020-10-01 14:01:02,365:INFO:Total runtime is 0.9214291175206503 minutes
+2020-10-01 14:01:02,394:INFO:Fitting Model
+2020-10-01 14:01:03,997:INFO:Evaluating Metrics
+2020-10-01 14:01:03,997:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:04,011:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:04,014:INFO:Compiling Metrics
+2020-10-01 14:01:04,019:INFO:Initializing Fold 5
+2020-10-01 14:01:04,020:INFO:Total runtime is 0.9490119973818462 minutes
+2020-10-01 14:01:04,049:INFO:Fitting Model
+2020-10-01 14:01:05,601:INFO:Evaluating Metrics
+2020-10-01 14:01:05,602:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:05,616:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:05,619:INFO:Compiling Metrics
+2020-10-01 14:01:05,625:INFO:Initializing Fold 6
+2020-10-01 14:01:05,626:INFO:Total runtime is 0.9757771174112956 minutes
+2020-10-01 14:01:05,656:INFO:Fitting Model
+2020-10-01 14:01:06,762:INFO:Evaluating Metrics
+2020-10-01 14:01:06,763:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:06,777:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:06,779:INFO:Compiling Metrics
+2020-10-01 14:01:06,785:INFO:Initializing Fold 7
+2020-10-01 14:01:06,786:INFO:Total runtime is 0.9951089859008789 minutes
+2020-10-01 14:01:06,816:INFO:Fitting Model
+2020-10-01 14:01:07,564:INFO:Evaluating Metrics
+2020-10-01 14:01:07,564:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:07,579:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:07,581:INFO:Compiling Metrics
+2020-10-01 14:01:07,587:INFO:Initializing Fold 8
+2020-10-01 14:01:07,587:INFO:Total runtime is 1.0084691325823467 minutes
+2020-10-01 14:01:07,617:INFO:Fitting Model
+2020-10-01 14:01:08,776:INFO:Evaluating Metrics
+2020-10-01 14:01:08,776:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:08,791:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:08,793:INFO:Compiling Metrics
+2020-10-01 14:01:08,800:INFO:Initializing Fold 9
+2020-10-01 14:01:08,801:INFO:Total runtime is 1.0286943515141806 minutes
+2020-10-01 14:01:08,830:INFO:Fitting Model
+2020-10-01 14:01:09,964:INFO:Evaluating Metrics
+2020-10-01 14:01:09,964:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:09,980:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:09,982:INFO:Compiling Metrics
+2020-10-01 14:01:09,988:INFO:Initializing Fold 10
+2020-10-01 14:01:09,989:INFO:Total runtime is 1.0485012849171957 minutes
+2020-10-01 14:01:10,019:INFO:Fitting Model
+2020-10-01 14:01:11,156:INFO:Evaluating Metrics
+2020-10-01 14:01:11,156:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:11,171:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:11,173:INFO:Compiling Metrics
+2020-10-01 14:01:11,178:INFO:Calculating mean and std
+2020-10-01 14:01:11,179:INFO:Creating metrics dataframe
+2020-10-01 14:01:11,193:INFO:Initializing Ridge Classifier
+2020-10-01 14:01:11,200:INFO:Initializing Fold 1
+2020-10-01 14:01:11,201:INFO:Total runtime is 1.068692747751872 minutes
+2020-10-01 14:01:11,233:INFO:Fitting Model
+2020-10-01 14:01:11,786:INFO:Evaluating Metrics
+2020-10-01 14:01:11,786:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:11,799:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:11,802:INFO:Compiling Metrics
+2020-10-01 14:01:11,808:INFO:Initializing Fold 2
+2020-10-01 14:01:11,808:INFO:Total runtime is 1.0788198510805769 minutes
+2020-10-01 14:01:11,843:INFO:Fitting Model
+2020-10-01 14:01:12,241:INFO:Evaluating Metrics
+2020-10-01 14:01:12,241:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:12,258:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:12,261:INFO:Compiling Metrics
+2020-10-01 14:01:12,267:INFO:Initializing Fold 3
+2020-10-01 14:01:12,268:INFO:Total runtime is 1.0864779829978946 minutes
+2020-10-01 14:01:12,296:INFO:Fitting Model
+2020-10-01 14:01:12,694:INFO:Evaluating Metrics
+2020-10-01 14:01:12,694:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:12,709:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:12,711:INFO:Compiling Metrics
+2020-10-01 14:01:12,717:INFO:Initializing Fold 4
+2020-10-01 14:01:12,717:INFO:Total runtime is 1.0939734498659772 minutes
+2020-10-01 14:01:12,746:INFO:Fitting Model
+2020-10-01 14:01:13,146:INFO:Evaluating Metrics
+2020-10-01 14:01:13,146:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:13,159:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:13,161:INFO:Compiling Metrics
+2020-10-01 14:01:13,167:INFO:Initializing Fold 5
+2020-10-01 14:01:13,168:INFO:Total runtime is 1.1014780521392824 minutes
+2020-10-01 14:01:13,196:INFO:Fitting Model
+2020-10-01 14:01:13,601:INFO:Evaluating Metrics
+2020-10-01 14:01:13,601:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:13,614:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:13,616:INFO:Compiling Metrics
+2020-10-01 14:01:13,623:INFO:Initializing Fold 6
+2020-10-01 14:01:13,623:INFO:Total runtime is 1.1090685009956363 minutes
+2020-10-01 14:01:13,653:INFO:Fitting Model
+2020-10-01 14:01:14,051:INFO:Evaluating Metrics
+2020-10-01 14:01:14,051:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:14,064:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:14,066:INFO:Compiling Metrics
+2020-10-01 14:01:14,072:INFO:Initializing Fold 7
+2020-10-01 14:01:14,072:INFO:Total runtime is 1.116557053724925 minutes
+2020-10-01 14:01:14,102:INFO:Fitting Model
+2020-10-01 14:01:14,499:INFO:Evaluating Metrics
+2020-10-01 14:01:14,499:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:14,512:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:14,515:INFO:Compiling Metrics
+2020-10-01 14:01:14,521:INFO:Initializing Fold 8
+2020-10-01 14:01:14,521:INFO:Total runtime is 1.1240347981452945 minutes
+2020-10-01 14:01:14,549:INFO:Fitting Model
+2020-10-01 14:01:14,950:INFO:Evaluating Metrics
+2020-10-01 14:01:14,950:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:14,963:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:14,966:INFO:Compiling Metrics
+2020-10-01 14:01:14,972:INFO:Initializing Fold 9
+2020-10-01 14:01:14,973:INFO:Total runtime is 1.1315578341484074 minutes
+2020-10-01 14:01:15,002:INFO:Fitting Model
+2020-10-01 14:01:15,400:INFO:Evaluating Metrics
+2020-10-01 14:01:15,400:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:15,413:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:15,416:INFO:Compiling Metrics
+2020-10-01 14:01:15,421:INFO:Initializing Fold 10
+2020-10-01 14:01:15,422:INFO:Total runtime is 1.1390452027320865 minutes
+2020-10-01 14:01:15,453:INFO:Fitting Model
+2020-10-01 14:01:15,854:INFO:Evaluating Metrics
+2020-10-01 14:01:15,854:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:01:15,867:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:01:15,869:INFO:Compiling Metrics
+2020-10-01 14:01:15,875:INFO:Calculating mean and std
+2020-10-01 14:01:15,875:INFO:Creating metrics dataframe
+2020-10-01 14:01:15,886:INFO:Initializing Random Forest Classifier
+2020-10-01 14:01:15,893:INFO:Initializing Fold 1
+2020-10-01 14:01:15,894:INFO:Total runtime is 1.1469113190968836 minutes
+2020-10-01 14:01:15,927:INFO:Fitting Model
+2020-10-01 14:01:16,069:INFO:Evaluating Metrics
+2020-10-01 14:01:16,334:INFO:Compiling Metrics
+2020-10-01 14:01:16,344:INFO:Initializing Fold 2
+2020-10-01 14:01:16,345:INFO:Total runtime is 1.154427333672842 minutes
+2020-10-01 14:01:16,403:INFO:Fitting Model
+2020-10-01 14:01:16,553:INFO:Evaluating Metrics
+2020-10-01 14:01:16,814:INFO:Compiling Metrics
+2020-10-01 14:01:16,823:INFO:Initializing Fold 3
+2020-10-01 14:01:16,823:INFO:Total runtime is 1.1624038338661198 minutes
+2020-10-01 14:01:16,883:INFO:Fitting Model
+2020-10-01 14:01:17,033:INFO:Evaluating Metrics
+2020-10-01 14:01:17,295:INFO:Compiling Metrics
+2020-10-01 14:01:17,304:INFO:Initializing Fold 4
+2020-10-01 14:01:17,304:INFO:Total runtime is 1.1704221010208133 minutes
+2020-10-01 14:01:17,361:INFO:Fitting Model
+2020-10-01 14:01:17,513:INFO:Evaluating Metrics
+2020-10-01 14:01:17,776:INFO:Compiling Metrics
+2020-10-01 14:01:17,785:INFO:Initializing Fold 5
+2020-10-01 14:01:17,786:INFO:Total runtime is 1.1784476161003117 minutes
+2020-10-01 14:01:17,845:INFO:Fitting Model
+2020-10-01 14:01:17,995:INFO:Evaluating Metrics
+2020-10-01 14:01:18,265:INFO:Compiling Metrics
+2020-10-01 14:01:18,274:INFO:Initializing Fold 6
+2020-10-01 14:01:18,275:INFO:Total runtime is 1.18659600019455 minutes
+2020-10-01 14:01:18,333:INFO:Fitting Model
+2020-10-01 14:01:18,486:INFO:Evaluating Metrics
+2020-10-01 14:01:18,749:INFO:Compiling Metrics
+2020-10-01 14:01:18,758:INFO:Initializing Fold 7
+2020-10-01 14:01:18,758:INFO:Total runtime is 1.1946545004844669 minutes
+2020-10-01 14:01:18,815:INFO:Fitting Model
+2020-10-01 14:01:18,966:INFO:Evaluating Metrics
+2020-10-01 14:01:19,229:INFO:Compiling Metrics
+2020-10-01 14:01:19,238:INFO:Initializing Fold 8
+2020-10-01 14:01:19,239:INFO:Total runtime is 1.2026596983273827 minutes
+2020-10-01 14:01:19,296:INFO:Fitting Model
+2020-10-01 14:01:19,445:INFO:Evaluating Metrics
+2020-10-01 14:01:19,707:INFO:Compiling Metrics
+2020-10-01 14:01:19,716:INFO:Initializing Fold 9
+2020-10-01 14:01:19,716:INFO:Total runtime is 1.2106223821640019 minutes
+2020-10-01 14:01:19,776:INFO:Fitting Model
+2020-10-01 14:01:19,928:INFO:Evaluating Metrics
+2020-10-01 14:01:20,187:INFO:Compiling Metrics
+2020-10-01 14:01:20,196:INFO:Initializing Fold 10
+2020-10-01 14:01:20,197:INFO:Total runtime is 1.2186328848203027 minutes
+2020-10-01 14:01:20,253:INFO:Fitting Model
+2020-10-01 14:01:20,405:INFO:Evaluating Metrics
+2020-10-01 14:01:20,670:INFO:Compiling Metrics
+2020-10-01 14:01:20,679:INFO:Calculating mean and std
+2020-10-01 14:01:20,680:INFO:Creating metrics dataframe
+2020-10-01 14:01:20,694:INFO:Initializing Quadratic Discriminant Analysis
+2020-10-01 14:01:20,701:INFO:Initializing Fold 1
+2020-10-01 14:01:20,702:INFO:Total runtime is 1.2270460009574895 minutes
+2020-10-01 14:01:20,764:INFO:Fitting Model
+2020-10-01 14:01:23,463:INFO:Evaluating Metrics
+2020-10-01 14:01:23,604:INFO:Compiling Metrics
+2020-10-01 14:01:23,610:INFO:Initializing Fold 2
+2020-10-01 14:01:23,611:INFO:Total runtime is 1.2755287011464442 minutes
+2020-10-01 14:01:23,640:INFO:Fitting Model
+2020-10-01 14:01:26,185:INFO:Evaluating Metrics
+2020-10-01 14:01:26,315:INFO:Compiling Metrics
+2020-10-01 14:01:26,320:INFO:Initializing Fold 3
+2020-10-01 14:01:26,321:INFO:Total runtime is 1.320701432228089 minutes
+2020-10-01 14:01:26,375:INFO:Fitting Model
+2020-10-01 14:01:28,905:INFO:Evaluating Metrics
+2020-10-01 14:01:29,033:INFO:Compiling Metrics
+2020-10-01 14:01:29,038:INFO:Initializing Fold 4
+2020-10-01 14:01:29,039:INFO:Total runtime is 1.3660011013348903 minutes
+2020-10-01 14:01:29,069:INFO:Fitting Model
+2020-10-01 14:01:31,813:INFO:Evaluating Metrics
+2020-10-01 14:01:31,983:INFO:Compiling Metrics
+2020-10-01 14:01:31,990:INFO:Initializing Fold 5
+2020-10-01 14:01:31,991:INFO:Total runtime is 1.4151931007703151 minutes
+2020-10-01 14:01:32,026:INFO:Fitting Model
+2020-10-01 14:01:35,134:INFO:Evaluating Metrics
+2020-10-01 14:01:35,348:INFO:Compiling Metrics
+2020-10-01 14:01:35,356:INFO:Initializing Fold 6
+2020-10-01 14:01:35,356:INFO:Total runtime is 1.471288736661276 minutes
+2020-10-01 14:01:35,425:INFO:Fitting Model
+2020-10-01 14:01:38,648:INFO:Evaluating Metrics
+2020-10-01 14:01:38,841:INFO:Compiling Metrics
+2020-10-01 14:01:38,848:INFO:Initializing Fold 7
+2020-10-01 14:01:38,849:INFO:Total runtime is 1.529492382208507 minutes
+2020-10-01 14:01:38,886:INFO:Fitting Model
+2020-10-01 14:01:42,104:INFO:Evaluating Metrics
+2020-10-01 14:01:42,312:INFO:Compiling Metrics
+2020-10-01 14:01:42,320:INFO:Initializing Fold 8
+2020-10-01 14:01:42,321:INFO:Total runtime is 1.5873699506123866 minutes
+2020-10-01 14:01:42,357:INFO:Fitting Model
+2020-10-01 14:01:45,647:INFO:Evaluating Metrics
+2020-10-01 14:01:45,836:INFO:Compiling Metrics
+2020-10-01 14:01:45,845:INFO:Initializing Fold 9
+2020-10-01 14:01:45,846:INFO:Total runtime is 1.64611436923345 minutes
+2020-10-01 14:01:45,881:INFO:Fitting Model
+2020-10-01 14:01:49,089:INFO:Evaluating Metrics
+2020-10-01 14:01:49,282:INFO:Compiling Metrics
+2020-10-01 14:01:49,289:INFO:Initializing Fold 10
+2020-10-01 14:01:49,290:INFO:Total runtime is 1.7035104990005498 minutes
+2020-10-01 14:01:49,353:INFO:Fitting Model
+2020-10-01 14:01:52,546:INFO:Evaluating Metrics
+2020-10-01 14:01:52,738:INFO:Compiling Metrics
+2020-10-01 14:01:52,752:INFO:Calculating mean and std
+2020-10-01 14:01:52,753:INFO:Creating metrics dataframe
+2020-10-01 14:01:52,771:INFO:Initializing Ada Boost Classifier
+2020-10-01 14:01:52,781:INFO:Initializing Fold 1
+2020-10-01 14:01:52,782:INFO:Total runtime is 1.7617198705673223 minutes
+2020-10-01 14:01:52,855:INFO:Fitting Model
+2020-10-01 14:01:56,357:INFO:Evaluating Metrics
+2020-10-01 14:01:56,504:INFO:Compiling Metrics
+2020-10-01 14:01:56,510:INFO:Initializing Fold 2
+2020-10-01 14:01:56,511:INFO:Total runtime is 1.8238641858100897 minutes
+2020-10-01 14:01:56,540:INFO:Fitting Model
+2020-10-01 14:01:59,632:INFO:Evaluating Metrics
+2020-10-01 14:01:59,776:INFO:Compiling Metrics
+2020-10-01 14:01:59,782:INFO:Initializing Fold 3
+2020-10-01 14:01:59,782:INFO:Total runtime is 1.8783891836802171 minutes
+2020-10-01 14:01:59,811:INFO:Fitting Model
+2020-10-01 14:02:03,019:INFO:Evaluating Metrics
+2020-10-01 14:02:03,161:INFO:Compiling Metrics
+2020-10-01 14:02:03,167:INFO:Initializing Fold 4
+2020-10-01 14:02:03,167:INFO:Total runtime is 1.9348008831342067 minutes
+2020-10-01 14:02:03,194:INFO:Fitting Model
+2020-10-01 14:02:06,265:INFO:Evaluating Metrics
+2020-10-01 14:02:06,407:INFO:Compiling Metrics
+2020-10-01 14:02:06,412:INFO:Initializing Fold 5
+2020-10-01 14:02:06,413:INFO:Total runtime is 1.988901849587759 minutes
+2020-10-01 14:02:06,440:INFO:Fitting Model
+2020-10-01 14:02:09,517:INFO:Evaluating Metrics
+2020-10-01 14:02:09,660:INFO:Compiling Metrics
+2020-10-01 14:02:09,665:INFO:Initializing Fold 6
+2020-10-01 14:02:09,666:INFO:Total runtime is 2.043117519219717 minutes
+2020-10-01 14:02:09,693:INFO:Fitting Model
+2020-10-01 14:02:12,814:INFO:Evaluating Metrics
+2020-10-01 14:02:12,956:INFO:Compiling Metrics
+2020-10-01 14:02:12,962:INFO:Initializing Fold 7
+2020-10-01 14:02:12,962:INFO:Total runtime is 2.098051087061565 minutes
+2020-10-01 14:02:12,989:INFO:Fitting Model
+2020-10-01 14:02:16,088:INFO:Evaluating Metrics
+2020-10-01 14:02:16,230:INFO:Compiling Metrics
+2020-10-01 14:02:16,236:INFO:Initializing Fold 8
+2020-10-01 14:02:16,237:INFO:Total runtime is 2.152627619107565 minutes
+2020-10-01 14:02:16,264:INFO:Fitting Model
+2020-10-01 14:02:19,345:INFO:Evaluating Metrics
+2020-10-01 14:02:19,488:INFO:Compiling Metrics
+2020-10-01 14:02:19,494:INFO:Initializing Fold 9
+2020-10-01 14:02:19,494:INFO:Total runtime is 2.2069209019343066 minutes
+2020-10-01 14:02:19,523:INFO:Fitting Model
+2020-10-01 14:02:22,603:INFO:Evaluating Metrics
+2020-10-01 14:02:22,751:INFO:Compiling Metrics
+2020-10-01 14:02:22,756:INFO:Initializing Fold 10
+2020-10-01 14:02:22,757:INFO:Total runtime is 2.2612921198209133 minutes
+2020-10-01 14:02:22,783:INFO:Fitting Model
+2020-10-01 14:02:25,863:INFO:Evaluating Metrics
+2020-10-01 14:02:26,008:INFO:Compiling Metrics
+2020-10-01 14:02:26,014:INFO:Calculating mean and std
+2020-10-01 14:02:26,014:INFO:Creating metrics dataframe
+2020-10-01 14:02:26,026:INFO:Initializing Gradient Boosting Classifier
+2020-10-01 14:02:26,032:INFO:Initializing Fold 1
+2020-10-01 14:02:26,033:INFO:Total runtime is 2.315893236796062 minutes
+2020-10-01 14:02:26,060:INFO:Fitting Model
+2020-10-01 14:02:36,148:INFO:Evaluating Metrics
+2020-10-01 14:02:36,188:INFO:Compiling Metrics
+2020-10-01 14:02:36,194:INFO:Initializing Fold 2
+2020-10-01 14:02:36,194:INFO:Total runtime is 2.485250918070476 minutes
+2020-10-01 14:02:36,220:INFO:Fitting Model
+2020-10-01 14:02:46,310:INFO:Evaluating Metrics
+2020-10-01 14:02:46,348:INFO:Compiling Metrics
+2020-10-01 14:02:46,354:INFO:Initializing Fold 3
+2020-10-01 14:02:46,354:INFO:Total runtime is 2.6545853177706404 minutes
+2020-10-01 14:02:46,381:INFO:Fitting Model
+2020-10-01 14:02:56,445:INFO:Evaluating Metrics
+2020-10-01 14:02:56,482:INFO:Compiling Metrics
+2020-10-01 14:02:56,488:INFO:Initializing Fold 4
+2020-10-01 14:02:56,488:INFO:Total runtime is 2.8234889348347987 minutes
+2020-10-01 14:02:56,516:INFO:Fitting Model
+2020-10-01 14:03:06,720:INFO:Evaluating Metrics
+2020-10-01 14:03:06,756:INFO:Compiling Metrics
+2020-10-01 14:03:06,762:INFO:Initializing Fold 5
+2020-10-01 14:03:06,763:INFO:Total runtime is 2.9947286486625675 minutes
+2020-10-01 14:03:06,791:INFO:Fitting Model
+2020-10-01 14:03:16,875:INFO:Evaluating Metrics
+2020-10-01 14:03:16,912:INFO:Compiling Metrics
+2020-10-01 14:03:16,917:INFO:Initializing Fold 6
+2020-10-01 14:03:16,918:INFO:Total runtime is 3.1639815012613934 minutes
+2020-10-01 14:03:16,946:INFO:Fitting Model
+2020-10-01 14:03:26,991:INFO:Evaluating Metrics
+2020-10-01 14:03:27,029:INFO:Compiling Metrics
+2020-10-01 14:03:27,036:INFO:Initializing Fold 7
+2020-10-01 14:03:27,036:INFO:Total runtime is 3.332616400718689 minutes
+2020-10-01 14:03:27,063:INFO:Fitting Model
+2020-10-01 14:03:37,148:INFO:Evaluating Metrics
+2020-10-01 14:03:37,186:INFO:Compiling Metrics
+2020-10-01 14:03:37,191:INFO:Initializing Fold 8
+2020-10-01 14:03:37,192:INFO:Total runtime is 3.501878166198731 minutes
+2020-10-01 14:03:37,220:INFO:Fitting Model
+2020-10-01 14:03:47,428:INFO:Evaluating Metrics
+2020-10-01 14:03:47,466:INFO:Compiling Metrics
+2020-10-01 14:03:47,472:INFO:Initializing Fold 9
+2020-10-01 14:03:47,473:INFO:Total runtime is 3.673227365811666 minutes
+2020-10-01 14:03:47,499:INFO:Fitting Model
+2020-10-01 14:03:57,554:INFO:Evaluating Metrics
+2020-10-01 14:03:57,591:INFO:Compiling Metrics
+2020-10-01 14:03:57,597:INFO:Initializing Fold 10
+2020-10-01 14:03:57,597:INFO:Total runtime is 3.841973702112834 minutes
+2020-10-01 14:03:57,624:INFO:Fitting Model
+2020-10-01 14:04:07,729:INFO:Evaluating Metrics
+2020-10-01 14:04:07,768:INFO:Compiling Metrics
+2020-10-01 14:04:07,773:INFO:Calculating mean and std
+2020-10-01 14:04:07,773:INFO:Creating metrics dataframe
+2020-10-01 14:04:07,785:INFO:Initializing Linear Discriminant Analysis
+2020-10-01 14:04:07,792:INFO:Initializing Fold 1
+2020-10-01 14:04:07,792:INFO:Total runtime is 4.0118850032488504 minutes
+2020-10-01 14:04:07,819:INFO:Fitting Model
+2020-10-01 14:04:11,235:INFO:Evaluating Metrics
+2020-10-01 14:04:11,262:INFO:Compiling Metrics
+2020-10-01 14:04:11,268:INFO:Initializing Fold 2
+2020-10-01 14:04:11,269:INFO:Total runtime is 4.069824866453806 minutes
+2020-10-01 14:04:11,298:INFO:Fitting Model
+2020-10-01 14:04:14,616:INFO:Evaluating Metrics
+2020-10-01 14:04:14,644:INFO:Compiling Metrics
+2020-10-01 14:04:14,650:INFO:Initializing Fold 3
+2020-10-01 14:04:14,650:INFO:Total runtime is 4.1261870185534155 minutes
+2020-10-01 14:04:14,678:INFO:Fitting Model
+2020-10-01 14:04:17,985:INFO:Evaluating Metrics
+2020-10-01 14:04:18,016:INFO:Compiling Metrics
+2020-10-01 14:04:18,021:INFO:Initializing Fold 4
+2020-10-01 14:04:18,022:INFO:Total runtime is 4.182383914788564 minutes
+2020-10-01 14:04:18,052:INFO:Fitting Model
+2020-10-01 14:04:21,316:INFO:Evaluating Metrics
+2020-10-01 14:04:21,343:INFO:Compiling Metrics
+2020-10-01 14:04:21,349:INFO:Initializing Fold 5
+2020-10-01 14:04:21,350:INFO:Total runtime is 4.237843716144561 minutes
+2020-10-01 14:04:21,378:INFO:Fitting Model
+2020-10-01 14:04:24,625:INFO:Evaluating Metrics
+2020-10-01 14:04:24,656:INFO:Compiling Metrics
+2020-10-01 14:04:24,661:INFO:Initializing Fold 6
+2020-10-01 14:04:24,662:INFO:Total runtime is 4.2930491010348 minutes
+2020-10-01 14:04:24,692:INFO:Fitting Model
+2020-10-01 14:04:28,101:INFO:Evaluating Metrics
+2020-10-01 14:04:28,129:INFO:Compiling Metrics
+2020-10-01 14:04:28,134:INFO:Initializing Fold 7
+2020-10-01 14:04:28,135:INFO:Total runtime is 4.350931084156036 minutes
+2020-10-01 14:04:28,163:INFO:Fitting Model
+2020-10-01 14:04:31,524:INFO:Evaluating Metrics
+2020-10-01 14:04:31,554:INFO:Compiling Metrics
+2020-10-01 14:04:31,560:INFO:Initializing Fold 8
+2020-10-01 14:04:31,560:INFO:Total runtime is 4.408021648724874 minutes
+2020-10-01 14:04:31,588:INFO:Fitting Model
+2020-10-01 14:04:34,960:INFO:Evaluating Metrics
+2020-10-01 14:04:34,988:INFO:Compiling Metrics
+2020-10-01 14:04:34,994:INFO:Initializing Fold 9
+2020-10-01 14:04:34,995:INFO:Total runtime is 4.465259130795796 minutes
+2020-10-01 14:04:35,024:INFO:Fitting Model
+2020-10-01 14:04:38,312:INFO:Evaluating Metrics
+2020-10-01 14:04:38,340:INFO:Compiling Metrics
+2020-10-01 14:04:38,345:INFO:Initializing Fold 10
+2020-10-01 14:04:38,346:INFO:Total runtime is 4.521118716398874 minutes
+2020-10-01 14:04:38,374:INFO:Fitting Model
+2020-10-01 14:04:41,665:INFO:Evaluating Metrics
+2020-10-01 14:04:41,693:INFO:Compiling Metrics
+2020-10-01 14:04:41,698:INFO:Calculating mean and std
+2020-10-01 14:04:41,699:INFO:Creating metrics dataframe
+2020-10-01 14:04:41,711:INFO:Initializing Extra Trees Classifier
+2020-10-01 14:04:41,718:INFO:Initializing Fold 1
+2020-10-01 14:04:41,719:INFO:Total runtime is 4.577326067288715 minutes
+2020-10-01 14:04:41,750:INFO:Fitting Model
+2020-10-01 14:04:42,334:INFO:Evaluating Metrics
+2020-10-01 14:04:42,602:INFO:Compiling Metrics
+2020-10-01 14:04:42,611:INFO:Initializing Fold 2
+2020-10-01 14:04:42,612:INFO:Total runtime is 4.592208067576089 minutes
+2020-10-01 14:04:42,668:INFO:Fitting Model
+2020-10-01 14:04:43,269:INFO:Evaluating Metrics
+2020-10-01 14:04:43,528:INFO:Compiling Metrics
+2020-10-01 14:04:43,537:INFO:Initializing Fold 3
+2020-10-01 14:04:43,538:INFO:Total runtime is 4.607647502422331 minutes
+2020-10-01 14:04:43,593:INFO:Fitting Model
+2020-10-01 14:04:44,184:INFO:Evaluating Metrics
+2020-10-01 14:04:44,453:INFO:Compiling Metrics
+2020-10-01 14:04:44,462:INFO:Initializing Fold 4
+2020-10-01 14:04:44,463:INFO:Total runtime is 4.623059586683907 minutes
+2020-10-01 14:04:44,516:INFO:Fitting Model
+2020-10-01 14:04:45,109:INFO:Evaluating Metrics
+2020-10-01 14:04:45,380:INFO:Compiling Metrics
+2020-10-01 14:04:45,389:INFO:Initializing Fold 5
+2020-10-01 14:04:45,390:INFO:Total runtime is 4.6385215838750185 minutes
+2020-10-01 14:04:45,447:INFO:Fitting Model
+2020-10-01 14:04:46,042:INFO:Evaluating Metrics
+2020-10-01 14:04:46,310:INFO:Compiling Metrics
+2020-10-01 14:04:46,320:INFO:Initializing Fold 6
+2020-10-01 14:04:46,321:INFO:Total runtime is 4.654029782613117 minutes
+2020-10-01 14:04:46,376:INFO:Fitting Model
+2020-10-01 14:04:46,958:INFO:Evaluating Metrics
+2020-10-01 14:04:47,222:INFO:Compiling Metrics
+2020-10-01 14:04:47,231:INFO:Initializing Fold 7
+2020-10-01 14:04:47,231:INFO:Total runtime is 4.669203102588652 minutes
+2020-10-01 14:04:47,286:INFO:Fitting Model
+2020-10-01 14:04:47,880:INFO:Evaluating Metrics
+2020-10-01 14:04:48,143:INFO:Compiling Metrics
+2020-10-01 14:04:48,152:INFO:Initializing Fold 8
+2020-10-01 14:04:48,152:INFO:Total runtime is 4.684553917249042 minutes
+2020-10-01 14:04:48,207:INFO:Fitting Model
+2020-10-01 14:04:48,796:INFO:Evaluating Metrics
+2020-10-01 14:04:49,061:INFO:Compiling Metrics
+2020-10-01 14:04:49,070:INFO:Initializing Fold 9
+2020-10-01 14:04:49,070:INFO:Total runtime is 4.699854167302448 minutes
+2020-10-01 14:04:49,123:INFO:Fitting Model
+2020-10-01 14:04:49,716:INFO:Evaluating Metrics
+2020-10-01 14:04:49,977:INFO:Compiling Metrics
+2020-10-01 14:04:49,984:INFO:Initializing Fold 10
+2020-10-01 14:04:49,985:INFO:Total runtime is 4.7150982141494735 minutes
+2020-10-01 14:04:50,039:INFO:Fitting Model
+2020-10-01 14:04:50,624:INFO:Evaluating Metrics
+2020-10-01 14:04:50,887:INFO:Compiling Metrics
+2020-10-01 14:04:50,896:INFO:Calculating mean and std
+2020-10-01 14:04:50,897:INFO:Creating metrics dataframe
+2020-10-01 14:04:50,912:INFO:Initializing Extreme Gradient Boosting
+2020-10-01 14:04:50,920:INFO:Initializing Fold 1
+2020-10-01 14:04:50,921:INFO:Total runtime is 4.730699499448139 minutes
+2020-10-01 14:04:50,981:INFO:Fitting Model
+2020-10-01 14:05:25,883:INFO:Evaluating Metrics
+2020-10-01 14:05:26,010:INFO:Compiling Metrics
+2020-10-01 14:05:26,017:INFO:Initializing Fold 2
+2020-10-01 14:05:26,017:INFO:Total runtime is 5.315635848045348 minutes
+2020-10-01 14:05:26,046:INFO:Fitting Model
+2020-10-01 14:06:00,721:INFO:Evaluating Metrics
+2020-10-01 14:06:00,829:INFO:Compiling Metrics
+2020-10-01 14:06:00,834:INFO:Initializing Fold 3
+2020-10-01 14:06:00,835:INFO:Total runtime is 5.895927798748016 minutes
+2020-10-01 14:06:00,863:INFO:Fitting Model
+2020-10-01 14:06:36,513:INFO:Evaluating Metrics
+2020-10-01 14:06:36,622:INFO:Compiling Metrics
+2020-10-01 14:06:36,628:INFO:Initializing Fold 4
+2020-10-01 14:06:36,629:INFO:Total runtime is 6.4924961686134335 minutes
+2020-10-01 14:06:36,659:INFO:Fitting Model
+2020-10-01 14:07:12,584:INFO:Evaluating Metrics
+2020-10-01 14:07:12,702:INFO:Compiling Metrics
+2020-10-01 14:07:12,708:INFO:Initializing Fold 5
+2020-10-01 14:07:12,708:INFO:Total runtime is 7.093822801113128 minutes
+2020-10-01 14:07:12,735:INFO:Fitting Model
+2020-10-01 14:07:48,685:INFO:Evaluating Metrics
+2020-10-01 14:07:48,806:INFO:Compiling Metrics
+2020-10-01 14:07:48,812:INFO:Initializing Fold 6
+2020-10-01 14:07:48,813:INFO:Total runtime is 7.695564432938893 minutes
+2020-10-01 14:07:48,849:INFO:Fitting Model
+2020-10-01 14:08:25,046:INFO:Evaluating Metrics
+2020-10-01 14:08:25,152:INFO:Compiling Metrics
+2020-10-01 14:08:25,158:INFO:Initializing Fold 7
+2020-10-01 14:08:25,159:INFO:Total runtime is 8.301324347654978 minutes
+2020-10-01 14:08:25,185:INFO:Fitting Model
+2020-10-01 14:09:00,003:INFO:Evaluating Metrics
+2020-10-01 14:09:00,115:INFO:Compiling Metrics
+2020-10-01 14:09:00,121:INFO:Initializing Fold 8
+2020-10-01 14:09:00,121:INFO:Total runtime is 8.884040117263794 minutes
+2020-10-01 14:09:00,151:INFO:Fitting Model
+2020-10-01 14:09:34,313:INFO:Evaluating Metrics
+2020-10-01 14:09:34,427:INFO:Compiling Metrics
+2020-10-01 14:09:34,433:INFO:Initializing Fold 9
+2020-10-01 14:09:34,434:INFO:Total runtime is 9.45590980052948 minutes
+2020-10-01 14:09:34,461:INFO:Fitting Model
+2020-10-01 14:10:10,408:INFO:Evaluating Metrics
+2020-10-01 14:10:10,517:INFO:Compiling Metrics
+2020-10-01 14:10:10,523:INFO:Initializing Fold 10
+2020-10-01 14:10:10,523:INFO:Total runtime is 10.057405034701029 minutes
+2020-10-01 14:10:10,549:INFO:Fitting Model
+2020-10-01 14:10:46,517:INFO:Evaluating Metrics
+2020-10-01 14:10:46,625:INFO:Compiling Metrics
+2020-10-01 14:10:46,631:INFO:Calculating mean and std
+2020-10-01 14:10:46,631:INFO:Creating metrics dataframe
+2020-10-01 14:10:46,646:INFO:Initializing Light Gradient Boosting Machine
+2020-10-01 14:10:46,653:INFO:Initializing Fold 1
+2020-10-01 14:10:46,653:INFO:Total runtime is 10.6595720688502 minutes
+2020-10-01 14:10:46,690:INFO:Fitting Model
+2020-10-01 14:10:48,019:INFO:Evaluating Metrics
+2020-10-01 14:10:48,097:INFO:Compiling Metrics
+2020-10-01 14:10:48,103:INFO:Initializing Fold 2
+2020-10-01 14:10:48,104:INFO:Total runtime is 10.683744649092356 minutes
+2020-10-01 14:10:48,150:INFO:Fitting Model
+2020-10-01 14:10:49,322:INFO:Evaluating Metrics
+2020-10-01 14:10:49,388:INFO:Compiling Metrics
+2020-10-01 14:10:49,394:INFO:Initializing Fold 3
+2020-10-01 14:10:49,395:INFO:Total runtime is 10.705261500676473 minutes
+2020-10-01 14:10:49,442:INFO:Fitting Model
+2020-10-01 14:10:50,624:INFO:Evaluating Metrics
+2020-10-01 14:10:50,693:INFO:Compiling Metrics
+2020-10-01 14:10:50,698:INFO:Initializing Fold 4
+2020-10-01 14:10:50,699:INFO:Total runtime is 10.726999553044637 minutes
+2020-10-01 14:10:50,746:INFO:Fitting Model
+2020-10-01 14:10:51,950:INFO:Evaluating Metrics
+2020-10-01 14:10:52,018:INFO:Compiling Metrics
+2020-10-01 14:10:52,024:INFO:Initializing Fold 5
+2020-10-01 14:10:52,024:INFO:Total runtime is 10.749090353647867 minutes
+2020-10-01 14:10:52,071:INFO:Fitting Model
+2020-10-01 14:10:53,238:INFO:Evaluating Metrics
+2020-10-01 14:10:53,302:INFO:Compiling Metrics
+2020-10-01 14:10:53,308:INFO:Initializing Fold 6
+2020-10-01 14:10:53,309:INFO:Total runtime is 10.770503214995065 minutes
+2020-10-01 14:10:53,356:INFO:Fitting Model
+2020-10-01 14:10:54,535:INFO:Evaluating Metrics
+2020-10-01 14:10:54,601:INFO:Compiling Metrics
+2020-10-01 14:10:54,606:INFO:Initializing Fold 7
+2020-10-01 14:10:54,607:INFO:Total runtime is 10.792129651705423 minutes
+2020-10-01 14:10:54,654:INFO:Fitting Model
+2020-10-01 14:10:55,859:INFO:Evaluating Metrics
+2020-10-01 14:10:55,922:INFO:Compiling Metrics
+2020-10-01 14:10:55,928:INFO:Initializing Fold 8
+2020-10-01 14:10:55,928:INFO:Total runtime is 10.814155201117197 minutes
+2020-10-01 14:10:55,976:INFO:Fitting Model
+2020-10-01 14:10:57,140:INFO:Evaluating Metrics
+2020-10-01 14:10:57,206:INFO:Compiling Metrics
+2020-10-01 14:10:57,212:INFO:Initializing Fold 9
+2020-10-01 14:10:57,212:INFO:Total runtime is 10.835554150740306 minutes
+2020-10-01 14:10:57,259:INFO:Fitting Model
+2020-10-01 14:10:58,404:INFO:Evaluating Metrics
+2020-10-01 14:10:58,471:INFO:Compiling Metrics
+2020-10-01 14:10:58,477:INFO:Initializing Fold 10
+2020-10-01 14:10:58,478:INFO:Total runtime is 10.856647868951162 minutes
+2020-10-01 14:10:58,525:INFO:Fitting Model
+2020-10-01 14:10:59,721:INFO:Evaluating Metrics
+2020-10-01 14:10:59,786:INFO:Compiling Metrics
+2020-10-01 14:10:59,792:INFO:Calculating mean and std
+2020-10-01 14:10:59,792:INFO:Creating metrics dataframe
+2020-10-01 14:10:59,805:INFO:Initializing CatBoost Classifier
+2020-10-01 14:10:59,813:INFO:Initializing Fold 1
+2020-10-01 14:10:59,813:INFO:Total runtime is 10.87890306711197 minutes
+2020-10-01 14:10:59,859:INFO:Fitting Model
+2020-10-01 14:11:28,641:INFO:Evaluating Metrics
+2020-10-01 14:11:28,793:INFO:Compiling Metrics
+2020-10-01 14:11:28,799:INFO:Initializing Fold 2
+2020-10-01 14:11:28,799:INFO:Total runtime is 11.362003084023796 minutes
+2020-10-01 14:11:28,836:INFO:Fitting Model
+2020-10-01 14:12:01,921:INFO:Evaluating Metrics
+2020-10-01 14:12:02,078:INFO:Compiling Metrics
+2020-10-01 14:12:02,084:INFO:Initializing Fold 3
+2020-10-01 14:12:02,085:INFO:Total runtime is 11.916758700211846 minutes
+2020-10-01 14:12:02,140:INFO:Fitting Model
+2020-10-01 14:12:31,779:INFO:Evaluating Metrics
+2020-10-01 14:12:31,923:INFO:Compiling Metrics
+2020-10-01 14:12:31,929:INFO:Initializing Fold 4
+2020-10-01 14:12:31,930:INFO:Total runtime is 12.414177636305494 minutes
+2020-10-01 14:12:31,973:INFO:Fitting Model
+2020-10-01 14:13:01,706:INFO:Evaluating Metrics
+2020-10-01 14:13:01,923:INFO:Compiling Metrics
+2020-10-01 14:13:01,929:INFO:Initializing Fold 5
+2020-10-01 14:13:01,930:INFO:Total runtime is 12.914178268114728 minutes
+2020-10-01 14:13:01,968:INFO:Fitting Model
+2020-10-01 14:13:32,976:INFO:Evaluating Metrics
+2020-10-01 14:13:33,117:INFO:Compiling Metrics
+2020-10-01 14:13:33,122:INFO:Initializing Fold 6
+2020-10-01 14:13:33,123:INFO:Total runtime is 13.434065715471906 minutes
+2020-10-01 14:13:33,163:INFO:Fitting Model
+2020-10-01 14:14:03,060:INFO:Evaluating Metrics
+2020-10-01 14:14:03,274:INFO:Compiling Metrics
+2020-10-01 14:14:03,280:INFO:Initializing Fold 7
+2020-10-01 14:14:03,281:INFO:Total runtime is 13.936692337195081 minutes
+2020-10-01 14:14:03,321:INFO:Fitting Model
+2020-10-01 14:14:35,180:INFO:Evaluating Metrics
+2020-10-01 14:14:35,462:INFO:Compiling Metrics
+2020-10-01 14:14:35,470:INFO:Initializing Fold 8
+2020-10-01 14:14:35,471:INFO:Total runtime is 14.473195183277133 minutes
+2020-10-01 14:14:35,524:INFO:Fitting Model
+2020-10-01 14:15:06,987:INFO:Evaluating Metrics
+2020-10-01 14:15:07,210:INFO:Compiling Metrics
+2020-10-01 14:15:07,216:INFO:Initializing Fold 9
+2020-10-01 14:15:07,216:INFO:Total runtime is 15.002288385232292 minutes
+2020-10-01 14:15:07,256:INFO:Fitting Model
+2020-10-01 14:15:39,262:INFO:Evaluating Metrics
+2020-10-01 14:15:39,405:INFO:Compiling Metrics
+2020-10-01 14:15:39,411:INFO:Initializing Fold 10
+2020-10-01 14:15:39,412:INFO:Total runtime is 15.538878901799523 minutes
+2020-10-01 14:15:39,453:INFO:Fitting Model
+2020-10-01 14:16:09,503:INFO:Evaluating Metrics
+2020-10-01 14:16:09,709:INFO:Compiling Metrics
+2020-10-01 14:16:09,716:INFO:Calculating mean and std
+2020-10-01 14:16:09,717:INFO:Creating metrics dataframe
+2020-10-01 14:16:09,736:INFO:Finalizing top_n models
+2020-10-01 14:16:09,736:INFO:SubProcess create_model() called ==================================
+2020-10-01 14:16:09,743:INFO:Initializing create_model()
+2020-10-01 14:16:09,743:INFO:create_model(estimator=et, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-10-01 14:16:09,743:INFO:Checking exceptions
+2020-10-01 14:16:09,743:INFO:Preloading libraries
+2020-10-01 14:16:09,743:INFO:Preparing display monitor
+2020-10-01 14:16:09,752:INFO:Copying training dataset
+2020-10-01 14:16:09,808:INFO:Importing libraries
+2020-10-01 14:16:09,809:INFO:Defining folds
+2020-10-01 14:16:09,809:INFO:Declaring metric variables
+2020-10-01 14:16:09,810:INFO:Importing untrained model
+2020-10-01 14:16:09,810:INFO:Extra Trees Classifier Imported succesfully
+2020-10-01 14:16:09,811:INFO:Checking ensemble method
+2020-10-01 14:16:09,818:INFO:Initializing Fold 1
+2020-10-01 14:16:09,865:INFO:Fitting Model
+2020-10-01 14:16:10,464:INFO:Evaluating Metrics
+2020-10-01 14:16:10,729:INFO:Compiling Metrics
+2020-10-01 14:16:10,737:INFO:Initializing Fold 2
+2020-10-01 14:16:10,792:INFO:Fitting Model
+2020-10-01 14:16:11,382:INFO:Evaluating Metrics
+2020-10-01 14:16:11,650:INFO:Compiling Metrics
+2020-10-01 14:16:11,658:INFO:Initializing Fold 3
+2020-10-01 14:16:11,706:INFO:Fitting Model
+2020-10-01 14:16:12,293:INFO:Evaluating Metrics
+2020-10-01 14:16:12,559:INFO:Compiling Metrics
+2020-10-01 14:16:12,568:INFO:Initializing Fold 4
+2020-10-01 14:16:12,617:INFO:Fitting Model
+2020-10-01 14:16:13,208:INFO:Evaluating Metrics
+2020-10-01 14:16:13,476:INFO:Compiling Metrics
+2020-10-01 14:16:13,485:INFO:Initializing Fold 5
+2020-10-01 14:16:13,543:INFO:Fitting Model
+2020-10-01 14:16:14,133:INFO:Evaluating Metrics
+2020-10-01 14:16:14,397:INFO:Compiling Metrics
+2020-10-01 14:16:14,406:INFO:Initializing Fold 6
+2020-10-01 14:16:14,456:INFO:Fitting Model
+2020-10-01 14:16:15,044:INFO:Evaluating Metrics
+2020-10-01 14:16:15,314:INFO:Compiling Metrics
+2020-10-01 14:16:15,323:INFO:Initializing Fold 7
+2020-10-01 14:16:15,372:INFO:Fitting Model
+2020-10-01 14:16:15,959:INFO:Evaluating Metrics
+2020-10-01 14:16:16,226:INFO:Compiling Metrics
+2020-10-01 14:16:16,235:INFO:Initializing Fold 8
+2020-10-01 14:16:16,287:INFO:Fitting Model
+2020-10-01 14:16:16,869:INFO:Evaluating Metrics
+2020-10-01 14:16:17,137:INFO:Compiling Metrics
+2020-10-01 14:16:17,145:INFO:Initializing Fold 9
+2020-10-01 14:16:17,196:INFO:Fitting Model
+2020-10-01 14:16:17,785:INFO:Evaluating Metrics
+2020-10-01 14:16:18,055:INFO:Compiling Metrics
+2020-10-01 14:16:18,064:INFO:Initializing Fold 10
+2020-10-01 14:16:18,114:INFO:Fitting Model
+2020-10-01 14:16:18,703:INFO:Evaluating Metrics
+2020-10-01 14:16:18,971:INFO:Compiling Metrics
+2020-10-01 14:16:18,979:INFO:Calculating mean and std
+2020-10-01 14:16:18,980:INFO:Creating metrics dataframe
+2020-10-01 14:16:18,985:INFO:Finalizing model
+2020-10-01 14:16:19,582:INFO:Uploading results into container
+2020-10-01 14:16:19,583:INFO:Uploading model into container now
+2020-10-01 14:16:19,583:INFO:create_model_container: 1
+2020-10-01 14:16:19,583:INFO:master_model_container: 1
+2020-10-01 14:16:19,583:INFO:display_container: 1
+2020-10-01 14:16:19,584:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=3241, verbose=0,
+                     warm_start=False)
+2020-10-01 14:16:19,584:INFO:create_model() succesfully completed......................................
+2020-10-01 14:16:19,599:INFO:SubProcess create_model() end ==================================
+2020-10-01 14:16:19,670:INFO:create_model_container: 1
+2020-10-01 14:16:19,670:INFO:master_model_container: 1
+2020-10-01 14:16:19,670:INFO:display_container: 2
+2020-10-01 14:16:19,671:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=3241, verbose=0,
+                     warm_start=False)
+2020-10-01 14:16:19,671:INFO:compare_models() succesfully completed......................................
+2020-10-01 14:18:56,858:INFO:Initializing compare_models()
+2020-10-01 14:18:56,858:INFO:compare_models(exclude=None, include=None, fold=10, round=4, sort=AUC, n_select=1, turbo=True, verbose=True)
+2020-10-01 14:18:56,859:INFO:Checking exceptions
+2020-10-01 14:18:56,860:INFO:Preloading libraries
+2020-10-01 14:18:56,861:INFO:Preparing display monitor
+2020-10-01 14:18:56,891:INFO:Copying training dataset
+2020-10-01 14:18:56,891:INFO:Importing libraries
+2020-10-01 14:18:56,896:INFO:Importing untrained models
+2020-10-01 14:18:56,897:INFO:Import successful
+2020-10-01 14:18:56,905:INFO:Defining folds
+2020-10-01 14:18:56,905:INFO:Declaring metric variables
+2020-10-01 14:18:56,905:INFO:Initializing Logistic Regression
+2020-10-01 14:18:56,915:INFO:Initializing Fold 1
+2020-10-01 14:18:56,916:INFO:Total runtime is 0.00017840067545572916 minutes
+2020-10-01 14:18:56,961:INFO:Fitting Model
+2020-10-01 14:18:57,494:INFO:Evaluating Metrics
+2020-10-01 14:18:57,523:INFO:Compiling Metrics
+2020-10-01 14:18:57,528:INFO:Initializing Fold 2
+2020-10-01 14:18:57,529:INFO:Total runtime is 0.010390551884969077 minutes
+2020-10-01 14:18:57,560:INFO:Fitting Model
+2020-10-01 14:18:58,054:INFO:Evaluating Metrics
+2020-10-01 14:18:58,082:INFO:Compiling Metrics
+2020-10-01 14:18:58,088:INFO:Initializing Fold 3
+2020-10-01 14:18:58,089:INFO:Total runtime is 0.01972423394521078 minutes
+2020-10-01 14:18:58,119:INFO:Fitting Model
+2020-10-01 14:18:58,625:INFO:Evaluating Metrics
+2020-10-01 14:18:58,654:INFO:Compiling Metrics
+2020-10-01 14:18:58,659:INFO:Initializing Fold 4
+2020-10-01 14:18:58,660:INFO:Total runtime is 0.029242734114329025 minutes
+2020-10-01 14:18:58,687:INFO:Fitting Model
+2020-10-01 14:18:59,160:INFO:Evaluating Metrics
+2020-10-01 14:18:59,188:INFO:Compiling Metrics
+2020-10-01 14:18:59,194:INFO:Initializing Fold 5
+2020-10-01 14:18:59,194:INFO:Total runtime is 0.0381518840789795 minutes
+2020-10-01 14:18:59,223:INFO:Fitting Model
+2020-10-01 14:18:59,695:INFO:Evaluating Metrics
+2020-10-01 14:18:59,723:INFO:Compiling Metrics
+2020-10-01 14:18:59,729:INFO:Initializing Fold 6
+2020-10-01 14:18:59,730:INFO:Total runtime is 0.04707088470458985 minutes
+2020-10-01 14:18:59,759:INFO:Fitting Model
+2020-10-01 14:19:00,286:INFO:Evaluating Metrics
+2020-10-01 14:19:00,319:INFO:Compiling Metrics
+2020-10-01 14:19:00,325:INFO:Initializing Fold 7
+2020-10-01 14:19:00,326:INFO:Total runtime is 0.0570092519124349 minutes
+2020-10-01 14:19:00,355:INFO:Fitting Model
+2020-10-01 14:19:00,864:INFO:Evaluating Metrics
+2020-10-01 14:19:00,893:INFO:Compiling Metrics
+2020-10-01 14:19:00,899:INFO:Initializing Fold 8
+2020-10-01 14:19:00,900:INFO:Total runtime is 0.06656983296076457 minutes
+2020-10-01 14:19:00,928:INFO:Fitting Model
+2020-10-01 14:19:01,443:INFO:Evaluating Metrics
+2020-10-01 14:19:01,473:INFO:Compiling Metrics
+2020-10-01 14:19:01,478:INFO:Initializing Fold 9
+2020-10-01 14:19:01,479:INFO:Total runtime is 0.07622563044230143 minutes
+2020-10-01 14:19:01,507:INFO:Fitting Model
+2020-10-01 14:19:01,996:INFO:Evaluating Metrics
+2020-10-01 14:19:02,026:INFO:Compiling Metrics
+2020-10-01 14:19:02,031:INFO:Initializing Fold 10
+2020-10-01 14:19:02,032:INFO:Total runtime is 0.08544406890869141 minutes
+2020-10-01 14:19:02,062:INFO:Fitting Model
+2020-10-01 14:19:02,565:INFO:Evaluating Metrics
+2020-10-01 14:19:02,594:INFO:Compiling Metrics
+2020-10-01 14:19:02,599:INFO:Calculating mean and std
+2020-10-01 14:19:02,600:INFO:Creating metrics dataframe
+2020-10-01 14:19:02,611:INFO:Initializing K Neighbors Classifier
+2020-10-01 14:19:02,618:INFO:Initializing Fold 1
+2020-10-01 14:19:02,618:INFO:Total runtime is 0.09521909952163697 minutes
+2020-10-01 14:19:02,648:INFO:Fitting Model
+2020-10-01 14:19:03,440:INFO:Evaluating Metrics
+2020-10-01 14:19:05,863:INFO:Compiling Metrics
+2020-10-01 14:19:05,869:INFO:Initializing Fold 2
+2020-10-01 14:19:05,870:INFO:Total runtime is 0.14941124916076662 minutes
+2020-10-01 14:19:05,917:INFO:Fitting Model
+2020-10-01 14:19:06,657:INFO:Evaluating Metrics
+2020-10-01 14:19:09,003:INFO:Compiling Metrics
+2020-10-01 14:19:09,009:INFO:Initializing Fold 3
+2020-10-01 14:19:09,010:INFO:Total runtime is 0.20174430211385092 minutes
+2020-10-01 14:19:09,034:INFO:Fitting Model
+2020-10-01 14:19:09,957:INFO:Evaluating Metrics
+2020-10-01 14:19:12,287:INFO:Compiling Metrics
+2020-10-01 14:19:12,294:INFO:Initializing Fold 4
+2020-10-01 14:19:12,294:INFO:Total runtime is 0.25648410320281984 minutes
+2020-10-01 14:19:12,317:INFO:Fitting Model
+2020-10-01 14:19:13,247:INFO:Evaluating Metrics
+2020-10-01 14:19:15,583:INFO:Compiling Metrics
+2020-10-01 14:19:15,589:INFO:Initializing Fold 5
+2020-10-01 14:19:15,590:INFO:Total runtime is 0.31140981515248617 minutes
+2020-10-01 14:19:15,612:INFO:Fitting Model
+2020-10-01 14:19:16,547:INFO:Evaluating Metrics
+2020-10-01 14:19:18,882:INFO:Compiling Metrics
+2020-10-01 14:19:18,888:INFO:Initializing Fold 6
+2020-10-01 14:19:18,889:INFO:Total runtime is 0.3663950363794963 minutes
+2020-10-01 14:19:18,914:INFO:Fitting Model
+2020-10-01 14:19:19,849:INFO:Evaluating Metrics
+2020-10-01 14:19:22,177:INFO:Compiling Metrics
+2020-10-01 14:19:22,184:INFO:Initializing Fold 7
+2020-10-01 14:19:22,184:INFO:Total runtime is 0.42131689786911014 minutes
+2020-10-01 14:19:22,207:INFO:Fitting Model
+2020-10-01 14:19:23,146:INFO:Evaluating Metrics
+2020-10-01 14:19:25,460:INFO:Compiling Metrics
+2020-10-01 14:19:25,467:INFO:Initializing Fold 8
+2020-10-01 14:19:25,468:INFO:Total runtime is 0.4760376691818238 minutes
+2020-10-01 14:19:25,490:INFO:Fitting Model
+2020-10-01 14:19:26,423:INFO:Evaluating Metrics
+2020-10-01 14:19:28,752:INFO:Compiling Metrics
+2020-10-01 14:19:28,759:INFO:Initializing Fold 9
+2020-10-01 14:19:28,760:INFO:Total runtime is 0.5309041341145834 minutes
+2020-10-01 14:19:28,784:INFO:Fitting Model
+2020-10-01 14:19:29,723:INFO:Evaluating Metrics
+2020-10-01 14:19:32,155:INFO:Compiling Metrics
+2020-10-01 14:19:32,162:INFO:Initializing Fold 10
+2020-10-01 14:19:32,162:INFO:Total runtime is 0.5876188000043233 minutes
+2020-10-01 14:19:32,185:INFO:Fitting Model
+2020-10-01 14:19:33,123:INFO:Evaluating Metrics
+2020-10-01 14:19:35,453:INFO:Compiling Metrics
+2020-10-01 14:19:35,460:INFO:Calculating mean and std
+2020-10-01 14:19:35,460:INFO:Creating metrics dataframe
+2020-10-01 14:19:35,471:INFO:Initializing Naive Bayes
+2020-10-01 14:19:35,478:INFO:Initializing Fold 1
+2020-10-01 14:19:35,479:INFO:Total runtime is 0.642894430955251 minutes
+2020-10-01 14:19:35,504:INFO:Fitting Model
+2020-10-01 14:19:35,767:INFO:Evaluating Metrics
+2020-10-01 14:19:35,824:INFO:Compiling Metrics
+2020-10-01 14:19:35,830:INFO:Initializing Fold 2
+2020-10-01 14:19:35,830:INFO:Total runtime is 0.6487516522407532 minutes
+2020-10-01 14:19:35,858:INFO:Fitting Model
+2020-10-01 14:19:36,103:INFO:Evaluating Metrics
+2020-10-01 14:19:36,154:INFO:Compiling Metrics
+2020-10-01 14:19:36,160:INFO:Initializing Fold 3
+2020-10-01 14:19:36,161:INFO:Total runtime is 0.654257333278656 minutes
+2020-10-01 14:19:36,189:INFO:Fitting Model
+2020-10-01 14:19:36,346:INFO:Evaluating Metrics
+2020-10-01 14:19:36,396:INFO:Compiling Metrics
+2020-10-01 14:19:36,402:INFO:Initializing Fold 4
+2020-10-01 14:19:36,402:INFO:Total runtime is 0.6582817514737447 minutes
+2020-10-01 14:19:36,432:INFO:Fitting Model
+2020-10-01 14:19:36,624:INFO:Evaluating Metrics
+2020-10-01 14:19:36,675:INFO:Compiling Metrics
+2020-10-01 14:19:36,681:INFO:Initializing Fold 5
+2020-10-01 14:19:36,682:INFO:Total runtime is 0.6629360477129618 minutes
+2020-10-01 14:19:36,708:INFO:Fitting Model
+2020-10-01 14:19:36,863:INFO:Evaluating Metrics
+2020-10-01 14:19:36,913:INFO:Compiling Metrics
+2020-10-01 14:19:36,919:INFO:Initializing Fold 6
+2020-10-01 14:19:36,919:INFO:Total runtime is 0.6668981989224751 minutes
+2020-10-01 14:19:36,946:INFO:Fitting Model
+2020-10-01 14:19:37,097:INFO:Evaluating Metrics
+2020-10-01 14:19:37,146:INFO:Compiling Metrics
+2020-10-01 14:19:37,152:INFO:Initializing Fold 7
+2020-10-01 14:19:37,152:INFO:Total runtime is 0.6707841157913208 minutes
+2020-10-01 14:19:37,179:INFO:Fitting Model
+2020-10-01 14:19:37,328:INFO:Evaluating Metrics
+2020-10-01 14:19:37,372:INFO:Compiling Metrics
+2020-10-01 14:19:37,379:INFO:Initializing Fold 8
+2020-10-01 14:19:37,379:INFO:Total runtime is 0.6745645999908447 minutes
+2020-10-01 14:19:37,405:INFO:Fitting Model
+2020-10-01 14:19:37,554:INFO:Evaluating Metrics
+2020-10-01 14:19:37,603:INFO:Compiling Metrics
+2020-10-01 14:19:37,609:INFO:Initializing Fold 9
+2020-10-01 14:19:37,609:INFO:Total runtime is 0.6783978700637817 minutes
+2020-10-01 14:19:37,637:INFO:Fitting Model
+2020-10-01 14:19:37,788:INFO:Evaluating Metrics
+2020-10-01 14:19:37,837:INFO:Compiling Metrics
+2020-10-01 14:19:37,843:INFO:Initializing Fold 10
+2020-10-01 14:19:37,843:INFO:Total runtime is 0.6822993357976277 minutes
+2020-10-01 14:19:37,870:INFO:Fitting Model
+2020-10-01 14:19:38,018:INFO:Evaluating Metrics
+2020-10-01 14:19:38,065:INFO:Compiling Metrics
+2020-10-01 14:19:38,071:INFO:Calculating mean and std
+2020-10-01 14:19:38,071:INFO:Creating metrics dataframe
+2020-10-01 14:19:38,082:INFO:Initializing Decision Tree Classifier
+2020-10-01 14:19:38,088:INFO:Initializing Fold 1
+2020-10-01 14:19:38,089:INFO:Total runtime is 0.6863919496536254 minutes
+2020-10-01 14:19:38,117:INFO:Fitting Model
+2020-10-01 14:19:38,973:INFO:Evaluating Metrics
+2020-10-01 14:19:39,006:INFO:Compiling Metrics
+2020-10-01 14:19:39,012:INFO:Initializing Fold 2
+2020-10-01 14:19:39,013:INFO:Total runtime is 0.7017884333928425 minutes
+2020-10-01 14:19:39,039:INFO:Fitting Model
+2020-10-01 14:19:39,896:INFO:Evaluating Metrics
+2020-10-01 14:19:39,929:INFO:Compiling Metrics
+2020-10-01 14:19:39,935:INFO:Initializing Fold 3
+2020-10-01 14:19:39,936:INFO:Total runtime is 0.717173381646474 minutes
+2020-10-01 14:19:39,963:INFO:Fitting Model
+2020-10-01 14:19:40,802:INFO:Evaluating Metrics
+2020-10-01 14:19:40,836:INFO:Compiling Metrics
+2020-10-01 14:19:40,842:INFO:Initializing Fold 4
+2020-10-01 14:19:40,842:INFO:Total runtime is 0.7322811325391132 minutes
+2020-10-01 14:19:40,870:INFO:Fitting Model
+2020-10-01 14:19:41,697:INFO:Evaluating Metrics
+2020-10-01 14:19:41,728:INFO:Compiling Metrics
+2020-10-01 14:19:41,734:INFO:Initializing Fold 5
+2020-10-01 14:19:41,735:INFO:Total runtime is 0.747166081269582 minutes
+2020-10-01 14:19:41,762:INFO:Fitting Model
+2020-10-01 14:19:42,566:INFO:Evaluating Metrics
+2020-10-01 14:19:42,599:INFO:Compiling Metrics
+2020-10-01 14:19:42,605:INFO:Initializing Fold 6
+2020-10-01 14:19:42,605:INFO:Total runtime is 0.7616643667221068 minutes
+2020-10-01 14:19:42,631:INFO:Fitting Model
+2020-10-01 14:19:43,520:INFO:Evaluating Metrics
+2020-10-01 14:19:43,552:INFO:Compiling Metrics
+2020-10-01 14:19:43,558:INFO:Initializing Fold 7
+2020-10-01 14:19:43,558:INFO:Total runtime is 0.7775473992029824 minutes
+2020-10-01 14:19:43,586:INFO:Fitting Model
+2020-10-01 14:19:44,412:INFO:Evaluating Metrics
+2020-10-01 14:19:44,445:INFO:Compiling Metrics
+2020-10-01 14:19:44,450:INFO:Initializing Fold 8
+2020-10-01 14:19:44,451:INFO:Total runtime is 0.7924250523249307 minutes
+2020-10-01 14:19:44,477:INFO:Fitting Model
+2020-10-01 14:19:45,334:INFO:Evaluating Metrics
+2020-10-01 14:19:45,365:INFO:Compiling Metrics
+2020-10-01 14:19:45,371:INFO:Initializing Fold 9
+2020-10-01 14:19:45,371:INFO:Total runtime is 0.8077685197194415 minutes
+2020-10-01 14:19:45,398:INFO:Fitting Model
+2020-10-01 14:19:46,273:INFO:Evaluating Metrics
+2020-10-01 14:19:46,304:INFO:Compiling Metrics
+2020-10-01 14:19:46,309:INFO:Initializing Fold 10
+2020-10-01 14:19:46,310:INFO:Total runtime is 0.82341011762619 minutes
+2020-10-01 14:19:46,337:INFO:Fitting Model
+2020-10-01 14:19:47,229:INFO:Evaluating Metrics
+2020-10-01 14:19:47,259:INFO:Compiling Metrics
+2020-10-01 14:19:47,264:INFO:Calculating mean and std
+2020-10-01 14:19:47,265:INFO:Creating metrics dataframe
+2020-10-01 14:19:47,276:INFO:Initializing SVM - Linear Kernel
+2020-10-01 14:19:47,282:INFO:Initializing Fold 1
+2020-10-01 14:19:47,283:INFO:Total runtime is 0.8396206339200336 minutes
+2020-10-01 14:19:47,311:INFO:Fitting Model
+2020-10-01 14:19:48,418:INFO:Evaluating Metrics
+2020-10-01 14:19:48,418:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:48,433:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:48,435:INFO:Compiling Metrics
+2020-10-01 14:19:48,441:INFO:Initializing Fold 2
+2020-10-01 14:19:48,442:INFO:Total runtime is 0.8589399019877114 minutes
+2020-10-01 14:19:48,470:INFO:Fitting Model
+2020-10-01 14:19:49,508:INFO:Evaluating Metrics
+2020-10-01 14:19:49,508:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:49,522:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:49,525:INFO:Compiling Metrics
+2020-10-01 14:19:49,530:INFO:Initializing Fold 3
+2020-10-01 14:19:49,531:INFO:Total runtime is 0.8770948171615599 minutes
+2020-10-01 14:19:49,560:INFO:Fitting Model
+2020-10-01 14:19:51,314:INFO:Evaluating Metrics
+2020-10-01 14:19:51,314:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:51,328:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:51,331:INFO:Compiling Metrics
+2020-10-01 14:19:51,336:INFO:Initializing Fold 4
+2020-10-01 14:19:51,337:INFO:Total runtime is 0.9071934461593626 minutes
+2020-10-01 14:19:51,366:INFO:Fitting Model
+2020-10-01 14:19:53,109:INFO:Evaluating Metrics
+2020-10-01 14:19:53,109:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:53,123:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:53,126:INFO:Compiling Metrics
+2020-10-01 14:19:53,131:INFO:Initializing Fold 5
+2020-10-01 14:19:53,132:INFO:Total runtime is 0.9371100346247353 minutes
+2020-10-01 14:19:53,161:INFO:Fitting Model
+2020-10-01 14:19:54,882:INFO:Evaluating Metrics
+2020-10-01 14:19:54,882:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:54,896:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:54,899:INFO:Compiling Metrics
+2020-10-01 14:19:54,904:INFO:Initializing Fold 6
+2020-10-01 14:19:54,905:INFO:Total runtime is 0.9666604002316791 minutes
+2020-10-01 14:19:54,934:INFO:Fitting Model
+2020-10-01 14:19:56,118:INFO:Evaluating Metrics
+2020-10-01 14:19:56,118:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:56,132:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:56,135:INFO:Compiling Metrics
+2020-10-01 14:19:56,140:INFO:Initializing Fold 7
+2020-10-01 14:19:56,141:INFO:Total runtime is 0.9872630675633747 minutes
+2020-10-01 14:19:56,176:INFO:Fitting Model
+2020-10-01 14:19:56,980:INFO:Evaluating Metrics
+2020-10-01 14:19:56,980:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:56,994:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:56,997:INFO:Compiling Metrics
+2020-10-01 14:19:57,002:INFO:Initializing Fold 8
+2020-10-01 14:19:57,003:INFO:Total runtime is 1.0016276319821673 minutes
+2020-10-01 14:19:57,032:INFO:Fitting Model
+2020-10-01 14:19:58,263:INFO:Evaluating Metrics
+2020-10-01 14:19:58,263:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:58,277:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:58,280:INFO:Compiling Metrics
+2020-10-01 14:19:58,285:INFO:Initializing Fold 9
+2020-10-01 14:19:58,286:INFO:Total runtime is 1.0230106353759763 minutes
+2020-10-01 14:19:58,313:INFO:Fitting Model
+2020-10-01 14:19:59,484:INFO:Evaluating Metrics
+2020-10-01 14:19:59,484:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:19:59,499:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:19:59,501:INFO:Compiling Metrics
+2020-10-01 14:19:59,507:INFO:Initializing Fold 10
+2020-10-01 14:19:59,507:INFO:Total runtime is 1.0433644175529477 minutes
+2020-10-01 14:19:59,535:INFO:Fitting Model
+2020-10-01 14:20:00,600:INFO:Evaluating Metrics
+2020-10-01 14:20:00,601:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:00,616:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:00,618:INFO:Compiling Metrics
+2020-10-01 14:20:00,624:INFO:Calculating mean and std
+2020-10-01 14:20:00,625:INFO:Creating metrics dataframe
+2020-10-01 14:20:00,636:INFO:Initializing Ridge Classifier
+2020-10-01 14:20:00,643:INFO:Initializing Fold 1
+2020-10-01 14:20:00,644:INFO:Total runtime is 1.0623071153958636 minutes
+2020-10-01 14:20:00,675:INFO:Fitting Model
+2020-10-01 14:20:01,216:INFO:Evaluating Metrics
+2020-10-01 14:20:01,216:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:01,229:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:01,231:INFO:Compiling Metrics
+2020-10-01 14:20:01,237:INFO:Initializing Fold 2
+2020-10-01 14:20:01,238:INFO:Total runtime is 1.0722120682398477 minutes
+2020-10-01 14:20:01,268:INFO:Fitting Model
+2020-10-01 14:20:01,667:INFO:Evaluating Metrics
+2020-10-01 14:20:01,667:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:01,681:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:01,684:INFO:Compiling Metrics
+2020-10-01 14:20:01,690:INFO:Initializing Fold 3
+2020-10-01 14:20:01,690:INFO:Total runtime is 1.079749047756195 minutes
+2020-10-01 14:20:01,722:INFO:Fitting Model
+2020-10-01 14:20:02,120:INFO:Evaluating Metrics
+2020-10-01 14:20:02,120:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:02,133:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:02,135:INFO:Compiling Metrics
+2020-10-01 14:20:02,141:INFO:Initializing Fold 4
+2020-10-01 14:20:02,142:INFO:Total runtime is 1.0872712850570678 minutes
+2020-10-01 14:20:02,170:INFO:Fitting Model
+2020-10-01 14:20:02,553:INFO:Evaluating Metrics
+2020-10-01 14:20:02,553:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:02,566:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:02,568:INFO:Compiling Metrics
+2020-10-01 14:20:02,574:INFO:Initializing Fold 5
+2020-10-01 14:20:02,574:INFO:Total runtime is 1.0944859306017558 minutes
+2020-10-01 14:20:02,604:INFO:Fitting Model
+2020-10-01 14:20:02,994:INFO:Evaluating Metrics
+2020-10-01 14:20:02,994:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:03,007:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:03,009:INFO:Compiling Metrics
+2020-10-01 14:20:03,015:INFO:Initializing Fold 6
+2020-10-01 14:20:03,016:INFO:Total runtime is 1.1018360177675883 minutes
+2020-10-01 14:20:03,044:INFO:Fitting Model
+2020-10-01 14:20:03,431:INFO:Evaluating Metrics
+2020-10-01 14:20:03,431:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:03,444:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:03,447:INFO:Compiling Metrics
+2020-10-01 14:20:03,452:INFO:Initializing Fold 7
+2020-10-01 14:20:03,453:INFO:Total runtime is 1.1091271003087362 minutes
+2020-10-01 14:20:03,482:INFO:Fitting Model
+2020-10-01 14:20:03,872:INFO:Evaluating Metrics
+2020-10-01 14:20:03,872:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:03,885:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:03,887:INFO:Compiling Metrics
+2020-10-01 14:20:03,893:INFO:Initializing Fold 8
+2020-10-01 14:20:03,894:INFO:Total runtime is 1.1164711634318034 minutes
+2020-10-01 14:20:03,922:INFO:Fitting Model
+2020-10-01 14:20:04,306:INFO:Evaluating Metrics
+2020-10-01 14:20:04,306:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:04,319:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:04,322:INFO:Compiling Metrics
+2020-10-01 14:20:04,327:INFO:Initializing Fold 9
+2020-10-01 14:20:04,328:INFO:Total runtime is 1.1237070480982463 minutes
+2020-10-01 14:20:04,356:INFO:Fitting Model
+2020-10-01 14:20:04,739:INFO:Evaluating Metrics
+2020-10-01 14:20:04,739:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:04,752:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:04,754:INFO:Compiling Metrics
+2020-10-01 14:20:04,760:INFO:Initializing Fold 10
+2020-10-01 14:20:04,761:INFO:Total runtime is 1.1309219360351563 minutes
+2020-10-01 14:20:04,789:INFO:Fitting Model
+2020-10-01 14:20:05,177:INFO:Evaluating Metrics
+2020-10-01 14:20:05,177:WARNING:model has no predict_proba attribute. pred_prob set to 0.00
+2020-10-01 14:20:05,190:WARNING:model has no predict_proba attribute. AUC set to 0.00
+2020-10-01 14:20:05,192:INFO:Compiling Metrics
+2020-10-01 14:20:05,198:INFO:Calculating mean and std
+2020-10-01 14:20:05,198:INFO:Creating metrics dataframe
+2020-10-01 14:20:05,211:INFO:Initializing Random Forest Classifier
+2020-10-01 14:20:05,218:INFO:Initializing Fold 1
+2020-10-01 14:20:05,219:INFO:Total runtime is 1.1385576844215395 minutes
+2020-10-01 14:20:05,248:INFO:Fitting Model
+2020-10-01 14:20:05,391:INFO:Evaluating Metrics
+2020-10-01 14:20:05,654:INFO:Compiling Metrics
+2020-10-01 14:20:05,663:INFO:Initializing Fold 2
+2020-10-01 14:20:05,664:INFO:Total runtime is 1.1459695339202882 minutes
+2020-10-01 14:20:05,720:INFO:Fitting Model
+2020-10-01 14:20:05,866:INFO:Evaluating Metrics
+2020-10-01 14:20:06,129:INFO:Compiling Metrics
+2020-10-01 14:20:06,138:INFO:Initializing Fold 3
+2020-10-01 14:20:06,139:INFO:Total runtime is 1.1538929979006451 minutes
+2020-10-01 14:20:06,196:INFO:Fitting Model
+2020-10-01 14:20:06,341:INFO:Evaluating Metrics
+2020-10-01 14:20:06,609:INFO:Compiling Metrics
+2020-10-01 14:20:06,619:INFO:Initializing Fold 4
+2020-10-01 14:20:06,619:INFO:Total runtime is 1.1618975838025414 minutes
+2020-10-01 14:20:06,674:INFO:Fitting Model
+2020-10-01 14:20:06,823:INFO:Evaluating Metrics
+2020-10-01 14:20:07,087:INFO:Compiling Metrics
+2020-10-01 14:20:07,096:INFO:Initializing Fold 5
+2020-10-01 14:20:07,097:INFO:Total runtime is 1.1698621670405074 minutes
+2020-10-01 14:20:07,152:INFO:Fitting Model
+2020-10-01 14:20:07,297:INFO:Evaluating Metrics
+2020-10-01 14:20:07,558:INFO:Compiling Metrics
+2020-10-01 14:20:07,567:INFO:Initializing Fold 6
+2020-10-01 14:20:07,568:INFO:Total runtime is 1.1777071674664819 minutes
+2020-10-01 14:20:07,623:INFO:Fitting Model
+2020-10-01 14:20:07,770:INFO:Evaluating Metrics
+2020-10-01 14:20:08,032:INFO:Compiling Metrics
+2020-10-01 14:20:08,039:INFO:Initializing Fold 7
+2020-10-01 14:20:08,039:INFO:Total runtime is 1.1855623165766402 minutes
+2020-10-01 14:20:08,092:INFO:Fitting Model
+2020-10-01 14:20:08,240:INFO:Evaluating Metrics
+2020-10-01 14:20:08,509:INFO:Compiling Metrics
+2020-10-01 14:20:08,518:INFO:Initializing Fold 8
+2020-10-01 14:20:08,519:INFO:Total runtime is 1.1935567180315658 minutes
+2020-10-01 14:20:08,573:INFO:Fitting Model
+2020-10-01 14:20:08,719:INFO:Evaluating Metrics
+2020-10-01 14:20:08,984:INFO:Compiling Metrics
+2020-10-01 14:20:08,993:INFO:Initializing Fold 9
+2020-10-01 14:20:08,994:INFO:Total runtime is 1.2014785528182987 minutes
+2020-10-01 14:20:09,050:INFO:Fitting Model
+2020-10-01 14:20:09,197:INFO:Evaluating Metrics
+2020-10-01 14:20:09,465:INFO:Compiling Metrics
+2020-10-01 14:20:09,474:INFO:Initializing Fold 10
+2020-10-01 14:20:09,475:INFO:Total runtime is 1.209486552079519 minutes
+2020-10-01 14:20:09,531:INFO:Fitting Model
+2020-10-01 14:20:09,678:INFO:Evaluating Metrics
+2020-10-01 14:20:09,948:INFO:Compiling Metrics
+2020-10-01 14:20:09,957:INFO:Calculating mean and std
+2020-10-01 14:20:09,957:INFO:Creating metrics dataframe
+2020-10-01 14:20:09,971:INFO:Initializing Quadratic Discriminant Analysis
+2020-10-01 14:20:09,978:INFO:Initializing Fold 1
+2020-10-01 14:20:09,979:INFO:Total runtime is 1.2178867499033614 minutes
+2020-10-01 14:20:10,037:INFO:Fitting Model
+2020-10-01 14:20:12,636:INFO:Evaluating Metrics
+2020-10-01 14:20:12,769:INFO:Compiling Metrics
+2020-10-01 14:20:12,775:INFO:Initializing Fold 2
+2020-10-01 14:20:12,776:INFO:Total runtime is 1.2645082672437036 minutes
+2020-10-01 14:20:12,805:INFO:Fitting Model
+2020-10-01 14:20:15,321:INFO:Evaluating Metrics
+2020-10-01 14:20:15,456:INFO:Compiling Metrics
+2020-10-01 14:20:15,462:INFO:Initializing Fold 3
+2020-10-01 14:20:15,463:INFO:Total runtime is 1.3092908700307213 minutes
+2020-10-01 14:20:15,516:INFO:Fitting Model
+2020-10-01 14:20:17,993:INFO:Evaluating Metrics
+2020-10-01 14:20:18,120:INFO:Compiling Metrics
+2020-10-01 14:20:18,126:INFO:Initializing Fold 4
+2020-10-01 14:20:18,126:INFO:Total runtime is 1.3536837657292686 minutes
+2020-10-01 14:20:18,156:INFO:Fitting Model
+2020-10-01 14:20:20,619:INFO:Evaluating Metrics
+2020-10-01 14:20:20,750:INFO:Compiling Metrics
+2020-10-01 14:20:20,757:INFO:Initializing Fold 5
+2020-10-01 14:20:20,757:INFO:Total runtime is 1.3975327690442405 minutes
+2020-10-01 14:20:20,788:INFO:Fitting Model
+2020-10-01 14:20:23,319:INFO:Evaluating Metrics
+2020-10-01 14:20:23,464:INFO:Compiling Metrics
+2020-10-01 14:20:23,471:INFO:Initializing Fold 6
+2020-10-01 14:20:23,472:INFO:Total runtime is 1.4427799661954246 minutes
+2020-10-01 14:20:23,507:INFO:Fitting Model
+2020-10-01 14:20:26,126:INFO:Evaluating Metrics
+2020-10-01 14:20:26,267:INFO:Compiling Metrics
+2020-10-01 14:20:26,274:INFO:Initializing Fold 7
+2020-10-01 14:20:26,275:INFO:Total runtime is 1.4894893169403078 minutes
+2020-10-01 14:20:26,308:INFO:Fitting Model
+2020-10-01 14:20:29,046:INFO:Evaluating Metrics
+2020-10-01 14:20:29,187:INFO:Compiling Metrics
+2020-10-01 14:20:29,194:INFO:Initializing Fold 8
+2020-10-01 14:20:29,195:INFO:Total runtime is 1.5381585001945497 minutes
+2020-10-01 14:20:29,228:INFO:Fitting Model
+2020-10-01 14:20:31,882:INFO:Evaluating Metrics
+2020-10-01 14:20:32,025:INFO:Compiling Metrics
+2020-10-01 14:20:32,032:INFO:Initializing Fold 9
+2020-10-01 14:20:32,033:INFO:Total runtime is 1.5854536334673566 minutes
+2020-10-01 14:20:32,066:INFO:Fitting Model
+2020-10-01 14:20:34,657:INFO:Evaluating Metrics
+2020-10-01 14:20:34,837:INFO:Compiling Metrics
+2020-10-01 14:20:34,845:INFO:Initializing Fold 10
+2020-10-01 14:20:34,846:INFO:Total runtime is 1.6323360999425254 minutes
+2020-10-01 14:20:34,881:INFO:Fitting Model
+2020-10-01 14:20:37,658:INFO:Evaluating Metrics
+2020-10-01 14:20:37,799:INFO:Compiling Metrics
+2020-10-01 14:20:37,810:INFO:Calculating mean and std
+2020-10-01 14:20:37,811:INFO:Creating metrics dataframe
+2020-10-01 14:20:37,828:INFO:Initializing Ada Boost Classifier
+2020-10-01 14:20:37,845:INFO:Initializing Fold 1
+2020-10-01 14:20:37,846:INFO:Total runtime is 1.682340200742086 minutes
+2020-10-01 14:20:37,915:INFO:Fitting Model
+2020-10-01 14:20:41,295:INFO:Evaluating Metrics
+2020-10-01 14:20:41,451:INFO:Compiling Metrics
+2020-10-01 14:20:41,457:INFO:Initializing Fold 2
+2020-10-01 14:20:41,457:INFO:Total runtime is 1.7425355474154156 minutes
+2020-10-01 14:20:41,485:INFO:Fitting Model
+2020-10-01 14:20:44,509:INFO:Evaluating Metrics
+2020-10-01 14:20:44,651:INFO:Compiling Metrics
+2020-10-01 14:20:44,656:INFO:Initializing Fold 3
+2020-10-01 14:20:44,657:INFO:Total runtime is 1.7958620627721151 minutes
+2020-10-01 14:20:44,685:INFO:Fitting Model
+2020-10-01 14:20:47,708:INFO:Evaluating Metrics
+2020-10-01 14:20:47,848:INFO:Compiling Metrics
+2020-10-01 14:20:47,854:INFO:Initializing Fold 4
+2020-10-01 14:20:47,855:INFO:Total runtime is 1.8491531133651733 minutes
+2020-10-01 14:20:47,882:INFO:Fitting Model
+2020-10-01 14:20:50,906:INFO:Evaluating Metrics
+2020-10-01 14:20:51,049:INFO:Compiling Metrics
+2020-10-01 14:20:51,055:INFO:Initializing Fold 5
+2020-10-01 14:20:51,055:INFO:Total runtime is 1.9025007009506225 minutes
+2020-10-01 14:20:51,083:INFO:Fitting Model
+2020-10-01 14:20:54,188:INFO:Evaluating Metrics
+2020-10-01 14:20:54,341:INFO:Compiling Metrics
+2020-10-01 14:20:54,346:INFO:Initializing Fold 6
+2020-10-01 14:20:54,347:INFO:Total runtime is 1.9573602159818013 minutes
+2020-10-01 14:20:54,377:INFO:Fitting Model
+2020-10-01 14:20:57,650:INFO:Evaluating Metrics
+2020-10-01 14:20:57,800:INFO:Compiling Metrics
+2020-10-01 14:20:57,806:INFO:Initializing Fold 7
+2020-10-01 14:20:57,806:INFO:Total runtime is 2.0150136152903237 minutes
+2020-10-01 14:20:57,832:INFO:Fitting Model
+2020-10-01 14:21:01,506:INFO:Evaluating Metrics
+2020-10-01 14:21:01,679:INFO:Compiling Metrics
+2020-10-01 14:21:01,686:INFO:Initializing Fold 8
+2020-10-01 14:21:01,686:INFO:Total runtime is 2.079684015115102 minutes
+2020-10-01 14:21:01,721:INFO:Fitting Model
+2020-10-01 14:21:05,148:INFO:Evaluating Metrics
+2020-10-01 14:21:05,289:INFO:Compiling Metrics
+2020-10-01 14:21:05,295:INFO:Initializing Fold 9
+2020-10-01 14:21:05,295:INFO:Total runtime is 2.13983594973882 minutes
+2020-10-01 14:21:05,321:INFO:Fitting Model
+2020-10-01 14:21:08,504:INFO:Evaluating Metrics
+2020-10-01 14:21:08,661:INFO:Compiling Metrics
+2020-10-01 14:21:08,667:INFO:Initializing Fold 10
+2020-10-01 14:21:08,668:INFO:Total runtime is 2.196045951048533 minutes
+2020-10-01 14:21:08,720:INFO:Fitting Model
+2020-10-01 14:21:11,860:INFO:Evaluating Metrics
+2020-10-01 14:21:12,000:INFO:Compiling Metrics
+2020-10-01 14:21:12,005:INFO:Calculating mean and std
+2020-10-01 14:21:12,006:INFO:Creating metrics dataframe
+2020-10-01 14:21:12,017:INFO:Initializing Gradient Boosting Classifier
+2020-10-01 14:21:12,023:INFO:Initializing Fold 1
+2020-10-01 14:21:12,024:INFO:Total runtime is 2.251978266239166 minutes
+2020-10-01 14:21:12,052:INFO:Fitting Model
+2020-10-01 14:21:22,227:INFO:Evaluating Metrics
+2020-10-01 14:21:22,264:INFO:Compiling Metrics
+2020-10-01 14:21:22,269:INFO:Initializing Fold 2
+2020-10-01 14:21:22,270:INFO:Total runtime is 2.4227482000986735 minutes
+2020-10-01 14:21:22,298:INFO:Fitting Model
+2020-10-01 14:21:32,344:INFO:Evaluating Metrics
+2020-10-01 14:21:32,383:INFO:Compiling Metrics
+2020-10-01 14:21:32,389:INFO:Initializing Fold 3
+2020-10-01 14:21:32,390:INFO:Total runtime is 2.591404648621877 minutes
+2020-10-01 14:21:32,416:INFO:Fitting Model
+2020-10-01 14:21:42,417:INFO:Evaluating Metrics
+2020-10-01 14:21:42,453:INFO:Compiling Metrics
+2020-10-01 14:21:42,459:INFO:Initializing Fold 4
+2020-10-01 14:21:42,460:INFO:Total runtime is 2.759236216545105 minutes
+2020-10-01 14:21:42,487:INFO:Fitting Model
+2020-10-01 14:21:52,454:INFO:Evaluating Metrics
+2020-10-01 14:21:52,489:INFO:Compiling Metrics
+2020-10-01 14:21:52,496:INFO:Initializing Fold 5
+2020-10-01 14:21:52,497:INFO:Total runtime is 2.9265267690022787 minutes
+2020-10-01 14:21:52,523:INFO:Fitting Model
+2020-10-01 14:22:02,638:INFO:Evaluating Metrics
+2020-10-01 14:22:02,674:INFO:Compiling Metrics
+2020-10-01 14:22:02,680:INFO:Initializing Fold 6
+2020-10-01 14:22:02,681:INFO:Total runtime is 3.096256184577942 minutes
+2020-10-01 14:22:02,708:INFO:Fitting Model
+2020-10-01 14:22:12,693:INFO:Evaluating Metrics
+2020-10-01 14:22:12,731:INFO:Compiling Metrics
+2020-10-01 14:22:12,737:INFO:Initializing Fold 7
+2020-10-01 14:22:12,738:INFO:Total runtime is 3.263879668712616 minutes
+2020-10-01 14:22:12,765:INFO:Fitting Model
+2020-10-01 14:22:22,679:INFO:Evaluating Metrics
+2020-10-01 14:22:22,718:INFO:Compiling Metrics
+2020-10-01 14:22:22,724:INFO:Initializing Fold 8
+2020-10-01 14:22:22,725:INFO:Total runtime is 3.43032128016154 minutes
+2020-10-01 14:22:22,751:INFO:Fitting Model
+2020-10-01 14:22:32,674:INFO:Evaluating Metrics
+2020-10-01 14:22:32,711:INFO:Compiling Metrics
+2020-10-01 14:22:32,717:INFO:Initializing Fold 9
+2020-10-01 14:22:32,718:INFO:Total runtime is 3.5968743324279786 minutes
+2020-10-01 14:22:32,744:INFO:Fitting Model
+2020-10-01 14:22:42,662:INFO:Evaluating Metrics
+2020-10-01 14:22:42,698:INFO:Compiling Metrics
+2020-10-01 14:22:42,704:INFO:Initializing Fold 10
+2020-10-01 14:22:42,705:INFO:Total runtime is 3.7633195996284488 minutes
+2020-10-01 14:22:42,732:INFO:Fitting Model
+2020-10-01 14:22:52,689:INFO:Evaluating Metrics
+2020-10-01 14:22:52,724:INFO:Compiling Metrics
+2020-10-01 14:22:52,730:INFO:Calculating mean and std
+2020-10-01 14:22:52,731:INFO:Creating metrics dataframe
+2020-10-01 14:22:52,743:INFO:Initializing Linear Discriminant Analysis
+2020-10-01 14:22:52,749:INFO:Initializing Fold 1
+2020-10-01 14:22:52,750:INFO:Total runtime is 3.93074426651001 minutes
+2020-10-01 14:22:52,778:INFO:Fitting Model
+2020-10-01 14:22:56,067:INFO:Evaluating Metrics
+2020-10-01 14:22:56,095:INFO:Compiling Metrics
+2020-10-01 14:22:56,101:INFO:Initializing Fold 2
+2020-10-01 14:22:56,101:INFO:Total runtime is 3.9865994016329447 minutes
+2020-10-01 14:22:56,130:INFO:Fitting Model
+2020-10-01 14:22:59,349:INFO:Evaluating Metrics
+2020-10-01 14:22:59,377:INFO:Compiling Metrics
+2020-10-01 14:22:59,383:INFO:Initializing Fold 3
+2020-10-01 14:22:59,383:INFO:Total runtime is 4.041296700636546 minutes
+2020-10-01 14:22:59,411:INFO:Fitting Model
+2020-10-01 14:23:02,684:INFO:Evaluating Metrics
+2020-10-01 14:23:02,714:INFO:Compiling Metrics
+2020-10-01 14:23:02,720:INFO:Initializing Fold 4
+2020-10-01 14:23:02,721:INFO:Total runtime is 4.096922532717387 minutes
+2020-10-01 14:23:02,749:INFO:Fitting Model
+2020-10-01 14:23:05,881:INFO:Evaluating Metrics
+2020-10-01 14:23:05,908:INFO:Compiling Metrics
+2020-10-01 14:23:05,914:INFO:Initializing Fold 5
+2020-10-01 14:23:05,914:INFO:Total runtime is 4.150150450070699 minutes
+2020-10-01 14:23:05,942:INFO:Fitting Model
+2020-10-01 14:23:09,118:INFO:Evaluating Metrics
+2020-10-01 14:23:09,146:INFO:Compiling Metrics
+2020-10-01 14:23:09,151:INFO:Initializing Fold 6
+2020-10-01 14:23:09,152:INFO:Total runtime is 4.204110018412272 minutes
+2020-10-01 14:23:09,181:INFO:Fitting Model
+2020-10-01 14:23:12,396:INFO:Evaluating Metrics
+2020-10-01 14:23:12,426:INFO:Compiling Metrics
+2020-10-01 14:23:12,432:INFO:Initializing Fold 7
+2020-10-01 14:23:12,433:INFO:Total runtime is 4.258791232109069 minutes
+2020-10-01 14:23:12,463:INFO:Fitting Model
+2020-10-01 14:23:15,834:INFO:Evaluating Metrics
+2020-10-01 14:23:15,868:INFO:Compiling Metrics
+2020-10-01 14:23:15,875:INFO:Initializing Fold 8
+2020-10-01 14:23:15,876:INFO:Total runtime is 4.316173350811004 minutes
+2020-10-01 14:23:15,912:INFO:Fitting Model
+2020-10-01 14:23:19,260:INFO:Evaluating Metrics
+2020-10-01 14:23:19,292:INFO:Compiling Metrics
+2020-10-01 14:23:19,299:INFO:Initializing Fold 9
+2020-10-01 14:23:19,299:INFO:Total runtime is 4.373235416412353 minutes
+2020-10-01 14:23:19,333:INFO:Fitting Model
+2020-10-01 14:23:22,660:INFO:Evaluating Metrics
+2020-10-01 14:23:22,691:INFO:Compiling Metrics
+2020-10-01 14:23:22,697:INFO:Initializing Fold 10
+2020-10-01 14:23:22,698:INFO:Total runtime is 4.429878600438435 minutes
+2020-10-01 14:23:22,730:INFO:Fitting Model
+2020-10-01 14:23:26,102:INFO:Evaluating Metrics
+2020-10-01 14:23:26,133:INFO:Compiling Metrics
+2020-10-01 14:23:26,139:INFO:Calculating mean and std
+2020-10-01 14:23:26,140:INFO:Creating metrics dataframe
+2020-10-01 14:23:26,155:INFO:Initializing Extra Trees Classifier
+2020-10-01 14:23:26,164:INFO:Initializing Fold 1
+2020-10-01 14:23:26,164:INFO:Total runtime is 4.487651868661244 minutes
+2020-10-01 14:23:26,196:INFO:Fitting Model
+2020-10-01 14:23:26,793:INFO:Evaluating Metrics
+2020-10-01 14:23:27,049:INFO:Compiling Metrics
+2020-10-01 14:23:27,055:INFO:Initializing Fold 2
+2020-10-01 14:23:27,057:INFO:Total runtime is 4.502521347999572 minutes
+2020-10-01 14:23:27,125:INFO:Fitting Model
+2020-10-01 14:23:27,718:INFO:Evaluating Metrics
+2020-10-01 14:23:27,982:INFO:Compiling Metrics
+2020-10-01 14:23:27,991:INFO:Initializing Fold 3
+2020-10-01 14:23:27,992:INFO:Total runtime is 4.518110052744547 minutes
+2020-10-01 14:23:28,049:INFO:Fitting Model
+2020-10-01 14:23:28,642:INFO:Evaluating Metrics
+2020-10-01 14:23:28,909:INFO:Compiling Metrics
+2020-10-01 14:23:28,918:INFO:Initializing Fold 4
+2020-10-01 14:23:28,919:INFO:Total runtime is 4.533555535475412 minutes
+2020-10-01 14:23:28,975:INFO:Fitting Model
+2020-10-01 14:23:29,558:INFO:Evaluating Metrics
+2020-10-01 14:23:29,829:INFO:Compiling Metrics
+2020-10-01 14:23:29,838:INFO:Initializing Fold 5
+2020-10-01 14:23:29,839:INFO:Total runtime is 4.548889001210529 minutes
+2020-10-01 14:23:29,894:INFO:Fitting Model
+2020-10-01 14:23:30,486:INFO:Evaluating Metrics
+2020-10-01 14:23:30,749:INFO:Compiling Metrics
+2020-10-01 14:23:30,758:INFO:Initializing Fold 6
+2020-10-01 14:23:30,759:INFO:Total runtime is 4.564220050970712 minutes
+2020-10-01 14:23:30,815:INFO:Fitting Model
+2020-10-01 14:23:31,398:INFO:Evaluating Metrics
+2020-10-01 14:23:31,667:INFO:Compiling Metrics
+2020-10-01 14:23:31,676:INFO:Initializing Fold 7
+2020-10-01 14:23:31,677:INFO:Total runtime is 4.579522347450255 minutes
+2020-10-01 14:23:31,734:INFO:Fitting Model
+2020-10-01 14:23:32,322:INFO:Evaluating Metrics
+2020-10-01 14:23:32,587:INFO:Compiling Metrics
+2020-10-01 14:23:32,596:INFO:Initializing Fold 8
+2020-10-01 14:23:32,597:INFO:Total runtime is 4.594862349828083 minutes
+2020-10-01 14:23:32,653:INFO:Fitting Model
+2020-10-01 14:23:33,240:INFO:Evaluating Metrics
+2020-10-01 14:23:33,504:INFO:Compiling Metrics
+2020-10-01 14:23:33,513:INFO:Initializing Fold 9
+2020-10-01 14:23:33,515:INFO:Total runtime is 4.610156313578287 minutes
+2020-10-01 14:23:33,574:INFO:Fitting Model
+2020-10-01 14:23:34,167:INFO:Evaluating Metrics
+2020-10-01 14:23:34,428:INFO:Compiling Metrics
+2020-10-01 14:23:34,435:INFO:Initializing Fold 10
+2020-10-01 14:23:34,436:INFO:Total runtime is 4.625513168176014 minutes
+2020-10-01 14:23:34,489:INFO:Fitting Model
+2020-10-01 14:23:35,077:INFO:Evaluating Metrics
+2020-10-01 14:23:35,343:INFO:Compiling Metrics
+2020-10-01 14:23:35,351:INFO:Calculating mean and std
+2020-10-01 14:23:35,352:INFO:Creating metrics dataframe
+2020-10-01 14:23:35,367:INFO:Initializing Extreme Gradient Boosting
+2020-10-01 14:23:35,374:INFO:Initializing Fold 1
+2020-10-01 14:23:35,375:INFO:Total runtime is 4.641155501206715 minutes
+2020-10-01 14:23:35,431:INFO:Fitting Model
+2020-10-01 14:24:09,310:INFO:Evaluating Metrics
+2020-10-01 14:24:09,420:INFO:Compiling Metrics
+2020-10-01 14:24:09,426:INFO:Initializing Fold 2
+2020-10-01 14:24:09,427:INFO:Total runtime is 5.208687583605447 minutes
+2020-10-01 14:24:09,456:INFO:Fitting Model
+2020-10-01 14:24:45,233:INFO:Evaluating Metrics
+2020-10-01 14:24:45,385:INFO:Compiling Metrics
+2020-10-01 14:24:45,396:INFO:Initializing Fold 3
+2020-10-01 14:24:45,397:INFO:Total runtime is 5.8081969181696556 minutes
+2020-10-01 14:24:45,428:INFO:Fitting Model
+2020-10-01 14:25:21,183:INFO:Evaluating Metrics
+2020-10-01 14:25:21,304:INFO:Compiling Metrics
+2020-10-01 14:25:21,310:INFO:Initializing Fold 4
+2020-10-01 14:25:21,311:INFO:Total runtime is 6.406755034128823 minutes
+2020-10-01 14:25:21,337:INFO:Fitting Model
+2020-10-01 14:25:54,841:INFO:Evaluating Metrics
+2020-10-01 14:25:54,948:INFO:Compiling Metrics
+2020-10-01 14:25:54,953:INFO:Initializing Fold 5
+2020-10-01 14:25:54,954:INFO:Total runtime is 6.967475668589272 minutes
+2020-10-01 14:25:54,980:INFO:Fitting Model
+2020-10-01 14:26:30,239:INFO:Evaluating Metrics
+2020-10-01 14:26:30,350:INFO:Compiling Metrics
+2020-10-01 14:26:30,356:INFO:Initializing Fold 6
+2020-10-01 14:26:30,356:INFO:Total runtime is 7.557516284783679 minutes
+2020-10-01 14:26:30,382:INFO:Fitting Model
+2020-10-01 14:27:05,584:INFO:Evaluating Metrics
+2020-10-01 14:27:05,692:INFO:Compiling Metrics
+2020-10-01 14:27:05,698:INFO:Initializing Fold 7
+2020-10-01 14:27:05,698:INFO:Total runtime is 8.146552097797391 minutes
+2020-10-01 14:27:05,724:INFO:Fitting Model
+2020-10-01 14:27:39,178:INFO:Evaluating Metrics
+2020-10-01 14:27:39,287:INFO:Compiling Metrics
+2020-10-01 14:27:39,292:INFO:Initializing Fold 8
+2020-10-01 14:27:39,293:INFO:Total runtime is 8.70645673672358 minutes
+2020-10-01 14:27:39,319:INFO:Fitting Model
+2020-10-01 14:28:12,951:INFO:Evaluating Metrics
+2020-10-01 14:28:13,076:INFO:Compiling Metrics
+2020-10-01 14:28:13,083:INFO:Initializing Fold 9
+2020-10-01 14:28:13,084:INFO:Total runtime is 9.269637564818062 minutes
+2020-10-01 14:28:13,110:INFO:Fitting Model
+2020-10-01 14:28:46,711:INFO:Evaluating Metrics
+2020-10-01 14:28:46,820:INFO:Compiling Metrics
+2020-10-01 14:28:46,826:INFO:Initializing Fold 10
+2020-10-01 14:28:46,827:INFO:Total runtime is 9.832019650936124 minutes
+2020-10-01 14:28:46,855:INFO:Fitting Model
+2020-10-01 14:29:20,542:INFO:Evaluating Metrics
+2020-10-01 14:29:20,649:INFO:Compiling Metrics
+2020-10-01 14:29:20,655:INFO:Calculating mean and std
+2020-10-01 14:29:20,655:INFO:Creating metrics dataframe
+2020-10-01 14:29:20,668:INFO:Initializing Light Gradient Boosting Machine
+2020-10-01 14:29:20,675:INFO:Initializing Fold 1
+2020-10-01 14:29:20,676:INFO:Total runtime is 10.396175531546271 minutes
+2020-10-01 14:29:20,701:INFO:Fitting Model
+2020-10-01 14:29:21,889:INFO:Evaluating Metrics
+2020-10-01 14:29:21,955:INFO:Compiling Metrics
+2020-10-01 14:29:21,961:INFO:Initializing Fold 2
+2020-10-01 14:29:21,962:INFO:Total runtime is 10.417610581715898 minutes
+2020-10-01 14:29:22,009:INFO:Fitting Model
+2020-10-01 14:29:23,185:INFO:Evaluating Metrics
+2020-10-01 14:29:23,251:INFO:Compiling Metrics
+2020-10-01 14:29:23,258:INFO:Initializing Fold 3
+2020-10-01 14:29:23,258:INFO:Total runtime is 10.439217233657834 minutes
+2020-10-01 14:29:23,305:INFO:Fitting Model
+2020-10-01 14:29:24,487:INFO:Evaluating Metrics
+2020-10-01 14:29:24,569:INFO:Compiling Metrics
+2020-10-01 14:29:24,575:INFO:Initializing Fold 4
+2020-10-01 14:29:24,576:INFO:Total runtime is 10.46117566823959 minutes
+2020-10-01 14:29:24,623:INFO:Fitting Model
+2020-10-01 14:29:25,791:INFO:Evaluating Metrics
+2020-10-01 14:29:25,858:INFO:Compiling Metrics
+2020-10-01 14:29:25,864:INFO:Initializing Fold 5
+2020-10-01 14:29:25,864:INFO:Total runtime is 10.482650717099505 minutes
+2020-10-01 14:29:25,912:INFO:Fitting Model
+2020-10-01 14:29:27,078:INFO:Evaluating Metrics
+2020-10-01 14:29:27,145:INFO:Compiling Metrics
+2020-10-01 14:29:27,151:INFO:Initializing Fold 6
+2020-10-01 14:29:27,152:INFO:Total runtime is 10.50411381324132 minutes
+2020-10-01 14:29:27,200:INFO:Fitting Model
+2020-10-01 14:29:28,380:INFO:Evaluating Metrics
+2020-10-01 14:29:28,448:INFO:Compiling Metrics
+2020-10-01 14:29:28,454:INFO:Initializing Fold 7
+2020-10-01 14:29:28,454:INFO:Total runtime is 10.52581626574198 minutes
+2020-10-01 14:29:28,502:INFO:Fitting Model
+2020-10-01 14:29:29,678:INFO:Evaluating Metrics
+2020-10-01 14:29:29,747:INFO:Compiling Metrics
+2020-10-01 14:29:29,753:INFO:Initializing Fold 8
+2020-10-01 14:29:29,754:INFO:Total runtime is 10.547472266356147 minutes
+2020-10-01 14:29:29,800:INFO:Fitting Model
+2020-10-01 14:29:30,988:INFO:Evaluating Metrics
+2020-10-01 14:29:31,053:INFO:Compiling Metrics
+2020-10-01 14:29:31,059:INFO:Initializing Fold 9
+2020-10-01 14:29:31,060:INFO:Total runtime is 10.56924140055974 minutes
+2020-10-01 14:29:31,107:INFO:Fitting Model
+2020-10-01 14:29:32,281:INFO:Evaluating Metrics
+2020-10-01 14:29:32,348:INFO:Compiling Metrics
+2020-10-01 14:29:32,353:INFO:Initializing Fold 10
+2020-10-01 14:29:32,354:INFO:Total runtime is 10.590809349219 minutes
+2020-10-01 14:29:32,401:INFO:Fitting Model
+2020-10-01 14:29:33,566:INFO:Evaluating Metrics
+2020-10-01 14:29:33,632:INFO:Compiling Metrics
+2020-10-01 14:29:33,637:INFO:Calculating mean and std
+2020-10-01 14:29:33,638:INFO:Creating metrics dataframe
+2020-10-01 14:29:33,651:INFO:Initializing CatBoost Classifier
+2020-10-01 14:29:33,657:INFO:Initializing Fold 1
+2020-10-01 14:29:33,658:INFO:Total runtime is 10.612546451886491 minutes
+2020-10-01 14:29:33,706:INFO:Fitting Model
+2020-10-01 14:30:06,452:INFO:Evaluating Metrics
+2020-10-01 14:30:06,615:INFO:Compiling Metrics
+2020-10-01 14:30:06,622:INFO:Initializing Fold 2
+2020-10-01 14:30:06,622:INFO:Total runtime is 11.161952066421504 minutes
+2020-10-01 14:30:06,662:INFO:Fitting Model
+2020-10-01 14:30:37,279:INFO:Evaluating Metrics
+2020-10-01 14:30:37,424:INFO:Compiling Metrics
+2020-10-01 14:30:37,430:INFO:Initializing Fold 3
+2020-10-01 14:30:37,431:INFO:Total runtime is 11.675422314802802 minutes
+2020-10-01 14:30:37,470:INFO:Fitting Model
+2020-10-01 14:31:08,438:INFO:Evaluating Metrics
+2020-10-01 14:31:08,578:INFO:Compiling Metrics
+2020-10-01 14:31:08,585:INFO:Initializing Fold 4
+2020-10-01 14:31:08,585:INFO:Total runtime is 12.194662865002947 minutes
+2020-10-01 14:31:08,641:INFO:Fitting Model
+2020-10-01 14:31:38,309:INFO:Evaluating Metrics
+2020-10-01 14:31:38,521:INFO:Compiling Metrics
+2020-10-01 14:31:38,527:INFO:Initializing Fold 5
+2020-10-01 14:31:38,527:INFO:Total runtime is 12.693696169058478 minutes
+2020-10-01 14:31:38,565:INFO:Fitting Model
+2020-10-01 14:32:08,074:INFO:Evaluating Metrics
+2020-10-01 14:32:08,212:INFO:Compiling Metrics
+2020-10-01 14:32:08,218:INFO:Initializing Fold 6
+2020-10-01 14:32:08,218:INFO:Total runtime is 13.188550718625383 minutes
+2020-10-01 14:32:08,254:INFO:Fitting Model
+2020-10-01 14:32:39,080:INFO:Evaluating Metrics
+2020-10-01 14:32:39,306:INFO:Compiling Metrics
+2020-10-01 14:32:39,312:INFO:Initializing Fold 7
+2020-10-01 14:32:39,312:INFO:Total runtime is 13.706777882575985 minutes
+2020-10-01 14:32:39,352:INFO:Fitting Model
+2020-10-01 14:33:09,027:INFO:Evaluating Metrics
+2020-10-01 14:33:09,166:INFO:Compiling Metrics
+2020-10-01 14:33:09,171:INFO:Initializing Fold 8
+2020-10-01 14:33:09,172:INFO:Total runtime is 14.204444646835324 minutes
+2020-10-01 14:33:09,210:INFO:Fitting Model
+2020-10-01 14:33:38,228:INFO:Evaluating Metrics
+2020-10-01 14:33:38,439:INFO:Compiling Metrics
+2020-10-01 14:33:38,445:INFO:Initializing Fold 9
+2020-10-01 14:33:38,445:INFO:Total runtime is 14.692327968279518 minutes
+2020-10-01 14:33:38,484:INFO:Fitting Model
+2020-10-01 14:34:08,082:INFO:Evaluating Metrics
+2020-10-01 14:34:08,218:INFO:Compiling Metrics
+2020-10-01 14:34:08,224:INFO:Initializing Fold 10
+2020-10-01 14:34:08,225:INFO:Total runtime is 15.188653099536893 minutes
+2020-10-01 14:34:08,262:INFO:Fitting Model
+2020-10-01 14:34:37,202:INFO:Evaluating Metrics
+2020-10-01 14:34:37,413:INFO:Compiling Metrics
+2020-10-01 14:34:37,420:INFO:Calculating mean and std
+2020-10-01 14:34:37,420:INFO:Creating metrics dataframe
+2020-10-01 14:34:37,442:INFO:Finalizing top_n models
+2020-10-01 14:34:37,442:INFO:SubProcess create_model() called ==================================
+2020-10-01 14:34:37,447:INFO:Initializing create_model()
+2020-10-01 14:34:37,447:INFO:create_model(estimator=et, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=False, system=False)
+2020-10-01 14:34:37,448:INFO:Checking exceptions
+2020-10-01 14:34:37,448:INFO:Preloading libraries
+2020-10-01 14:34:37,448:INFO:Preparing display monitor
+2020-10-01 14:34:37,458:INFO:Copying training dataset
+2020-10-01 14:34:37,511:INFO:Importing libraries
+2020-10-01 14:34:37,512:INFO:Defining folds
+2020-10-01 14:34:37,512:INFO:Declaring metric variables
+2020-10-01 14:34:37,513:INFO:Importing untrained model
+2020-10-01 14:34:37,514:INFO:Extra Trees Classifier Imported succesfully
+2020-10-01 14:34:37,515:INFO:Checking ensemble method
+2020-10-01 14:34:37,527:INFO:Initializing Fold 1
+2020-10-01 14:34:37,617:INFO:Fitting Model
+2020-10-01 14:34:38,218:INFO:Evaluating Metrics
+2020-10-01 14:34:38,483:INFO:Compiling Metrics
+2020-10-01 14:34:38,494:INFO:Initializing Fold 2
+2020-10-01 14:34:38,563:INFO:Fitting Model
+2020-10-01 14:34:39,158:INFO:Evaluating Metrics
+2020-10-01 14:34:39,427:INFO:Compiling Metrics
+2020-10-01 14:34:39,435:INFO:Initializing Fold 3
+2020-10-01 14:34:39,489:INFO:Fitting Model
+2020-10-01 14:34:40,078:INFO:Evaluating Metrics
+2020-10-01 14:34:40,340:INFO:Compiling Metrics
+2020-10-01 14:34:40,349:INFO:Initializing Fold 4
+2020-10-01 14:34:40,402:INFO:Fitting Model
+2020-10-01 14:34:41,004:INFO:Evaluating Metrics
+2020-10-01 14:34:41,266:INFO:Compiling Metrics
+2020-10-01 14:34:41,275:INFO:Initializing Fold 5
+2020-10-01 14:34:41,329:INFO:Fitting Model
+2020-10-01 14:34:41,924:INFO:Evaluating Metrics
+2020-10-01 14:34:42,190:INFO:Compiling Metrics
+2020-10-01 14:34:42,199:INFO:Initializing Fold 6
+2020-10-01 14:34:42,256:INFO:Fitting Model
+2020-10-01 14:34:42,856:INFO:Evaluating Metrics
+2020-10-01 14:34:43,124:INFO:Compiling Metrics
+2020-10-01 14:34:43,132:INFO:Initializing Fold 7
+2020-10-01 14:34:43,189:INFO:Fitting Model
+2020-10-01 14:34:43,778:INFO:Evaluating Metrics
+2020-10-01 14:34:44,037:INFO:Compiling Metrics
+2020-10-01 14:34:44,048:INFO:Initializing Fold 8
+2020-10-01 14:34:44,102:INFO:Fitting Model
+2020-10-01 14:34:44,812:INFO:Evaluating Metrics
+2020-10-01 14:34:45,071:INFO:Compiling Metrics
+2020-10-01 14:34:45,079:INFO:Initializing Fold 9
+2020-10-01 14:34:45,133:INFO:Fitting Model
+2020-10-01 14:34:45,721:INFO:Evaluating Metrics
+2020-10-01 14:34:45,977:INFO:Compiling Metrics
+2020-10-01 14:34:45,986:INFO:Initializing Fold 10
+2020-10-01 14:34:46,040:INFO:Fitting Model
+2020-10-01 14:34:46,639:INFO:Evaluating Metrics
+2020-10-01 14:34:46,896:INFO:Compiling Metrics
+2020-10-01 14:34:46,905:INFO:Calculating mean and std
+2020-10-01 14:34:46,907:INFO:Creating metrics dataframe
+2020-10-01 14:34:46,912:INFO:Finalizing model
+2020-10-01 14:34:47,616:INFO:Uploading results into container
+2020-10-01 14:34:47,616:INFO:Uploading model into container now
+2020-10-01 14:34:47,616:INFO:create_model_container: 2
+2020-10-01 14:34:47,616:INFO:master_model_container: 2
+2020-10-01 14:34:47,616:INFO:display_container: 3
+2020-10-01 14:34:47,617:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=3241, verbose=0,
+                     warm_start=False)
+2020-10-01 14:34:47,617:INFO:create_model() succesfully completed......................................
+2020-10-01 14:34:47,632:INFO:SubProcess create_model() end ==================================
+2020-10-01 14:34:47,697:INFO:create_model_container: 2
+2020-10-01 14:34:47,697:INFO:master_model_container: 2
+2020-10-01 14:34:47,698:INFO:display_container: 4
+2020-10-01 14:34:47,698:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=3241, verbose=0,
+                     warm_start=False)
+2020-10-01 14:34:47,698:INFO:compare_models() succesfully completed......................................
